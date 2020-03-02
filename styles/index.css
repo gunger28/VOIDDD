@@ -1,0 +1,141 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:700);
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Roboto";
+}
+
+.menu_block {
+  margin-top: 140px;
+  -webkit-transition-duration: 4s;
+          transition-duration: 4s;
+  -webkit-transform: translateX(-140px);
+          transform: translateX(-140px);
+  margin-left: 10px;
+  position: fixed;
+  display: table-cell;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-color: rgba(0, 0, 0, 0);
+  width: 6%;
+  z-index: 2;
+}
+
+.menu_block .menu_logo {
+  background-color: rgba(0, 204, 255, 0);
+  width: 80%;
+  height: 77px;
+  margin-bottom: 13px;
+  z-index: 10;
+  border: none;
+  -webkit-transition-duration: 0.7s;
+          transition-duration: 0.7s;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  transition-duration: 0.7s;
+}
+
+.menu_block .menu_logo img {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  height: 100%;
+  width: 100%;
+}
+
+.menu_block .menu_logo:hover {
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+
+.menu_block .menu_element {
+  background-color: rgba(0, 204, 255, 0);
+  width: 80%;
+  height: 77px;
+  margin-bottom: 10px;
+  z-index: 10;
+  border-radius: 100%;
+  border: solid 8px #00c3ff;
+  -webkit-transition-duration: 1s;
+          transition-duration: 1s;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-shadow: 0 0 5px 3px #00b7ff, inset 0 0 5px 4px #008cff;
+          box-shadow: 0 0 5px 3px #00b7ff, inset 0 0 5px 4px #008cff;
+}
+
+.menu_block .menu_element p {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  font-family: "Open Sans";
+  color: white;
+  margin: auto;
+  font-size: 20px;
+}
+
+.menu_block .menu_element:hover {
+  -webkit-transition-duration: 1s;
+          transition-duration: 1s;
+  -webkit-animation: shadow 1s infinite alternate;
+          animation: shadow 1s infinite alternate;
+}
+
+.menu_block .menu_element p.mouseEnter {
+  text-shadow: 1px 3px 10px orange;
+  font-size: 17px;
+}
+
+@-webkit-keyframes shadow {
+  from {
+    -webkit-box-shadow: 0 0 9px 5px #0099ff, inset 0 0 9px 5px #0099ff;
+            box-shadow: 0 0 9px 5px #0099ff, inset 0 0 9px 5px #0099ff;
+  }
+  to {
+    -webkit-box-shadow: 0 0 5px 1px #0099ff, inset 0 0 5px 1px #0099ff;
+            box-shadow: 0 0 5px 1px #0099ff, inset 0 0 5px 1px #0099ff;
+  }
+}
+
+@keyframes shadow {
+  from {
+    -webkit-box-shadow: 0 0 9px 5px #0099ff, inset 0 0 9px 5px #0099ff;
+            box-shadow: 0 0 9px 5px #0099ff, inset 0 0 9px 5px #0099ff;
+  }
+  to {
+    -webkit-box-shadow: 0 0 5px 1px #0099ff, inset 0 0 5px 1px #0099ff;
+            box-shadow: 0 0 5px 1px #0099ff, inset 0 0 5px 1px #0099ff;
+  }
+}
+
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: black;
+}
+
+.vid_block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+
+.vid_block video {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+}
+/*# sourceMappingURL=index.css.map */

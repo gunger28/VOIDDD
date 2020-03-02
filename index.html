@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+        <link rel="stylesheet" href="./styles/index.css?<?php echo time();?>" />
+
+        <link
+            href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
+            rel="stylesheet"
+        />
+
+        <title>Untitled Document</title>
+    </head>
+
+    <body>
+        <div class="menu_block" id="mn">
+            <div class="menu_logo">
+                <img src="/assets/decor/logo1.png" alt="image" />
+                <a href="#top"></a>
+            </div>
+            <div
+                class="menu_element"
+                data-source="./scripts/vid2.webm"
+                data-fullname="Gallery"
+                data-shortname="V"
+            >
+                <p>V</p>
+            </div>
+            <div
+                class="menu_element"
+                data-source="./scripts/vid2.webm"
+                data-fullname="Works"
+                data-shortname="O"
+            >
+                <p>O</p>
+            </div>
+            <div
+                class="menu_element"
+                data-source="./scripts/vid2.webm"
+                data-fullname="Videos"
+                data-shortname="I"
+            >
+                <p>I</p>
+            </div>
+            <div
+                class="menu_element"
+                data-source="./scripts/vid2.webm"
+                data-fullname="Contacts"
+                data-shortname="D"
+            >
+                <p>D</p>
+            </div>
+        </div>
+
+        <div class="vid_block" id="top">
+            <video
+                pip="false"
+                src="/assets/gallery/video.webm"
+                autoplay
+                preload="auto"
+                id="video"
+            ></video>
+        </div>
+
+        <script src="/scripts/index.js"></script>
+    </body>
+</html>
