@@ -98,26 +98,26 @@
 @-webkit-keyframes shadow {
   from {
     text-shadow: 0 0px 5px white;
-    -webkit-box-shadow: 0 0 0px 0px rgba(0, 0, 0, 0), inset 0 0 0px 0px rgba(0, 0, 0, 0), inset 0 0 0px 0px rgba(0, 0, 0, 0);
-            box-shadow: 0 0 0px 0px rgba(0, 0, 0, 0), inset 0 0 0px 0px rgba(0, 0, 0, 0), inset 0 0 0px 0px rgba(0, 0, 0, 0);
+    -webkit-box-shadow: 0 0 0px 0px rgba(0, 0, 0, 0), inset 0 0 0px 0px rgba(0, 0, 0, 0);
+            box-shadow: 0 0 0px 0px rgba(0, 0, 0, 0), inset 0 0 0px 0px rgba(0, 0, 0, 0);
   }
   to {
     text-shadow: 0 0px 1px white;
-    -webkit-box-shadow: 0 0 6px 3px #0099ff, inset 0 0 6px 3px #0099ff, inset 0 0 6px 3px #0099ff;
-            box-shadow: 0 0 6px 3px #0099ff, inset 0 0 6px 3px #0099ff, inset 0 0 6px 3px #0099ff;
+    -webkit-box-shadow: 0 0 6px 3px #00d6ff, inset 0 0 6px 3px #00d6ff;
+            box-shadow: 0 0 6px 3px #00d6ff, inset 0 0 6px 3px #00d6ff;
   }
 }
 
 @keyframes shadow {
   from {
     text-shadow: 0 0px 5px white;
-    -webkit-box-shadow: 0 0 0px 0px rgba(0, 0, 0, 0), inset 0 0 0px 0px rgba(0, 0, 0, 0), inset 0 0 0px 0px rgba(0, 0, 0, 0);
-            box-shadow: 0 0 0px 0px rgba(0, 0, 0, 0), inset 0 0 0px 0px rgba(0, 0, 0, 0), inset 0 0 0px 0px rgba(0, 0, 0, 0);
+    -webkit-box-shadow: 0 0 0px 0px rgba(0, 0, 0, 0), inset 0 0 0px 0px rgba(0, 0, 0, 0);
+            box-shadow: 0 0 0px 0px rgba(0, 0, 0, 0), inset 0 0 0px 0px rgba(0, 0, 0, 0);
   }
   to {
     text-shadow: 0 0px 1px white;
-    -webkit-box-shadow: 0 0 6px 3px #0099ff, inset 0 0 6px 3px #0099ff, inset 0 0 6px 3px #0099ff;
-            box-shadow: 0 0 6px 3px #0099ff, inset 0 0 6px 3px #0099ff, inset 0 0 6px 3px #0099ff;
+    -webkit-box-shadow: 0 0 6px 3px #00d6ff, inset 0 0 6px 3px #00d6ff;
+            box-shadow: 0 0 6px 3px #00d6ff, inset 0 0 6px 3px #00d6ff;
   }
 }
 
