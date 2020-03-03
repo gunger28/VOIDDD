@@ -7,6 +7,55 @@
   font-family: "Roboto";
 }
 
+.wind_main {
+  position: fixed;
+  padding-left: 15px;
+  font-family: "Open Sans";
+  margin-top: 10px;
+  margin-left: auto;
+  margin-right: 40px;
+  top: 0;
+  left: 50;
+  right: 0;
+  width: 90%;
+  height: 900px;
+  border-radius: 30px;
+  z-index: 4;
+  -webkit-transition-duration: .8s;
+          transition-duration: .8s;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.wind_main .wind_category {
+  width: 25%;
+  display: inline;
+}
+
+.wind_main .wind_category p {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  display: inline-block;
+  max-width: 100%;
+  border-bottom: 1px solid black;
+  letter-spacing: 13px;
+  color: black;
+  font-size: 80px;
+  -webkit-transition-duration: .5s;
+          transition-duration: .5s;
+}
+
+.wind_main .wind_category p:hover {
+  background-color: gray;
+}
+
+.wind_main .wind_gal {
+  width: 75%;
+}
+
 .menu_block {
   margin-top: 20px;
   -webkit-transition-duration: 4s;
@@ -85,9 +134,12 @@
           animation: shadow 2s infinite alternate;
 }
 
+.menu_block .menu_element:hover p {
+  color: rgba(0, 0, 0, 0);
+}
+
 .menu_block .menu_element p.mouseMoveOn {
   font-size: 17px;
-  color: rgba(0, 0, 0, 0);
 }
 
 .menu_block .menu_element p.mouseEnter {

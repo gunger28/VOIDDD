@@ -15,15 +15,18 @@
 
     <body>
         <div class="menu_block"
-             data-source="./assets/gallery/vid1.webm" 
+            
              id="mn">
-            <div class="menu_logo">
+            <div class="menu_logo"
+             id="main_video"
+             data-source="./assets/gallery/vid1.webm" 
+             >
                 <img src="/assets/decor/logoVV1.png" alt="image" />
                 <a href="#top"></a>
             </div>
             <div
                 class="menu_element"
-                data-source="./scripts/vid2.webm"
+                data-source="./scripts/vid_gal1.webm"
                 data-fullname="Gallery"
                 data-shortname="V"
             >
@@ -62,8 +65,28 @@
                 autoplay
                 preload="auto"
                 id="video"
-            ></video>
-        </div>
+            >
+            
+            
+        
+        
+        </video>
+        <div id="gal" class="wind_main" style="transform: rotateY(90deg);">
+            <div class="wind_category">
+               <p> V     O     I     D</p> 
+               <p> GALLERY</p>
+               <p> WAR</p>
+               <p> COSMIC</p>
+               <p> APARTS</p>
+               
+
+            </div>
+            <div  class="wind_gal">
+               
+            </div>
+            
+                    </div>
+    </div>
 
         <script src="/scripts/index.js"></script>
     </body>
