@@ -8,7 +8,7 @@
 }
 
 .menu_block {
-  margin-top: 140px;
+  margin-top: 20px;
   -webkit-transition-duration: 4s;
           transition-duration: 4s;
   -webkit-transform: translateX(-140px);
@@ -26,8 +26,8 @@
 
 .menu_block .menu_logo {
   background-color: rgba(0, 204, 255, 0);
-  width: 80%;
-  height: 77px;
+  width: 80px;
+  height: 80px;
   margin-bottom: 13px;
   z-index: 10;
   border: none;
@@ -52,20 +52,19 @@
 }
 
 .menu_block .menu_element {
+  -webkit-transform: translateZ(-140px);
+          transform: translateZ(-140px);
   background-color: rgba(0, 204, 255, 0);
-  width: 80%;
-  height: 77px;
+  width: 80px;
+  height: 80px;
   margin-bottom: 10px;
   z-index: 10;
   border-radius: 100%;
-  border: solid 8px #00c3ff;
   -webkit-transition-duration: 1s;
           transition-duration: 1s;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-shadow: 0 0 5px 3px #00b7ff, inset 0 0 5px 4px #008cff;
-          box-shadow: 0 0 5px 3px #00b7ff, inset 0 0 5px 4px #008cff;
 }
 
 .menu_block .menu_element p {
@@ -80,36 +79,45 @@
 }
 
 .menu_block .menu_element:hover {
-  -webkit-transition-duration: 1s;
-          transition-duration: 1s;
-  -webkit-animation: shadow 1s infinite alternate;
-          animation: shadow 1s infinite alternate;
+  -webkit-transition-duration: 2s;
+          transition-duration: 2s;
+  -webkit-animation: shadow 2s infinite alternate;
+          animation: shadow 2s infinite alternate;
+}
+
+.menu_block .menu_element p.mouseMoveOn {
+  font-size: 17px;
+  color: rgba(0, 0, 0, 0);
 }
 
 .menu_block .menu_element p.mouseEnter {
-  text-shadow: 1px 3px 10px orange;
-  font-size: 17px;
+  background-color: red;
+  color: black;
 }
 
 @-webkit-keyframes shadow {
   from {
-    -webkit-box-shadow: 0 0 9px 5px #0099ff, inset 0 0 9px 5px #0099ff;
-            box-shadow: 0 0 9px 5px #0099ff, inset 0 0 9px 5px #0099ff;
+    text-shadow: 0 0px 5px white;
+    -webkit-box-shadow: 0 0 0px 0px rgba(0, 0, 0, 0), inset 0 0 0px 0px rgba(0, 0, 0, 0), inset 0 0 0px 0px rgba(0, 0, 0, 0);
+            box-shadow: 0 0 0px 0px rgba(0, 0, 0, 0), inset 0 0 0px 0px rgba(0, 0, 0, 0), inset 0 0 0px 0px rgba(0, 0, 0, 0);
   }
   to {
-    -webkit-box-shadow: 0 0 5px 1px #0099ff, inset 0 0 5px 1px #0099ff;
-            box-shadow: 0 0 5px 1px #0099ff, inset 0 0 5px 1px #0099ff;
+    text-shadow: 0 0px 1px white;
+    -webkit-box-shadow: 0 0 6px 3px #0099ff, inset 0 0 6px 3px #0099ff, inset 0 0 6px 3px #0099ff;
+            box-shadow: 0 0 6px 3px #0099ff, inset 0 0 6px 3px #0099ff, inset 0 0 6px 3px #0099ff;
   }
 }
 
 @keyframes shadow {
   from {
-    -webkit-box-shadow: 0 0 9px 5px #0099ff, inset 0 0 9px 5px #0099ff;
-            box-shadow: 0 0 9px 5px #0099ff, inset 0 0 9px 5px #0099ff;
+    text-shadow: 0 0px 5px white;
+    -webkit-box-shadow: 0 0 0px 0px rgba(0, 0, 0, 0), inset 0 0 0px 0px rgba(0, 0, 0, 0), inset 0 0 0px 0px rgba(0, 0, 0, 0);
+            box-shadow: 0 0 0px 0px rgba(0, 0, 0, 0), inset 0 0 0px 0px rgba(0, 0, 0, 0), inset 0 0 0px 0px rgba(0, 0, 0, 0);
   }
   to {
-    -webkit-box-shadow: 0 0 5px 1px #0099ff, inset 0 0 5px 1px #0099ff;
-            box-shadow: 0 0 5px 1px #0099ff, inset 0 0 5px 1px #0099ff;
+    text-shadow: 0 0px 1px white;
+    -webkit-box-shadow: 0 0 6px 3px #0099ff, inset 0 0 6px 3px #0099ff, inset 0 0 6px 3px #0099ff;
+            box-shadow: 0 0 6px 3px #0099ff, inset 0 0 6px 3px #0099ff, inset 0 0 6px 3px #0099ff;
   }
 }
 
