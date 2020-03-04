@@ -1,93 +1,109 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 
-        <link rel="stylesheet" href="./styles/index.css?<?php echo time();?>" />
+    <link rel="stylesheet" href="./styles/index.css?<?php echo time();?>" />
 
-        <link
-            href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
-            rel="stylesheet"
-        />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
+      rel="stylesheet"
+    />
 
-        <title>Untitled Document</title>
-    </head>
+    <title>Untitled Document</title>
+  </head>
 
-    <body>
-        <div class="menu_block"
-            
-             id="mn">
-            <div class="menu_logo"
-             id="main_video"
-             data-source="./assets/gallery/vid1.webm" 
-             >
-                <img src="/assets/decor/logoVV1.png" alt="image" />
-                <a href="#top"></a>
-            </div>
-            <div
-                class="menu_element"
-                data-source="./scripts/vid_gal1.webm"
-                data-fullname="Gallery"
-                data-shortname="V"
-            >
-                <p>V</p>
-            </div>
-            <div
-                class="menu_element"
-                data-source="./scripts/vid2.webm"
-                data-fullname="Works"
-                data-shortname="O"
-            >
-                <p>O</p>
-            </div>
-            <div
-                class="menu_element"
-                data-source="./scripts/vid2.webm"
-                data-fullname="Videos"
-                data-shortname="I"
-            >
-                <p>I</p>
-            </div>
-            <div
-                class="menu_element"
-                data-source="./scripts/vid2.webm"
-                data-fullname="Contacts"
-                data-shortname="D"
-            >
-                <p>D</p>
-            </div>
-        </div>
-
-        <div class="vid_block" id="top">
-            <video
-                pip="false"
-                src="/assets/gallery/vid1.webm"
-                autoplay
-                preload="auto"
-                id="video"
-            >
-            
-            
-        
-        
-        </video>
-        <div id="gal" class="wind_main" style="transform: rotateY(90deg);">
-            <div class="wind_category">
-               <p> V     O     I     D</p> 
-               <p> GALLERY</p>
-               <p> WAR</p>
-               <p> COSMIC</p>
-               <p> APARTS</p>
-               
-
-            </div>
-            <div  class="wind_gal">
-               
-            </div>
-            
-                    </div>
+  <body>
+    <div class="menu_block" id="mn">
+      <div
+        class="menu_logo"
+        id="main_video"
+        data-source="./assets/gallery/vid1.webm"
+      >
+        <img src="/assets/decor/logoVV1.png" alt="image" />
+        <a href="#top"></a>
+      </div>
+      <div
+        class="menu_element"
+        data-source="./scripts/vid_gal1.webm"
+        data-fullname="Gallery"
+        data-shortname="V"
+      >
+        <p>V</p>
+      </div>
+      <div
+        class="menu_element"
+        data-source="./scripts/vid2.webm"
+        data-fullname="Works"
+        data-shortname="O"
+      >
+        <p>O</p>
+      </div>
+      <div
+        class="menu_element"
+        data-source="./scripts/vid2.webm"
+        data-fullname="Videos"
+        data-shortname="I"
+      >
+        <p>I</p>
+      </div>
+      <div
+        class="menu_element"
+        data-source="./scripts/vid2.webm"
+        data-fullname="Contacts"
+        data-shortname="D"
+      >
+        <p>D</p>
+      </div>
     </div>
 
-        <script src="/scripts/index.js"></script>
-    </body>
+    <div class="vid_block" id="top">
+      <video
+        pip="false"
+        src="/assets/gallery/vid1.webm"
+        autoplay
+        preload="auto"
+        id="video"
+      ></video>
+      <div id="gal" class="wind_main" style="transform: rotateY(90deg);">
+        <div class="wind_category" >
+          <p class="cat" id="void">V O I D</p>
+          <p class="cat" id="gallery">GALLERY</p>
+          <p class="cat" id="war">WAR</p>
+          <p class="cat" id="cosmic">COSMIC</p>
+          <p class="cat" id="aparts">APARTS</p>
+          <p class="cat" id="faces">FACES</p>
+          <p class="cat" id="arch">ARCH</p>
+          <p class="cat" id="aparts">APARTS</p>
+        </div>
+        <div class="wind_gal" id="galBlock" >
+          <div class="gal_view">
+            <div class="preview_gal_top">
+                <img src="/assets/gallery/war2.png" alt="image" class="prew" id="f1"/>
+                <img src="/assets/gallery/faces2.png" alt="image" class="prew" id="s1"/>
+                <img src="/assets/gallery/war4.png" alt="image" class="prew" id="t1"/>
+                <img src="/assets/gallery/earth1.png" alt="image" class="prew" id="fo1"/>
+                <img src="/assets/gallery/war3.png" alt="image" class="prew" id="fi1"/>
+              </div>
+
+            <div class="watch_photo">
+              <img src="/assets/gallery/apart1.png" alt="image"  id="viewer"/>
+            </div>
+            <div class="preview_gal">
+              <img src="/assets/gallery/apart1.png" alt="image" class="prew" id="f"/>
+              <img src="/assets/gallery/apart2.png" alt="image" class="prew" id="s"/>
+              <img src="/assets/gallery/apart3.png" alt="image" class="prew" id="t"/>
+              <img src="/assets/gallery/faces1.png" alt="image" class="prew" id="fo"/>
+              <img src="/assets/gallery/war1.png" alt="image" class="prew" id="fi"/>
+            </div>
+           
+            <!-- <div class="platform_gal"></div> -->
+          </div>
+        </div>
+      </div>
+    </div>
+    <script type="text/javascript" src="./scripts/gallery.js" ></script>  
+    <script type="text/javascript" src="./scripts/index.js" ></script>
+  
+  </body>
 </html>
