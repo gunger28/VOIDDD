@@ -8,29 +8,32 @@ view.setAttribute("src",img.getAttribute("src"));
 
 };
 
-const war = ["./assets/gallery/war1.png","./assets/gallery/war2.png"];
+const cat = ["./assets/gallery/war"];
 
 function reload_imgs(category){
     const categ = document.getElementById(category);
 const imgs = document.querySelectorAll(".prew");
 console.log(categ);
+var i =1;
 switch(category){
 case 'void':
     imgs.forEach(function(item) {
         
         anim_reload();
         setTimeout(() => {
-            item.setAttribute("src",war[0]);
+            item.setAttribute("src",cat[0]+i+".png");
+            i++;
             anim_reload_reverse();
           }, 600);
-        
+        console.log(i);
       });
+      
 break;
 case 'gallery':
     imgs.forEach(function(item) {
         anim_reload();
         setTimeout(() => {
-            item.setAttribute("src",war[1]);
+            item.setAttribute("src",war[0]);
             anim_reload_reverse();
           }, 600);
         
