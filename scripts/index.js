@@ -81,6 +81,8 @@ function changeSource(src, element) {
 
 window.onload = function() {
   
+this.gal_move(true);
+
   // const prews = document.querySelectorAll(".prew");
   // // prews.addEventListener("click", function() {
   // //    take_pic_view(this.getAttribute("id"));

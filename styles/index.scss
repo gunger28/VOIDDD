@@ -83,6 +83,7 @@
         display: flex;
 
         img {
+          clip-path: polygon(0% 0%, 80% 0%, 100% 35%, 100% 100%, 20% 100%, 0% 70%);
           margin-bottom: 50px;
           margin: 0 auto;
           width: 100%;

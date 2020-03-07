@@ -8,7 +8,7 @@ view.setAttribute("src",img.getAttribute("src"));
 
 };
 
-const cat = ["./assets/gallery/war"];
+const cat = ["./assets/gallery/Gallery"];
 
 function reload_imgs(category){
     const categ = document.getElementById(category);
@@ -21,49 +21,106 @@ case 'void':
         
         anim_reload();
         setTimeout(() => {
-            item.setAttribute("src",cat[0]+i+".png");
+            item.setAttribute("src",cat[0]+"/Void/void"+i+".png");
             i++;
             anim_reload_reverse();
           }, 600);
         console.log(i);
       });
+
+      i=1;
       
 break;
 case 'gallery':
     imgs.forEach(function(item) {
         anim_reload();
         setTimeout(() => {
-            item.setAttribute("src",war[0]);
+            item.setAttribute("src",cat[0]+"/Gallery/gallery"+i+".png");
+            i++;
             anim_reload_reverse();
           }, 600);
         
       });
+
+      i=1;
 break;
 case 'war':
     imgs.forEach(function(item) {
-        item.setAttribute("src",war[0]);
+        anim_reload();
+        setTimeout(() => {
+            item.setAttribute("src",cat[0]+"/War/war"+i+".png");
+            i++;
+            anim_reload_reverse();
+          }, 600);
+        
       });
+
+      i=1;
 break;
 case 'cosmic':
     imgs.forEach(function(item) {
-        item.setAttribute("src",war[0]);
+        anim_reload();
+        setTimeout(() => {
+            item.setAttribute("src",cat[0]+"/cosmic/cosmic"+i+".png");
+            i++;
+            anim_reload_reverse();
+          }, 600);
+        
       });
+
+      i=1;
 break;
 case 'aparts':
     imgs.forEach(function(item) {
-        item.setAttribute("src",war[0]);
+        anim_reload();
+        setTimeout(() => {
+            item.setAttribute("src",cat[0]+"/apart/apart"+i+".png");
+            i++;
+            anim_reload_reverse();
+          }, 600);
+        
       });
+
+      i=1;
 break;
 case 'faces':
     imgs.forEach(function(item) {
+        anim_reload();
+        setTimeout(() => {
+            item.setAttribute("src",cat[0]+"/faces/faces"+i+".png");
+            i++;
+            anim_reload_reverse();
+          }, 600);
         
-        item.setAttribute("src",war[0]);
       });
+
+      i=1;
 break;
 case 'arch':
     imgs.forEach(function(item) {
-        item.setAttribute("src",war[0]);
+        anim_reload();
+        setTimeout(() => {
+            item.setAttribute("src",cat[0]+"/Arch/arch"+i+".png");
+            i++;
+            anim_reload_reverse();
+          }, 600);
+        
       });
+
+      i=1;
+break;
+case 'death':
+    imgs.forEach(function(item) {
+        anim_reload();
+        setTimeout(() => {
+            item.setAttribute("src",cat[0]+"/death/death"+i+".png");
+            i++;
+            anim_reload_reverse();
+          }, 600);
+        
+      });
+
+      i=1;
 break;
 }
 }
