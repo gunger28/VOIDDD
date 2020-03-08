@@ -102,7 +102,7 @@
         display: flex;
 
         img {
-          
+          clip-path: polygon(20% 0%, 100% 0%, 100% 50%, 80% 100%, 0% 100%, 0% 50%);
        //   border: 1px solid black;
           margin: 0 auto;
           //margin-top: 5px;
@@ -130,17 +130,20 @@
         display: flex;
 
         img {
-          
+          clip-path: polygon(20% 0%, 100% 0%, 100% 50%, 80% 100%, 0% 100%, 0% 50%);
         //  border: 1px solid black;
           margin: 0 auto;
           //margin-top: 5px;
           width: 19%;
           height: 100%;
-
+          
           transition-duration: 0.7s;
 
           &:hover {
+            
             transform: translateY(-10px);
+          
+         
             //transform: rotateY(20deg);
             
             //transform: rotate3d(9deg,30deg,0deg);
