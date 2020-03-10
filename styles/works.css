@@ -1,0 +1,211 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Roboto";
+}
+
+.works_block {
+  display: inline-block;
+  position: fixed;
+  opacity: 1;
+  margin: auto 0;
+  background-color: black;
+  width: 93vw;
+  height: 98vh;
+  z-index: 6;
+  -webkit-transition-duration: 2s;
+          transition-duration: 2s;
+  padding: 7px;
+}
+
+.works_block p {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  font-size: 80px;
+  color: white;
+  font-family: "Open Sans";
+  letter-spacing: 8px;
+  background-color: black;
+}
+
+.all_works_panel {
+  display: inline-block;
+  height: 80%;
+  width: 95%;
+}
+
+.all_works_panel .one_panel {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  height: 33%;
+  margin-bottom: 10px;
+}
+
+.all_works_panel .one_panel .one_card {
+  border-radius: 15px;
+  margin: auto auto;
+  height: 97%;
+  width: 24%;
+  display: inline-block;
+  background-color: black;
+  -webkit-transform: scale3d(0.8, 0.8, 0.8);
+          transform: scale3d(0.8, 0.8, 0.8);
+  -webkit-transition-duration: .7s;
+          transition-duration: .7s;
+  z-index: 10;
+}
+
+.all_works_panel .one_panel .one_card .tag {
+  pointer-events: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  text-align: center;
+  background-color: rgba(245, 245, 220, 0);
+  z-index: 2;
+  position: fixed;
+}
+
+.all_works_panel .one_panel .one_card .tag h1 {
+  pointer-events: none;
+  text-transform: uppercase;
+  text-align: center;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  margin: auto auto;
+  width: 100%;
+  height: 100%;
+  font-family: "Open Sans";
+  -webkit-transition-duration: .8s;
+          transition-duration: .8s;
+}
+
+.all_works_panel .one_panel .one_card img {
+  height: 100%;
+  width: 100%;
+  border-radius: 15px;
+  -webkit-transition-duration: .7s;
+          transition-duration: .7s;
+  opacity: .0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.all_works_panel .one_panel .one_card img:hover {
+  opacity: 1;
+}
+
+.all_works_panel .one_panel .one_card:hover {
+  -webkit-transform: scale3d(1, 1, 1);
+          transform: scale3d(1, 1, 1);
+}
+
+.description_block {
+  display: inline-block;
+  position: fixed;
+  background-color: white;
+  width: 30vw;
+  height: 100vh;
+  z-index: 20;
+  -webkit-transition-duration: 2s;
+          transition-duration: 2s;
+}
+
+.description_block .img_block {
+  position: relative;
+  background-color: black;
+  width: 100%;
+  height: 40%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.description_block .img_block img {
+  width: 100%;
+  height: 100%;
+}
+
+.description_block .title {
+  width: 100%;
+  height: 10%;
+  display: inline-block;
+  line-height: 110%;
+  font-weight: 700;
+  position: relative;
+  text-transform: uppercase;
+  font-family: "Open Sans";
+  font-size: 67px;
+  margin-left: -10px;
+}
+
+.description_block .description {
+  position: relative;
+  width: 100%;
+  height: 60%;
+  display: inline-block;
+}
+
+.description_block .description .text {
+  width: 100%;
+  height: 40%;
+  padding: 10px;
+}
+
+.description_block .description .text p {
+  text-indent: 25px;
+  word-wrap: break-word;
+  width: 100%;
+  max-height: 90%;
+  font-size: 20px;
+}
+
+.description_block .description .tecnologies {
+  margin-top: 10px;
+  width: 100%;
+  height: 11%;
+  margin-left: 10px;
+  font-family: "Open Sans";
+  font-size: 40px;
+}
+
+.description_block .description .style {
+  width: 100%;
+  height: 11%;
+  margin-left: 10px;
+  font-family: "Open Sans";
+  font-size: 40px;
+}
+
+.description_block .description .programs {
+  margin-top: 10px;
+  width: 100%;
+  height: 11%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.description_block .description .programs p {
+  color: white;
+  margin-top: 5px;
+  padding: 10px;
+  word-wrap: break-word;
+  background-color: black;
+  margin-left: 10px;
+  max-width: 90%;
+  max-height: 90%;
+  border-radius: 15px;
+  font-size: 20px;
+}
+/*# sourceMappingURL=works.css.map */
