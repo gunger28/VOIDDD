@@ -116,6 +116,7 @@ setWork(work);
            if(switcherVar === work.getAttribute("alt")){
             worksPane.style.width = "100vw";
             workPane.style.right = "-500px";
+            work.style.opacity = "0";
 
             textWorks.forEach(text => {
                 text.childNodes[1].style = "color: white; font-Size: 65px;"
@@ -133,7 +134,7 @@ console.log("same card");
             textWorks.forEach(text => {
               
               });
-
+  work.style.opacity = "1";
             workPane.style.right = "-500px";
 
                 textWorks.forEach(text => {
@@ -155,7 +156,7 @@ console.log("same card");
                   }, 1000);
                   switcherVar = work.getAttribute("alt");
     
-                  
+                  lastWork.style.opacity = "0";
                   
 
            }
@@ -175,6 +176,8 @@ console.log("same card");
 
 
         }
+
+        lastWork = work;
 
   }
   
