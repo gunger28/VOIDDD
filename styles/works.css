@@ -1,3 +1,4 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:700);
 * {
   margin: 0;
   padding: 0;
@@ -95,14 +96,6 @@
   border-radius: 15px;
   -webkit-transition-duration: .7s;
           transition-duration: .7s;
-  opacity: .0;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.all_works_panel .one_panel .one_card img:hover {
-  opacity: 1;
 }
 
 .all_works_panel .one_panel .one_card:hover {

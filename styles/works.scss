@@ -1,4 +1,8 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:700);
+
+$font: "Open Sans";
 * {
+  // font-family: Ubuntu;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -76,15 +80,15 @@ position: fixed;
 
 h1{
    
-    pointer-events: none;
+  pointer-events: none;
     text-transform: uppercase;
     text-align: center;
     user-select: none;
     margin: auto auto;
     width: 100%;
     height: 100%;
-    font-family: "Open Sans";
-
+   // font-family: "Open Sans";
+    font-family: $font;
 
 transition-duration: .8s;
 }
@@ -96,16 +100,6 @@ img{
     width: 100%;
 border-radius: 15px;
 transition-duration: .7s;
-opacity: .0;
-display: flex;
-
-
-&:hover{
-
-   opacity: 1;
-
-}
-
 }
 &:hover{
 
@@ -160,7 +154,8 @@ img{
         
 
         text-transform: uppercase;
-        font-family: "Open Sans";
+      //  font-family: "Open Sans";
+      font-family: $font;
     font-size: 67px;
 
     
