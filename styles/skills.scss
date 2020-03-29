@@ -1,0 +1,113 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:700);
+
+$font: "Open Sans";
+* {
+  // font-family: Ubuntu;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  
+    font-family: "Roboto";
+  }
+
+
+  .skills_pane{
+    display: flex;
+    position: fixed;
+    opacity: 1;
+    margin: auto 0;
+    background-color: rgb(255, 255, 255);
+    width: 100vw;
+    height: 100vh;
+    z-index: 6;
+    transition-duration: 1s;
+    //right: 250px;
+   // padding: 7px;
+
+    p{
+        position: fixed;
+        
+    user-select: none;
+    font-size: 80px;
+    color: rgb(0, 0, 0);
+    font-family: "Open Sans";
+    letter-spacing: 8px;
+    background-color: rgba(0, 0, 0, 0);
+
+
+  }
+
+
+  .line_of_skills{
+      margin-left: 110px;
+width: 80vw;
+height: 100%;
+background-color: rgba(0, 160, 93, 0);
+display: flex;
+
+.skill{
+    margin: 110px auto;
+    width: 25vw;
+    height: 85%;
+    background-color: rgb(0, 0, 0);
+display: inline-block;
+
+
+    .photo_cat{
+        
+        background-color: rgb(70, 0, 150);
+        width: 100%;
+    height: 45%;
+        clip-path: polygon(0% 0%, 80% 0%, 100% 0%, 100% 40%, 0% 100%, 0% 70%);
+        padding-top: 90px;
+p{
+    
+    position: static;
+        
+    user-select: none;
+    font-size: 120px;
+    color: rgb(255, 255, 255);
+    font-family: "Open Sans";
+    letter-spacing: 8px;
+
+    line-height: 1em;
+    text-shadow: 2px 7px rgb(75, 75, 75);
+    font-weight: 1000;
+   text-decoration-color: yellowgreen;
+text-align: center;
+
+transform: rotateZ(-25deg);
+text-shadow:0px 0px 0 rgb(235,235,235),1px 1px 0 rgb(226,226,226),2px 2px 0 rgb(216,216,216),3px 3px 0 rgb(206,206,206),4px 4px 0 rgb(197,197,197),5px 5px 0 rgb(187,187,187),6px 6px 0 rgb(177,177,177),7px 7px 0 rgb(168,168,168),8px 8px 0 rgb(158,158,158), 9px 9px 0 rgb(148,148,148),10px 10px 9px rgba(0,0,0,0.6),10px 10px 1px rgba(0,0,0,0.5),0px 0px 9px rgba(0,0,0,.2);
+
+transition-duration: 5s;
+&:hover{
+
+transform: translate3d(-70px,-40px,0px);
+
+}
+}
+
+    }
+
+    .info_cat{
+
+
+
+
+    }
+
+}
+
+  }
+
+  .block_icons{
+    background-color: rgba(0, 64, 160, 0.897);
+      margin: 0 auto;
+    width: 15vw;
+    height: 100%;
+
+
+  }
+
+
+}

@@ -157,6 +157,19 @@ function changeSource(src, element) {
         changeStyles_White();
         video.style.opacity = "0";
     }
+
+    if (element.dataset.fullname === "Skills") {
+        // close_others();
+       // gal_move(true);
+        //video.setAttribute("src", src);
+        // video.onload = () => {
+        //     video.play();
+        // };
+
+        flagSkills = true;
+        changeStyles_White();
+        video.style.opacity = "0";
+    }
 }
 
 window.onload = function() {

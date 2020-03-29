@@ -139,7 +139,7 @@ function showWork(flag, work) {
   } else {
     if (switcherVar === work.getAttribute("alt")) {
       worksPane.style.width = "100vw";
-      workPane.style.right = "-500px";
+      workPane.style.right = "-1000px";
       work.style.opacity = "0";
 
       textWorks.forEach(text => {
@@ -156,7 +156,7 @@ function showWork(flag, work) {
     //  boolOpacity = false;
       textWorks.forEach(text => {});
       work.style.opacity = "1";
-      workPane.style.right = "-500px";
+      workPane.style.right = "-1000px";
 
       textWorks.forEach(text => {
         //  text.childNodes[1].style = "color: white; font-Size: 65px;"
