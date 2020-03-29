@@ -100,7 +100,7 @@ color: orange;
     }
 
     .info_cat{
-        margin-top: 5px;
+      //margin-top: 5px;
 height: 100px;
 width: 100%;
 
@@ -125,11 +125,39 @@ color: black;
   }
 
   .block_icons{
-    background-color: rgba(0, 64, 160, 0.897);
+    background-color: rgb(0, 0, 0);
       margin: 0 auto;
     width: 15vw;
     height: 100%;
 
+
+
+    .pattern{
+display: flex;
+
+        background-color: rgb(255, 255, 255);
+        margin: 0 auto;
+      width: 100%;
+      height: 110px;
+
+
+      .percent{
+        background-color: rgb(0, 0, 0);
+          margin: auto auto;
+width: 45px;
+height: 45px;
+border-radius: 50%;
+//padding: 35px;
+h1{
+
+   text-align: center;
+color: white;
+font-size: 18px;
+
+}
+      }
+
+    }
 
   }
 
