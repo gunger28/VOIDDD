@@ -24,15 +24,16 @@
 
 .skills_pane p {
   position: fixed;
+  width: 78%;
   -webkit-user-select: none;
      -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
   font-size: 80px;
-  color: black;
+  color: white;
   font-family: "Open Sans";
   letter-spacing: 8px;
-  background-color: rgba(0, 0, 0, 0);
+  background-color: black;
 }
 
 .skills_pane .line_of_skills {
@@ -49,11 +50,9 @@
   margin: 110px auto;
   width: 25vw;
   height: 85%;
-  background-color: rgba(70, 0, 150, 0);
+  background-color: rgba(92, 92, 92, 0.136);
   display: inline-block;
   border-radius: 20px;
-  -webkit-box-shadow: 5px 5px 10px gray;
-          box-shadow: 5px 5px 10px gray;
 }
 
 .skills_pane .line_of_skills .skill .photo_cat {
