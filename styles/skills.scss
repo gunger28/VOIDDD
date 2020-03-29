@@ -63,7 +63,7 @@ display: inline-block;
 p{
    // left: 0;
     position: relative;
-        top: -50px;
+        top: -80px;
         left: -40px;
     user-select: none;
     font-size: 120px;
@@ -87,6 +87,11 @@ transform: translate3d(-70px,-40px,0px);
 
 }
 
+.show{
+background-color: orangered;
+color: orange;
+    
+}
 
 }
 
@@ -95,9 +100,23 @@ transform: translate3d(-70px,-40px,0px);
     }
 
     .info_cat{
+        margin-top: 5px;
+height: 100px;
+width: 100%;
+
+background-color: rgb(255, 255, 255);
+clip-path: polygon(0% 50%, 100% 0%, 100% 0%, 100% 50%, 0% 100%, 0% 70%);
+//transform: rotateZ(-24deg);
+
+h1{
+    transform: rotateZ(-7deg);
+    top: 30px;
+    position: relative;
+    font-size: 40px;
+color: black;
 
 
-
+}
 
     }
 

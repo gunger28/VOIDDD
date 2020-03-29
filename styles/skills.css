@@ -63,7 +63,7 @@
 
 .skills_pane .line_of_skills .skill .photo_cat p {
   position: relative;
-  top: -50px;
+  top: -80px;
   left: -40px;
   -webkit-user-select: none;
      -moz-user-select: none;
@@ -89,6 +89,29 @@
 .skills_pane .line_of_skills .skill .photo_cat p:hover {
   -webkit-transform: translate3d(-70px, -40px, 0px);
           transform: translate3d(-70px, -40px, 0px);
+}
+
+.skills_pane .line_of_skills .skill .photo_cat p .show {
+  background-color: orangered;
+  color: orange;
+}
+
+.skills_pane .line_of_skills .skill .info_cat {
+  margin-top: 5px;
+  height: 100px;
+  width: 100%;
+  background-color: white;
+  -webkit-clip-path: polygon(0% 50%, 100% 0%, 100% 0%, 100% 50%, 0% 100%, 0% 70%);
+          clip-path: polygon(0% 50%, 100% 0%, 100% 0%, 100% 50%, 0% 100%, 0% 70%);
+}
+
+.skills_pane .line_of_skills .skill .info_cat h1 {
+  -webkit-transform: rotateZ(-7deg);
+          transform: rotateZ(-7deg);
+  top: 30px;
+  position: relative;
+  font-size: 40px;
+  color: black;
 }
 
 .skills_pane .block_icons {
