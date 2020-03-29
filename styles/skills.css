@@ -99,9 +99,14 @@
 .skills_pane .line_of_skills .skill .info_cat {
   height: 100px;
   width: 100%;
-  background-color: white;
+  background-color: #531bad;
   -webkit-clip-path: polygon(0% 50%, 100% 0%, 100% 0%, 100% 50%, 0% 100%, 0% 70%);
           clip-path: polygon(0% 50%, 100% 0%, 100% 0%, 100% 50%, 0% 100%, 0% 70%);
+}
+
+.skills_pane .line_of_skills .skill .info_cat .bar_progres {
+  height: 200px;
+  background-color: #7926ff;
 }
 
 .skills_pane .line_of_skills .skill .info_cat h1 {
@@ -109,11 +114,10 @@
   position: relative;
   width: 350px;
   height: 10px;
-  background-color: #ffd000;
   text-indent: 10px;
   left: -10px;
-  -webkit-transform: rotateZ(-7.2deg);
-          transform: rotateZ(-7.2deg);
+  -webkit-transform: rotateZ(-7deg);
+          transform: rotateZ(-7deg);
   top: 30px;
   font-size: 40px;
   color: black;

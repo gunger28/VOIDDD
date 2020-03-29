@@ -104,23 +104,29 @@ color: orange;
 height: 100px;
 width: 100%;
 
-background-color: rgb(255, 255, 255);
+//background-color: rgb(255, 255, 255);
+background-color: rgb(83, 27, 173);
 clip-path: polygon(0% 50%, 100% 0%, 100% 0%, 100% 50%, 0% 100%, 0% 70%);
 //transform: rotateZ(-24deg);
+.bar_progres{
+    height: 200px; 
+    background-color: rgb(121, 38, 255);
 
+
+}
 h1{
     line-height: 55px;
     position: relative;
     width: 350px; 
     height: 10px; 
-    background-color: rgb(255, 208, 0); 
+    
     text-indent: 10px; 
 
     left: -10px; 
     //top: 20px;
 
 
-    transform: rotateZ(-7.2deg);
+    transform: rotateZ(-7deg);
     top: 30px;
    
     font-size: 40px;
