@@ -109,9 +109,20 @@ clip-path: polygon(0% 50%, 100% 0%, 100% 0%, 100% 50%, 0% 100%, 0% 70%);
 //transform: rotateZ(-24deg);
 
 h1{
-    transform: rotateZ(-7deg);
-    top: 30px;
+    line-height: 55px;
     position: relative;
+    width: 350px; 
+    height: 10px; 
+    background-color: rgb(255, 208, 0); 
+    text-indent: 10px; 
+
+    left: -10px; 
+    //top: 20px;
+
+
+    transform: rotateZ(-7.2deg);
+    top: 30px;
+   
     font-size: 40px;
 color: black;
 
@@ -149,7 +160,8 @@ height: 45px;
 border-radius: 50%;
 //padding: 35px;
 h1{
-
+   
+//text-indent: 40px;
    text-align: center;
 color: white;
 font-size: 18px;

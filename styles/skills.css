@@ -105,10 +105,16 @@
 }
 
 .skills_pane .line_of_skills .skill .info_cat h1 {
-  -webkit-transform: rotateZ(-7deg);
-          transform: rotateZ(-7deg);
-  top: 30px;
+  line-height: 55px;
   position: relative;
+  width: 350px;
+  height: 10px;
+  background-color: #ffd000;
+  text-indent: 10px;
+  left: -10px;
+  -webkit-transform: rotateZ(-7.2deg);
+          transform: rotateZ(-7.2deg);
+  top: 30px;
   font-size: 40px;
   color: black;
 }
