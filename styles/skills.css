@@ -59,11 +59,12 @@
   height: 303px;
   -webkit-clip-path: polygon(0% 0%, 80% 0%, 100% 0%, 100% 40%, 0% 100%, 0% 70%);
           clip-path: polygon(0% 0%, 80% 0%, 100% 0%, 100% 40%, 0% 100%, 0% 70%);
-  padding-top: 90px;
 }
 
 .skills_pane .line_of_skills .skill .photo_cat p {
-  position: static;
+  position: relative;
+  top: -50px;
+  left: -40px;
   -webkit-user-select: none;
      -moz-user-select: none;
       -ms-user-select: none;
@@ -72,7 +73,7 @@
   color: white;
   font-family: "Open Sans";
   letter-spacing: 8px;
-  line-height: 1em;
+  line-height: .85em;
   text-shadow: 2px 7px #4b4b4b;
   font-weight: 1000;
   -webkit-text-decoration-color: yellowgreen;
@@ -81,8 +82,8 @@
   -webkit-transform: rotateZ(-24deg);
           transform: rotateZ(-24deg);
   text-shadow: 0px 0px 0 #ebebeb, 1px 1px 0 #e2e2e2, 2px 2px 0 #d8d8d8, 3px 3px 0 #cecece, 4px 4px 0 #c5c5c5, 5px 5px 0 #bbbbbb, 6px 6px 0 #b1b1b1, 7px 7px 0 #a8a8a8, 8px 8px 0 #9e9e9e, 9px 9px 0 #949494, 10px 10px 9px rgba(0, 0, 0, 0.6), 10px 10px 1px rgba(0, 0, 0, 0.5), 0px 0px 9px rgba(0, 0, 0, 0.2);
-  -webkit-transition-duration: 5s;
-          transition-duration: 5s;
+  -webkit-transition-duration: 1s;
+          transition-duration: 1s;
 }
 
 .skills_pane .line_of_skills .skill .photo_cat p:hover {

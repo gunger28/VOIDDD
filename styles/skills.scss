@@ -59,18 +59,19 @@ display: inline-block;
         width: 100%;
     height: 303px;
         clip-path: polygon(0% 0%, 80% 0%, 100% 0%, 100% 40%, 0% 100%, 0% 70%);
-        padding-top: 90px;
+     //   padding-right: 90px;
 p{
-    
-    position: static;
-        
+   // left: 0;
+    position: relative;
+        top: -50px;
+        left: -40px;
     user-select: none;
     font-size: 120px;
     color: rgb(255, 255, 255);
     font-family: "Open Sans";
     letter-spacing: 8px;
 
-    line-height: 1em;
+    line-height: .85em;
     text-shadow: 2px 7px rgb(75, 75, 75);
     font-weight: 1000;
    text-decoration-color: yellowgreen;
@@ -79,13 +80,17 @@ text-align: center;
 transform: rotateZ(-24deg);
 text-shadow:0px 0px 0 rgb(235,235,235),1px 1px 0 rgb(226,226,226),2px 2px 0 rgb(216,216,216),3px 3px 0 rgb(206,206,206),4px 4px 0 rgb(197,197,197),5px 5px 0 rgb(187,187,187),6px 6px 0 rgb(177,177,177),7px 7px 0 rgb(168,168,168),8px 8px 0 rgb(158,158,158), 9px 9px 0 rgb(148,148,148),10px 10px 9px rgba(0,0,0,0.6),10px 10px 1px rgba(0,0,0,0.5),0px 0px 9px rgba(0,0,0,.2);
 
-transition-duration: 5s;
+transition-duration: 1s;
 &:hover{
 
 transform: translate3d(-70px,-40px,0px);
 
 }
+
+
 }
+
+
 
     }
 
