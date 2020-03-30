@@ -116,6 +116,7 @@
 .skills_pane .line_of_skills .skill .info_cat h1 {
   letter-spacing: 0px;
   font-family: "Open Sans";
+  background-color: rgba(128, 128, 128, 0);
   line-height: 55px;
   position: relative;
   width: 350px;
