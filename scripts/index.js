@@ -22,14 +22,15 @@ function close_others() {
         gal_move(close);
         flagGallery = false;
     }
+    if (flagSkills) {
+        skill_move(close);
+        flagSkills = false;
+    }
     if (flagContacts) {
         work_move(close);
         flagContacts = false;
     }
-    if (flagSkills) {
-        work_move(close);
-        flagSkills = false;
-    }
+    
 }
 
 function gal_move(flag) {
@@ -78,6 +79,26 @@ function work_move(flag) {
     } else {
       console.log("work closed!");
         works.style.left = "2100px";
+    }
+}
+
+function skill_move(flag) {
+    const skill = document.getElementById("skill");
+
+    if (flag) {
+        close_others();
+        setTimeout(() => {
+            skill.style.zIndex = "10";
+            skill.style.opacity = "1";
+            
+            changeStyles_Black();
+        }, 1000);
+
+        flagSkills = true;
+        console.log("skill opened!");
+    } else {
+        skill.style.zIndex = "0";
+        skill.style.opacity = "0";
     }
 }
 
@@ -166,6 +187,7 @@ function changeSource(src, element) {
         //     video.play();
         // };
 
+        skill_move(true);
         flagSkills = true;
         changeStyles_White();
         video.style.opacity = "0";
