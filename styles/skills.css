@@ -34,8 +34,8 @@
   letter-spacing: 8px;
   display: table;
   text-transform: uppercase;
-  background-image: -webkit-gradient(linear, left top, right top, from(#a200ff), color-stop(23%, #95e01c), color-stop(66%, yellow), to(#ffe600));
-  background-image: linear-gradient(to right, #a200ff, #95e01c 23%, yellow 66%, #ffe600);
+  background-image: -webkit-gradient(linear, left top, right top, from(#a200ff), color-stop(16%, #e04a1c), color-stop(1%, #e04a1c), to(#ffe600));
+  background-image: linear-gradient(to right, #a200ff, #e04a1c 16%, #e04a1c 1%, #ffe600);
   color: transparent;
   -webkit-background-clip: text;
   background-clip: text;
@@ -94,8 +94,8 @@
 }
 
 .skills_pane .line_of_skills .skill .photo_cat p:hover {
-  -webkit-transform: translate3d(-70px, -40px, 0px);
-          transform: translate3d(-70px, -40px, 0px);
+  -webkit-transform: translateX(-70px) translateY(30px) rotateZ(-24deg);
+          transform: translateX(-70px) translateY(30px) rotateZ(-24deg);
 }
 
 .skills_pane .line_of_skills .skill .photo_cat p .show {

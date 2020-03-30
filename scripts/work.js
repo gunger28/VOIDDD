@@ -103,7 +103,7 @@ function close_work_viewer(){
     const worksPane = document.getElementById("works");
 
     worksPane.style.width = "100vw";
-    workPane.style.right = "-500px";
+    workPane.style.right = "-900px";
     boolOpacity = true;
     boolWork = false;
     cards.forEach(card => {

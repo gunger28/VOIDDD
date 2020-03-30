@@ -40,7 +40,7 @@ $font: "Open Sans";
 display: table;
 text-transform: uppercase;
 
-background-image: linear-gradient(to right, rgb(162, 0, 255), rgb(149, 224, 28) 23%, yellow 66%, rgb(255, 230, 0));
+background-image: linear-gradient(to right, rgb(162, 0, 255), rgb(224, 74, 28) 16%, rgb(224, 74, 28) 1%, rgb(255, 230, 0));
 color: transparent;
 -webkit-background-clip: text;
 background-clip: text;
@@ -97,7 +97,7 @@ text-shadow:0px 0px 0 rgb(235,235,235),1px 1px 0 rgb(226,226,226),2px 2px 0 rgb(
 transition-duration: 1s;
 &:hover{
 
-transform: translate3d(-70px,-40px,0px);
+transform: translateX(-70px) translateY(30px)  rotateZ(-24deg);
 
 }
 
