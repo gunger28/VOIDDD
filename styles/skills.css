@@ -14,6 +14,7 @@
   position: fixed;
   opacity: 1;
   margin: auto 0;
+  background-image: url(/assets/decor/rainbow.jpg);
   background-color: white;
   width: 100vw;
   height: 100vh;
@@ -24,16 +25,15 @@
 
 .skills_pane p {
   position: fixed;
-  width: 78%;
+  width: 100%;
   -webkit-user-select: none;
      -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
   font-size: 80px;
-  color: white;
+  color: black;
   font-family: "Open Sans";
   letter-spacing: 8px;
-  background-color: black;
 }
 
 .skills_pane .line_of_skills {
@@ -50,13 +50,13 @@
   margin: 110px auto;
   width: 25vw;
   height: 85%;
-  background-color: rgba(92, 92, 92, 0.136);
+  background-color: rgba(255, 0, 157, 0.37);
   display: inline-block;
   border-radius: 20px;
 }
 
 .skills_pane .line_of_skills .skill .photo_cat {
-  background-color: #460096;
+  background-color: rgba(51, 0, 109, 0.74);
   width: 100%;
   height: 303px;
   -webkit-clip-path: polygon(0% 0%, 80% 0%, 100% 0%, 100% 40%, 0% 100%, 0% 70%);
@@ -130,7 +130,7 @@
 }
 
 .skills_pane .block_icons {
-  background-color: black;
+  background-color: rgba(0, 0, 0, 0);
   margin: 0 auto;
   width: 15vw;
   height: 100%;
@@ -140,13 +140,14 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  background-color: white;
+  background-color: rgba(255, 255, 255, 0);
   margin: 0 auto;
   width: 100%;
   height: 110px;
 }
 
 .skills_pane .block_icons .pattern .percent {
+  z-index: 7;
   background-color: black;
   margin: auto auto;
   width: 45px;
