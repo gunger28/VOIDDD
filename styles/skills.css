@@ -23,7 +23,7 @@
           transition-duration: 1s;
 }
 
-.skills_pane p {
+.skills_pane .p {
   position: fixed;
   width: 100%;
   -webkit-user-select: none;
@@ -31,9 +31,15 @@
       -ms-user-select: none;
           user-select: none;
   font-size: 80px;
-  color: black;
   font-family: "Open Sans";
   letter-spacing: 8px;
+  display: table;
+  text-transform: uppercase;
+  background-image: -webkit-gradient(linear, left top, right top, from(#a200ff), color-stop(23%, #95e01c), color-stop(66%, yellow), to(#ffe600));
+  background-image: linear-gradient(to right, #a200ff, #95e01c 23%, yellow 66%, #ffe600);
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
 }
 
 .skills_pane .line_of_skills {
@@ -127,7 +133,7 @@
           transform: rotateZ(-7deg);
   top: 25px;
   font-size: 40px;
-  color: black;
+  color: white;
 }
 
 .skills_pane .block_icons {
@@ -160,6 +166,13 @@
   font-size: 22px;
   font-family: "Open Sans";
   letter-spacing: 4px;
+  -webkit-transition-duration: .2s;
+          transition-duration: .2s;
+}
+
+.skills_pane .block_icons .block_cat p:hover {
+  color: #8c00ff;
+  background-color: #202020;
 }
 
 .skills_pane .block_icons .pattern {

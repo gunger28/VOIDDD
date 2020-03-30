@@ -23,7 +23,8 @@ canv.height = h*4;
 img.src = src;
 
 
-function drawAll(){draw(55,55,50);
+function drawAll(){
+    draw(55,55,50);
     
     draw(150,55,35);
     draw(50,155,25);

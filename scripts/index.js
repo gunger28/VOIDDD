@@ -174,7 +174,7 @@ function changeSource(src, element) {
 
 window.onload = function() {
     const prews = document.querySelectorAll(".prew");
-    this.drawAll();
+    //this.drawAll();
     prews.forEach(prew => {
         prew.addEventListener("click", function() {
             gal_view_move(event.target.getAttribute("id"));
