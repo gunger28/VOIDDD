@@ -18,8 +18,9 @@ canv.height = h*4;
 
 
 
-var img = new Image();  
-img.src = '/assets/decor/blend_grav.jpeg';
+ img = new Image();  
+ src = '/assets/decor/blend_grav.jpeg';
+img.src = src;
 
 
 function drawAll(){draw(55,55,50);

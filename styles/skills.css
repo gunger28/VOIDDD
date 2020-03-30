@@ -99,7 +99,7 @@
 }
 
 .skills_pane .line_of_skills .skill .info_cat {
-  height: 100px;
+  height: 90px;
   width: 100%;
   background-color: #531bad;
   -webkit-clip-path: polygon(0% 50%, 100% 0%, 100% 0%, 100% 50%, 0% 100%, 0% 70%);
@@ -117,7 +117,7 @@
   letter-spacing: 0px;
   font-family: "Open Sans";
   background-color: rgba(128, 128, 128, 0);
-  line-height: 55px;
+  line-height: 45px;
   position: relative;
   width: 350px;
   height: 10px;
@@ -135,6 +135,31 @@
   margin: 0 auto;
   width: 15vw;
   height: 100%;
+}
+
+.skills_pane .block_icons .block_cat {
+  display: inline-block;
+  background-color: black;
+  margin: 0 auto;
+  width: 100%;
+  height: 85%;
+  border-bottom-left-radius: 20px;
+}
+
+.skills_pane .block_icons .block_cat p {
+  position: relative;
+  width: 100%;
+  max-height: 10%;
+  color: white;
+  text-indent: 5px;
+  word-wrap: break-word;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  font-size: 22px;
+  font-family: "Open Sans";
+  letter-spacing: 4px;
 }
 
 .skills_pane .block_icons .pattern {
