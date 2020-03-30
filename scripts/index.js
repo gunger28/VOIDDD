@@ -195,6 +195,7 @@ function changeSource(src, element) {
 }
 
 window.onload = function() {
+    const Ptag = document.getElementById("panels_cat");
     const prews = document.querySelectorAll(".prew");
     //this.drawAll();
     prews.forEach(prew => {
@@ -226,6 +227,26 @@ window.onload = function() {
             reload_imgs(event.target.getAttribute("id"))
         );
     });
+    console.log(Ptag)
+
+    // Ptag.addEventListener("mouseenter", function() {
+                
+    //      audio = new Audio(), // Создаём новый элемент Audio
+    //             audio.src = '/audio/click.mp3',// Указываем путь к звуку "клика"
+    //             audio.autoplay = true
+    //             });
+
+
+    Ptag.childNodes.forEach(elem => {
+        elem.addEventListener("mouseenter", function() {
+      //  console.log(Ptag.childNodes),
+ audio = new Audio(), // Создаём новый элемент Audio
+ audio.volume = 0.5;
+        audio.src = '/audio/click.mp3',// Указываем путь к звуку "клика"
+        audio.autoplay = true
+        });
+    });
+    
 
     menuElements.forEach(menuElement => {
         menuElement.addEventListener("mouseenter", event =>
