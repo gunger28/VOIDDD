@@ -1,0 +1,52 @@
+$font: "Open Sans";
+$contSize: calc((100% - 800px)/2);
+* {
+  // font-family: Ubuntu;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  
+    font-family: "Roboto";
+  }
+
+  .contacts_pane{
+    transition-duration: 1s;
+    display: flex;
+    position: fixed;
+    
+    margin: auto 0;
+   // background-image: url(/assets/decor/rainbow.jpg);
+   background-color: rgb(151, 30, 30);
+    //background-color: rgb(0, 0, 0);
+    width: 100vw;
+    height: 100vh;
+    
+    transition-duration: 1s;
+    //right: 250px;
+   // padding: 7px;
+
+   .left_cont{
+width: $contSize;
+margin-left: 100px;
+
+    background-color: rgb(125, 151, 30);
+}
+
+
+
+.d_cont{
+width: 600px;
+
+
+    background-color: rgb(151, 30, 91);
+}
+
+
+.right_cont{
+width: $contSize;
+
+
+    background-color: rgba(30, 103, 151, 0.438);
+}
+
+  }
