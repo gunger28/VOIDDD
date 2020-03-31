@@ -14,7 +14,7 @@
   display: flex;
   position: fixed;
   margin: auto 0;
-  background-color: #971e1e;
+  background-color: black;
   width: 100vw;
   height: 100vh;
   transition-duration: 1s;
@@ -24,26 +24,27 @@
   width: calc((100% - 800px)/2);
   margin-left: 100px;
   display: inline-block;
-  background-color: #7d971e;
+  background-color: rgba(125, 151, 30, 0);
 }
 
 .contacts_pane .left_cont .cont {
   width: 90%;
-  height: 30%;
+  height: 15%;
   margin: 0 auto;
   margin-bottom: 15px;
-  background-color: #ee0020;
+  background-color: black;
+  border-bottom: 1px solid white;
 }
 
 .contacts_pane .d_cont {
   width: 600px;
   display: inline-block;
-  background-color: #971e5b;
+  background-color: rgba(151, 30, 91, 0);
 }
 
 .contacts_pane .d_cont .DDD {
   margin: auto auto;
-  background-color: #ff64b1;
+  background-color: rgba(255, 100, 177, 0);
   width: 95%;
   height: 95%;
 }
@@ -51,14 +52,15 @@
 .contacts_pane .right_cont {
   width: calc((100% - 800px)/2);
   display: inline-block;
-  background-color: rgba(30, 103, 151, 0.438);
+  background-color: rgba(30, 103, 151, 0);
 }
 
 .contacts_pane .right_cont .cont {
   width: 90%;
-  height: 30%;
+  height: 15%;
   margin: 0 auto;
   margin-bottom: 15px;
-  background-color: #ee0020;
+  background-color: black;
+  border-bottom: 1px solid white;
 }
 /*# sourceMappingURL=contacts.css.map */
