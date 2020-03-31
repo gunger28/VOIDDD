@@ -29,11 +29,17 @@
 
 .contacts_pane .left_cont .cont {
   width: 90%;
-  height: 15%;
+  height: 200px;
   margin: 0 auto;
   margin-bottom: 15px;
   background-color: black;
   border-bottom: 1px solid white;
+}
+
+.contacts_pane .left_cont .cont p {
+  top: 180px;
+  position: relative;
+  color: white;
 }
 
 .contacts_pane .d_cont {
@@ -57,10 +63,16 @@
 
 .contacts_pane .right_cont .cont {
   width: 90%;
-  height: 15%;
+  height: 200px;
   margin: 0 auto;
   margin-bottom: 15px;
   background-color: black;
   border-bottom: 1px solid white;
+}
+
+.contacts_pane .right_cont .cont p {
+  top: 180px;
+  position: relative;
+  color: white;
 }
 /*# sourceMappingURL=contacts.css.map */
