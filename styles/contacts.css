@@ -29,7 +29,7 @@
 
 .contacts_pane .left_cont .cont {
   width: 90%;
-  height: 200px;
+  height: 100px;
   margin: 0 auto;
   margin-bottom: 15px;
   background-color: black;
@@ -37,9 +37,34 @@
 }
 
 .contacts_pane .left_cont .cont p {
-  top: 180px;
+  font-family: "Open Sans";
+  top: 80px;
   position: relative;
   color: white;
+}
+
+.contacts_pane .logos {
+  margin: 0 auto;
+  width: 90%;
+  height: 400px;
+  display: table;
+  background-color: rgba(160, 194, 39, 0);
+}
+
+.contacts_pane .logos .line {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  height: 100px;
+  background-color: rgba(86, 39, 194, 0);
+}
+
+.contacts_pane .logos .line img {
+  width: 100px;
+  height: 100px;
+  margin: auto 0;
+  background-color: rgba(194, 39, 39, 0);
 }
 
 .contacts_pane .d_cont {
@@ -63,7 +88,7 @@
 
 .contacts_pane .right_cont .cont {
   width: 90%;
-  height: 200px;
+  height: 100px;
   margin: 0 auto;
   margin-bottom: 15px;
   background-color: black;
@@ -71,7 +96,8 @@
 }
 
 .contacts_pane .right_cont .cont p {
-  top: 180px;
+  font-family: "Open Sans";
+  top: 80px;
   position: relative;
   color: white;
 }
