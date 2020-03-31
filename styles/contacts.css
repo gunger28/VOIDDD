@@ -23,16 +23,42 @@
 .contacts_pane .left_cont {
   width: calc((100% - 800px)/2);
   margin-left: 100px;
+  display: inline-block;
   background-color: #7d971e;
+}
+
+.contacts_pane .left_cont .cont {
+  width: 90%;
+  height: 30%;
+  margin: 0 auto;
+  margin-bottom: 15px;
+  background-color: #ee0020;
 }
 
 .contacts_pane .d_cont {
   width: 600px;
+  display: inline-block;
   background-color: #971e5b;
+}
+
+.contacts_pane .d_cont .DDD {
+  margin: auto auto;
+  background-color: #ff64b1;
+  width: 95%;
+  height: 95%;
 }
 
 .contacts_pane .right_cont {
   width: calc((100% - 800px)/2);
+  display: inline-block;
   background-color: rgba(30, 103, 151, 0.438);
+}
+
+.contacts_pane .right_cont .cont {
+  width: 90%;
+  height: 30%;
+  margin: 0 auto;
+  margin-bottom: 15px;
+  background-color: #ee0020;
 }
 /*# sourceMappingURL=contacts.css.map */

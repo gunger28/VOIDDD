@@ -28,6 +28,16 @@ $contSize: calc((100% - 800px)/2);
    .left_cont{
 width: $contSize;
 margin-left: 100px;
+display: inline-block;
+
+.cont{
+width: 90%;
+height: 30%;
+
+margin: 0 auto;
+margin-bottom: 15px;
+background-color: rgb(238, 0, 32);
+}
 
     background-color: rgb(125, 151, 30);
 }
@@ -36,7 +46,17 @@ margin-left: 100px;
 
 .d_cont{
 width: 600px;
+display: inline-block;
 
+
+.DDD{
+    margin: auto auto;
+    background-color: rgb(255, 100, 177);
+width: 95%;
+height: 95%;
+
+
+}
 
     background-color: rgb(151, 30, 91);
 }
@@ -44,8 +64,16 @@ width: 600px;
 
 .right_cont{
 width: $contSize;
+display: inline-block;
 
-
+.cont{
+    width: 90%;
+    height: 30%;
+    
+    margin: 0 auto;
+    margin-bottom: 15px;
+    background-color: rgb(238, 0, 32);
+    }
     background-color: rgba(30, 103, 151, 0.438);
 }
 
