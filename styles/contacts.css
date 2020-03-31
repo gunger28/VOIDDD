@@ -46,10 +46,10 @@
 
 .contacts_pane .cont p {
   width: 80%;
-  max-height: 30px;
+  max-height: 32px;
   font-size: 20px;
   font-family: "Open Sans";
-  top: 22px;
+  top: 20px;
   position: relative;
   color: white;
   border-bottom: 1px solid white;
