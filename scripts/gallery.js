@@ -35,7 +35,7 @@ case 'gallery':
     imgs.forEach(function(item) {
         anim_reload();
         setTimeout(() => {
-            item.setAttribute("src",cat[0]+"/Gallery/gallery"+i+".png");
+            item.setAttribute("src",cat[0]+"/gallery/gallery"+i+".png");
             i++;
             anim_reload_reverse();
           }, 600);

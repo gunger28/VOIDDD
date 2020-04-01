@@ -46,16 +46,20 @@
   font-size: 77px;
   -webkit-box-shadow: -6px 6px #ffffff;
           box-shadow: -6px 6px #ffffff;
-  -webkit-transition-duration: 0.5s;
-          transition-duration: 0.5s;
+  -webkit-transition-duration: 0.3s;
+          transition-duration: 0.3s;
+  -webkit-box-shadow: 0px 0px 0 #000000;
+          box-shadow: 0px 0px 0 #000000;
 }
 
 .wind_main .wind_category p:hover {
   max-width: 98%;
+  -webkit-transform: translateY(-5px);
+          transform: translateY(-5px);
   text-decoration: none;
-  -webkit-box-shadow: -6px 6px 0 #686868;
-          box-shadow: -6px 6px 0 #686868;
-  background-color: #bdbdbd;
+  -webkit-box-shadow: -6px 6px 0 #000000;
+          box-shadow: -6px 6px 0 #000000;
+  background-color: white;
 }
 
 .wind_main .wind_gal {
