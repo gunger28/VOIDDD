@@ -281,7 +281,7 @@ window.onload = function() {
       //  console.log(Ptag.childNodes),
  audio = new Audio(), // Создаём новый элемент Audio
  audio.volume = 0.5;
-        audio.src = '/audio/click.mp3',// Указываем путь к звуку "клика"
+        audio.src = './audio/click.mp3',// Указываем путь к звуку "клика"
         audio.autoplay = true
         });
     });
