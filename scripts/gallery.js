@@ -8,7 +8,7 @@ view.setAttribute("src",img.getAttribute("src"));
 
 };
 
-const cat = ["../assets/gallery/Gallery"];
+const cat = ["./assets/gallery/Gallery"];
 
 function reload_imgs(category){
     const categ = document.getElementById(category);
