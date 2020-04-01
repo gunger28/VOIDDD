@@ -4,9 +4,9 @@ const video_3D = document.getElementById("vid_3D");
 vid1 = "./assets/videos/test1.webm";
 vid2 = "./assets/videos/test2.webm";
 vid3 = "./assets/videos/test3.webm";
-vid4 = "./assets/videos/test1.webm";
-vid5 = "./assets/videos/test2.webm";
-vid6 = "./assets/videos/test3.webm";
+vid4 = "./assets/videos/test4.webm";
+vid5 = "./assets/videos/test6.webm";
+vid6 = "./assets/videos/test7.webm";
 
 vid = vid1;
 counter = 0;
@@ -74,10 +74,10 @@ video_3D.setAttribute("src", vid);
 
 function opac(){
     video_3D.style.opacity = 0;
-
-video_3D
-
+console.log("switch video");
 setTimeout(() => {
+    video_swith();
     video_3D.style.opacity = 1;
-}, 1000);
+}, 500);
+
 }
