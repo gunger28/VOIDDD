@@ -113,7 +113,7 @@ case 'death':
     imgs.forEach(function(item) {
         anim_reload();
         setTimeout(() => {
-            item.setAttribute("src",cat[0]+"/death/death"+i+".png");
+            item.setAttribute("src",cat[0]+"/death/Death"+i+".png");
             i++;
             anim_reload_reverse();
           }, 600);
