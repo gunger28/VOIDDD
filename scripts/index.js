@@ -230,8 +230,8 @@ function changeSource(src, element) {
 
 window.onload = function() {
 
-    setInterval(video_swith, 10416);
-    setInterval(opac, 9916);
+    //setInterval(video_swith, 10416);
+   // setInterval(opac, 9916);
     
 
     const Ptag = document.getElementById("panels_cat");
