@@ -27,7 +27,7 @@ function close_others() {
         flagSkills = false;
     }
     if (flagContacts) {
-        work_move(close);
+        contacts_move(close);
         flagContacts = false;
     }
     
@@ -99,6 +99,26 @@ function skill_move(flag) {
     } else {
         skill.style.zIndex = "0";
         skill.style.opacity = "0";
+    }
+}
+
+function contacts_move(flag) {
+    const contacts = document.getElementById("contacts");
+
+    if (flag) {
+        close_others();
+        setTimeout(() => {
+            contacts.style.zIndex = "10";
+            contacts.style.opacity = "1";
+            
+            changeStyles_Black();
+        }, 1000);
+
+        flagContacts = true;
+        console.log("skill opened!");
+    } else {
+        contacts.style.zIndex = "0";
+        contacts.style.opacity = "0";
     }
 }
 
@@ -192,9 +212,28 @@ function changeSource(src, element) {
         changeStyles_White();
         video.style.opacity = "0";
     }
+
+    if (element.dataset.fullname === "Contacts") {
+        // close_others();
+       // gal_move(true);
+        //video.setAttribute("src", src);
+        // video.onload = () => {
+        //     video.play();
+        // };
+
+        contacts_move(true);
+        flagContacts = true;
+        changeStyles_White();
+        video.style.opacity = "0";
+    }
 }
 
 window.onload = function() {
+
+    setInterval(video_swith, 10416);
+    setInterval(opac, 9916);
+    
+
     const Ptag = document.getElementById("panels_cat");
     const prews = document.querySelectorAll(".prew");
     //this.drawAll();
