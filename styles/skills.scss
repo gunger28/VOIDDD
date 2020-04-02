@@ -64,7 +64,7 @@ display: flex;
     background-color: rgba(255, 0, 157, 0.37);
 display: inline-block;
 border-radius: 20px;
-transition-duration: 1s;
+transition-duration: .9s;
 //box-shadow: 5px 5px 10px gray;
     .photo_cat{
         
@@ -260,15 +260,47 @@ font-size: 18px;
 
 .description_skill{
   width: 80%;
-  height: 85%;
+  height: 400px;
   z-index: 0;
   position: fixed;
 margin-left: 100px;
 margin-top: 110px;
-background-color: rgba(0, 0, 0, 0.418);
+background-color: rgba(0, 0, 0, 0.718);
 
 
 transition-duration: .9s;
 
+display: flex;
+.media{
+margin: 10px 10px;
+//background-color: red;
+  width: 672px;
+  height: 380px;
+
+video{
+  width: 672px;
+  height: 380px;
+
+
+}
+}
+
+
+.text{
+  text-indent: 20px;
+  font-size: 18px;
+  font-family: $font;
+  display: inline-block;
+  position: relative;
+  $textW: calc(100% - 692px);
+  margin: 10px 10px;
+  color: white;
+  background-color: rgba(255, 255, 255, 0);
+ //extend width: 80%;
+  width: calc(100% - 692px);
+    height: 380px;
+
+
+}
 
 }
