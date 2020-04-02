@@ -3,7 +3,7 @@
     <head>
         <meta http-equiv="Content-Type"  content="text/html; charset=UTF-8" />
 
-        <link rel="shortcut icon" href="../assets/decor/icon.ico" type="image/x-icon">
+        <link rel="shortcut icon" href="./assets/decor/icon.ico" />
 
         <link rel="stylesheet" href="./styles/index.css?<?php echo time();?>" />
         <link rel="stylesheet" href="./styles/works.css?<?php echo time();?>" />
@@ -92,10 +92,16 @@ right
 
 
 
-        <div class="skills_pane" style="top:0px; z-index: 0; opacity: 0;" id="skill">
+        <div class="skills_pane" style="top:0px; z-index: 10; opacity: 1;" id="skill">
+            <div class="description_skill" id="desc_block" style="left: 2500px;">
+
+
+            </div>
+
+
 <div class="line_of_skills">
     <p class="p">SKILLS</p>
-    <div class="skill">
+    <div class="skill" id="fst">
 <div class="photo_cat">
 <p>3D3D3D3D3D3D3D3D3D</p>
 <p >3D3D3D3D3D3D3D3D3D</p>
@@ -132,7 +138,7 @@ right
             </div>
 
     </div>
-    <div class="skill">
+    <div class="skill" id="sec">
         <div class="photo_cat">
             <p>CODECODECODE</p>
             <p>CODECODECODE</p>
@@ -168,7 +174,7 @@ right
                     
 
     </div>
-    <div class="skill">
+    <div class="skill" id="thi">
         <div class="photo_cat">
             <p>2D2D2D2D2D</p>
             <p>2D2D2D2D2D</p>
@@ -233,7 +239,7 @@ right
 </div >
 
 <div class="block_cat" id='panels_cat'>
-    <div style="width: 100%; height: 4px; background-color: rgb(253, 160, 39);">ewre</div>
+    <div style="width: 100%; height: 4px; background-color: rgb(253, 160, 39);"></div>
 <p >VFX</p> 
 
 
@@ -593,5 +599,6 @@ right
         <script type="text/javascript" src="./scripts/index.js"></script>
         <script type="text/javascript" src="./scripts/work.js"></script>
         <script type="text/javascript" src="./scripts/gravity.js"></script>
+        <script type="text/javascript" src="./scripts/skills.js"></script>
     </body>
 </html>
