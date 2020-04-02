@@ -122,14 +122,16 @@ if(tmpObj == elem && flagDesc && !boolka){
 }
 }
 
-const img = ("../assets/decor/rainbow.jpg");
+
 
 function setContent(theme){
     var n = String(theme.dataset.media);
     console.log(n.length);
 
+    
+
      if(n[n.length-1] === "m"){
-       
+       media.childNodes[1].style.opacity = 1;
     media.childNodes[1].setAttribute("src", theme.dataset.media);
 
     media.childNodes[1].onload = () => {
@@ -147,10 +149,12 @@ function setContent(theme){
     //media.style.backgroundImage = "url("+img[0]+")";
     
 
-console.log(media.childNodes[1]);
+//console.log(media.childNodes[1]);
 //console.log(theme);
 
-textDesc.textContent = theme.dataset.descr;
+//textDesc.textContent = "lol";
+//console.log(theme.dataset.descr);
+textDesc.textContent = theme.dataset.desc;
 
 
 
