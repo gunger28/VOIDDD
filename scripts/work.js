@@ -158,9 +158,9 @@ function showWork(flag, work) {
       work.style.opacity = "1";
       workPane.style.right = "-1000px";
 
-      textWorks.forEach(text => {
-        //  text.childNodes[1].style = "color: white; font-Size: 65px;"
-      });
+      // textWorks.forEach(text => {
+      //   //  text.childNodes[1].style = "color: white; font-Size: 65px;"
+      // });
 
       setTimeout(() => {
         worksPane.style.width = "65vw";

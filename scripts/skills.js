@@ -3,13 +3,13 @@ const skill2 = document.getElementById("sec");
 const skill3 = document.getElementById("thi");
 
 const media = document.getElementById("media");
-const text = document.getElementById("text_desc");
+const textDesc = document.getElementById("text_desc");
 
 
 var tmpObj = document.getElementById("panels_cat");
 
 
-const desc = document.getElementById("desc_block");
+const descr = document.getElementById("desc_block");
 
 var flagDesc = false;
 
@@ -87,10 +87,10 @@ boolka = false;
     
     if(tmpObj !== elem && flagDesc){
         console.log("open other desc");
-            desc.style.left = "2500px";
+        descr.style.left = "2500px";
         elem.style.color = "orange";
             setTimeout(() => {
-                desc.style.left = "0px";
+                descr.style.left = "0px";
             }, 600);
             boolka =true;
 
@@ -101,7 +101,7 @@ if(tmpObj !== elem && !flagDesc ){
     console.log("open first time");
     elem.style.color = "orange";
     slide_skills(close);
-    desc.style.left = "0px";
+    descr.style.left = "0px";
 flagDesc = true;
 boolka =true;
 
@@ -112,7 +112,7 @@ tmpObj = elem;
 
 if(tmpObj == elem && flagDesc && !boolka){
     console.log("close all");
-    desc.style.left = "2500px";
+    descr.style.left = "2500px";
     setTimeout(() => {
         slide_skills(open);
     }, 100);
@@ -150,7 +150,7 @@ function setContent(theme){
 console.log(media.childNodes[1]);
 //console.log(theme);
 
-text.textContent = theme.dataset.desc;
+textDesc.textContent = theme.dataset.descr;
 
 
 
