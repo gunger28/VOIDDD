@@ -239,6 +239,7 @@
 .description_skill .media video {
   width: 672px;
   height: 380px;
+  z-index: 10;
 }
 
 .description_skill .text {
