@@ -65,10 +65,20 @@
   border-bottom: 1px solid white;
 }
 
-.contacts_pane .logos {
-  margin: 70px auto;
+.contacts_pane .info_cont {
+  margin: 0 auto;
+  margin-top: 10px;
   width: 90%;
-  height: 400px;
+  height: 200px;
+  font-family: "Open Sans";
+  color: white;
+}
+
+.contacts_pane .logos {
+  margin: 0 auto;
+  margin-top: 70px;
+  width: 90%;
+  height: 200px;
   display: table;
   background-color: rgba(160, 194, 39, 0);
 }
