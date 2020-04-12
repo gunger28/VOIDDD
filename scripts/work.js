@@ -26,7 +26,9 @@ function setWork(work) {
 
   title[0].textContent = work.getAttribute("alt");
   img[0].childNodes[1].src = work.src;
-  desc[0].childNodes[1].textContent = description[work.dataset.source];
+  //desc[0].childNodes[1].textContent = description[work.dataset.source];
+  console.log(work.dataset.descript);
+  desc[0].childNodes[1].textContent = work.dataset.descript
   tecs[0].textContent = "Tecnologies: " + tecnology[work.dataset.source];
   style[0].textContent = "Style: " + styles[work.dataset.source];
 
