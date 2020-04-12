@@ -3,6 +3,8 @@ var flagGallery = false;
 var flagSkills = false;
 var flagContacts = false;
 
+var loader = document.getElementById("loading");
+
 setTimeout(() => {
     document.querySelector("#mn").style.transform = "translateX(0)";
     // document.querySelector("#gal").style.transform = "translateY(0)";
@@ -232,6 +234,8 @@ window.onload = function() {
 
     //setInterval(video_swith, 10416);
     setInterval(opac, 9916);
+    loader.style.opacity = "0";
+    this.loader.style.zIndex = "0";
     
 
     const Ptag = document.getElementById("panels_cat");
@@ -298,6 +302,8 @@ window.onload = function() {
             txt.call(event.target, false)
         );
     });
+
+
 
     tagsWorksFonts.forEach(text => {
         // console.log(text.firstElementChild);
