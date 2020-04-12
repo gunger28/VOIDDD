@@ -3,8 +3,8 @@ var lastWork;
 //const name = ["cosmos" ,"death","merry","dright","funeral","plane","opposing","funeral","funeral","funeral","funeral","funeral"];
 const description = ["jjkkk", "funeral bad", "funeral bad"];
 const tecnology = ["eevee", "cycles","cycles", "cycles","eevee","eevee","eevee","cycles","eevee","eevee","eevee","eevee","eevee"];
-const styles = ["loft", "groft"];
-const program = ["blender", "gimp"];
+const styles = ["poly", "nurbs", "particles", "particles", "particles", "MIX", "procedural", "procedural", "poly", "poly", "procedural", "MIX"];
+const program = ["blender", "gimp", "CrazyBump", "NanoStudio", "Inkscape"];
 
 var fSSize = "40px;";
 var fBSize = "65px;";
@@ -29,7 +29,7 @@ function setWork(work) {
   //desc[0].childNodes[1].textContent = description[work.dataset.source];
   console.log(work.dataset.descript);
   desc[0].childNodes[1].textContent = work.dataset.descript
-  tecs[0].textContent = "Tecnologies: " + tecnology[work.dataset.source];
+  tecs[0].textContent = "Tecnology: " + tecnology[work.dataset.source];
   style[0].textContent = "Style: " + styles[work.dataset.source];
 
   oneProg = "<p>" + program[0] + "</p>";
@@ -105,6 +105,7 @@ function close_work_viewer(){
     const worksPane = document.getElementById("works");
 
     worksPane.style.width = "100vw";
+    worksPane.style.height = "100vh";
     workPane.style.right = "-900px";
     boolOpacity = true;
     boolWork = false;
@@ -128,6 +129,7 @@ function showWork(flag, work) {
   //console.log(work.parentNode);
   if (!flag) {
     worksPane.style.width = "65vw";
+    worksPane.style.height = "85vh";
     workPane.style.right = "0";
     setWork(work);
     textWorks.forEach(text => {
@@ -141,6 +143,7 @@ function showWork(flag, work) {
   } else {
     if (switcherVar === work.getAttribute("alt")) {
       worksPane.style.width = "100vw";
+      worksPane.style.height = "100vh";
       workPane.style.right = "-1000px";
       work.style.opacity = "0";
 
@@ -166,6 +169,7 @@ function showWork(flag, work) {
 
       setTimeout(() => {
         worksPane.style.width = "65vw";
+        worksPane.style.height = "85vh";
         workPane.style.right = "0";
         setWork(work);
 

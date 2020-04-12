@@ -156,6 +156,7 @@
 }
 
 .description_block .description .text p {
+  font-family: "Open Sans";
   text-indent: 25px;
   word-wrap: break-word;
   width: 100%;
