@@ -13,12 +13,17 @@ display: flex;
 position: fixed;
 top: 0;
 left: 0;
-background-color: rgb(255, 166, 0);
+background-image: url("../assets/videos/loading.gif");
+background-attachment: local;
+background-repeat: no-repeat;
+background-position-x: calc(50vw - 400px);
+background-position-y: calc(50vh - 225px);
+background-color: rgb(0, 0, 0);
 width: 100vw;
 height: 100vh;
 z-index: 100;
 
 
-
+transition-duration: .8s;
 
 }
