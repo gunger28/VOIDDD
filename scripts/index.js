@@ -8,6 +8,8 @@ var flagSkills = false;
 var flagContacts = false;
 
 var loader = document.getElementById("loading");
+var galleryPane = document.getElementById("galleryMain");
+
 
 setTimeout(() => {
     document.querySelector("#mn").style.transform = "translateX(0)";
@@ -18,11 +20,12 @@ setTimeout(() => {
 function video_opacity(flag){
 
     if(flag){
-        backPane.style.opacity = "1";
+      // video.style.opacity = "1";
+        
 }
 else{
-    backPane.style.opacity = "0";
-
+   // video.style.opacity = "0";
+   
 }
 }
 
@@ -36,6 +39,8 @@ function close_others() {
     }
     if (flagGallery) {
         gal_move(close);
+        galleryPane.style.opacity = "0";
+        galleryPane.style.zIndex = "0";
         flagGallery = false;
     }
     if (flagSkills) {
@@ -177,26 +182,27 @@ const video = document.getElementById("video");
 const backPane = document.getElementById("top");
 
 function changeSource(src, element) {
-    //video.style.backgroundImage = "./assets/gallery/logoSite.png";
+    backPane.style.backgroundImage = "";
+    backPane.style.backgroundColor = "";
     video_opacity(false);
-    if (element.dataset.fullname === "Main") {
-        video.setAttribute("src", src);
-        video.onload = () => {
-            video.play();
-        };
 
+    if (element.dataset.fullname === "Main") {
+        backPane.style.backgroundImage = "url('./assets/videos/main.png')";
         changeStyles_Black();
         video_opacity(true);
+        video.style.opacity = "0";
     }
 
     if (element.dataset.fullname === "Gallery") {
         // close_others();
         gal_move(true);
-        video.setAttribute("src", src);
-        video.onload = () => {
-            video.play();
-        };
-
+        backPane.style.backgroundColor = "rgb(255,255,255)";
+        // video.setAttribute("src", src);
+        // video.onload = () => {
+        //     video.play();
+        // };
+galleryPane.style.opacity = "1";
+galleryPane.style.zIndex = "11";
         flagGallery = true;
         changeStyles_White();
        
@@ -205,11 +211,6 @@ function changeSource(src, element) {
     if (element.dataset.fullname === "Works") {
         work_move(true);
 
-        video.setAttribute("src", src);
-        video.onload = () => {
-            video.play();
-            S;
-        };
 
         
         changeStyles_White();
@@ -227,14 +228,14 @@ function changeSource(src, element) {
         skill_move(true);
         flagSkills = true;
         changeStyles_White();
-        video.style.opacity = "0";
+       // video.style.opacity = "0";
     }
 
     if (element.dataset.fullname === "Contacts") {
         contacts_move(true);
         flagContacts = true;
         changeStyles_White();
-        video.style.opacity = "0";
+        //video.style.opacity = "0";
     }
 }
 
@@ -251,6 +252,9 @@ function load_main_logo(){
 
     document.getElementById("video").style.width = String(width)+"px";
     document.getElementById("video").style.height = String(height)+"px";
+
+    galleryPane.style.width = String(width) + "px"
+    galleryPane.style.height = String(height) + "px"
     
     setTimeout(() => {
        
@@ -266,7 +270,7 @@ window.onload = function() {
 
 
     load_main_logo();
-
+    
     //setInterval(video_swith, 10416);
     setInterval(opac, 9916);
     loader.style.opacity = "0";

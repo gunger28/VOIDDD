@@ -35,6 +35,52 @@
             
         </div>
 
+
+        <div class="menu_block" id="mn" style="z-index: 200;">
+            <div
+                class="menu_logo"
+                id="main_video"
+                data-source="../assets/gallery/vid1.webm"
+                data-fullname="Main"
+                data-shortname="V"
+            >
+                <img src="./assets/decor/logoVV1.png" alt="image" />
+                <a href="#top"></a>
+            </div>
+            <div
+                class="menu_element"
+                data-source="./scripts/vid_gal1.webm"
+                data-fullname="Gallery"
+                data-shortname="V"
+            >
+                <p>V</p>
+            </div>
+            <div
+                class="menu_element"
+                data-source="../assets/gallery/vid1.webm"
+                data-fullname="Works"
+                data-shortname="O"
+            >
+                <p>O</p>
+            </div>
+            <div
+                class="menu_element"
+                data-source="./scripts/vid2.webm"
+                data-fullname="Skills"
+                data-shortname="I"
+            >
+                <p>I</p>
+            </div>
+            <div
+                class="menu_element"
+                data-source="./scripts/vid2.webm"
+                data-fullname="Contacts"
+                data-shortname="D"
+            >
+                <p>D</p>
+            </div>
+        </div>
+
 <div class="contacts_pane" id="contacts" style="top: 0px; z-index: 0; opacity: 0;">
     <video id="vid_3D"src="./assets/videos/test1.webm" autoplay loop width="100%" height="100%"  pip="false" ></video>
 <div class="left_cont">
@@ -367,7 +413,7 @@ VFX</p>
                 </div>
             </div>
         </div>
-        <div class="works_block" style="left: -5100px; " id="works">
+        <div class="works_block" style="left: 5100px; " id="works">
             <p>WORKS</p>
             <div class="all_works_panel">
                 <div class="one_panel">
@@ -515,52 +561,8 @@ VFX</p>
                 </div>
             </div>
         </div>
-        <div class="menu_block" id="mn">
-            <div
-                class="menu_logo"
-                id="main_video"
-                data-source="../assets/gallery/vid1.webm"
-                data-fullname="Main"
-                data-shortname="V"
-            >
-                <img src="./assets/decor/logoVV1.png" alt="image" />
-                <a href="#top"></a>
-            </div>
-            <div
-                class="menu_element"
-                data-source="./scripts/vid_gal1.webm"
-                data-fullname="Gallery"
-                data-shortname="V"
-            >
-                <p>V</p>
-            </div>
-            <div
-                class="menu_element"
-                data-source="../assets/gallery/vid1.webm"
-                data-fullname="Works"
-                data-shortname="O"
-            >
-                <p>O</p>
-            </div>
-            <div
-                class="menu_element"
-                data-source="./scripts/vid2.webm"
-                data-fullname="Skills"
-                data-shortname="I"
-            >
-                <p>I</p>
-            </div>
-            <div
-                class="menu_element"
-                data-source="./scripts/vid2.webm"
-                data-fullname="Contacts"
-                data-shortname="D"
-            >
-                <p>D</p>
-            </div>
-        </div>
-
-        <div id="gal" class="wind_main" style="transform: rotateX(90deg);">
+       <div class="gal_pane" id="galleryMain" style="opacity: 0; z-index: 0;"> 
+ <div id="gal" class="wind_main" style="transform: rotateX(90deg);">
             <div class="wind_category">
                 <p class="cat" id="void">V O I D</p>
                 <p class="cat" id="gallery">GALLERY</p>
@@ -647,11 +649,11 @@ VFX</p>
                         />
                     </div>
 
-                    <!-- <div class="platform_gal"></div> -->
+                   
                 </div>
             </div>
         </div>
-
+</div>
         <script type="text/javascript" src="./scripts/gallery.js" ></script>
         <script type="text/javascript" src="./scripts/index.js"></script>
         <script type="text/javascript" src="./scripts/work.js" ></script>
