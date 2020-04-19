@@ -254,26 +254,18 @@
 @-webkit-keyframes shadow {
   from {
     text-shadow: 0 0px 5px white;
-    -webkit-box-shadow: 0 0 0px 0px rgba(0, 0, 0, 0), inset 0 0 0px 0px rgba(0, 0, 0, 0);
-            box-shadow: 0 0 0px 0px rgba(0, 0, 0, 0), inset 0 0 0px 0px rgba(0, 0, 0, 0);
   }
   to {
     text-shadow: 0 0px 1px white;
-    -webkit-box-shadow: 0 0 6px 3px #00d6ff, inset 0 0 6px 3px #00d6ff;
-            box-shadow: 0 0 6px 3px #00d6ff, inset 0 0 6px 3px #00d6ff;
   }
 }
 
 @keyframes shadow {
   from {
     text-shadow: 0 0px 5px white;
-    -webkit-box-shadow: 0 0 0px 0px rgba(0, 0, 0, 0), inset 0 0 0px 0px rgba(0, 0, 0, 0);
-            box-shadow: 0 0 0px 0px rgba(0, 0, 0, 0), inset 0 0 0px 0px rgba(0, 0, 0, 0);
   }
   to {
     text-shadow: 0 0px 1px white;
-    -webkit-box-shadow: 0 0 6px 3px #00d6ff, inset 0 0 6px 3px #00d6ff;
-            box-shadow: 0 0 6px 3px #00d6ff, inset 0 0 6px 3px #00d6ff;
   }
 }
 
@@ -290,6 +282,8 @@ body {
   display: flex;
   width: 100%;
   height: 100%;
+  -webkit-transition-duration: .8s;
+          transition-duration: .8s;
 }
 
 .vid_block video {
@@ -301,5 +295,7 @@ body {
   z-index: 1;
   width: 100%;
   height: 100%;
+  -webkit-transition-duration: .8s;
+          transition-duration: .8s;
 }
 /*# sourceMappingURL=index.css.map */

@@ -295,12 +295,12 @@ margin-top: 10px;
     // color: rgba(0, 0, 0, 0);
 
     text-shadow: 0 0px 5px rgb(255, 255, 255);
-    box-shadow: 0 0 0px 0px rgba(0, 0, 0, 0), inset 0 0 0px 0px rgba(0, 0, 0, 0);
+   // box-shadow: 0 0 0px 0px rgba(0, 0, 0, 0), inset 0 0 0px 0px rgba(0, 0, 0, 0);
   }
   to {
     //color: rgb(255, 255, 255);
     text-shadow: 0 0px 1px rgb(255, 255, 255);
-    box-shadow: 0 0 6px 3px rgb(0, 214, 255), inset 0 0 6px 3px rgb(0, 214, 255);
+  //  box-shadow: 0 0 6px 3px rgb(0, 214, 255), inset 0 0 6px 3px rgb(0, 214, 255);
   }
 }
 
@@ -315,12 +315,14 @@ body {
 
   width: 100%;
   height: 100%;
-
+transition-duration: .8s;
   video {
     user-select: none;
     position: relative;
     z-index: 1;
     width: 100%;
     height: 100%;
+
+    transition-duration: .8s;
   }
 }

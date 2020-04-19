@@ -1,3 +1,7 @@
+
+var width = document.body.clientWidth; // ширина  
+var height = document.body.clientHeight; // высота
+
 var flagWork = false;
 var flagGallery = false;
 var flagSkills = false;
@@ -11,6 +15,16 @@ setTimeout(() => {
 }, 1000);
 
 
+function video_opacity(flag){
+
+    if(flag){
+        backPane.style.opacity = "1";
+}
+else{
+    backPane.style.opacity = "0";
+
+}
+}
 
 function close_others() {
     const open = true;
@@ -160,10 +174,11 @@ function changeStyles_Black() {
 }
 
 const video = document.getElementById("video");
-const backPane = document.getElementsByClassName("vid_block");
+const backPane = document.getElementById("top");
 
 function changeSource(src, element) {
     //video.style.backgroundImage = "./assets/gallery/logoSite.png";
+    video_opacity(false);
     if (element.dataset.fullname === "Main") {
         video.setAttribute("src", src);
         video.onload = () => {
@@ -171,7 +186,7 @@ function changeSource(src, element) {
         };
 
         changeStyles_Black();
-        video.style.opacity = "1";
+        video_opacity(true);
     }
 
     if (element.dataset.fullname === "Gallery") {
@@ -184,7 +199,7 @@ function changeSource(src, element) {
 
         flagGallery = true;
         changeStyles_White();
-        video.style.opacity = "0";
+       
     }
 
     if (element.dataset.fullname === "Works") {
@@ -198,7 +213,7 @@ function changeSource(src, element) {
 
         
         changeStyles_White();
-        video.style.opacity = "0";
+        
     }
 
     if (element.dataset.fullname === "Skills") {
@@ -216,13 +231,6 @@ function changeSource(src, element) {
     }
 
     if (element.dataset.fullname === "Contacts") {
-        // close_others();
-       // gal_move(true);
-        //video.setAttribute("src", src);
-        // video.onload = () => {
-        //     video.play();
-        // };
-
         contacts_move(true);
         flagContacts = true;
         changeStyles_White();
@@ -230,7 +238,34 @@ function changeSource(src, element) {
     }
 }
 
+function load_main_logo(){
+    //backPane.style.width = width;
+    //backPane.style.height = height;
+
+    console.log(height);
+    document.getElementById("body").style.width = String(width)+"px";
+    document.getElementById("body").style.height = String(height)+"px";
+
+    document.getElementById("top").style.width = String(width)+"px";
+    document.getElementById("top").style.height = String(height)+"px";
+
+    document.getElementById("video").style.width = String(width)+"px";
+    document.getElementById("video").style.height = String(height)+"px";
+    
+    setTimeout(() => {
+       
+        backPane.style.backgroundImage = "url('./assets/videos/main.png')";
+        video.style.opacity = "0";
+    }, 13000);
+
+
+}
+
+
 window.onload = function() {
+
+
+    load_main_logo();
 
     //setInterval(video_swith, 10416);
     setInterval(opac, 9916);
