@@ -323,7 +323,7 @@ window.onload = function() {
         elem.addEventListener("mouseenter", function() {
       //  console.log(Ptag.childNodes),
  audio = new Audio(), // Создаём новый элемент Audio
- audio.volume = 0.5;
+ audio.volume = 0.2;
         audio.src = "./audio/click.mp3",// Указываем путь к звуку "клика"
         audio.autoplay = true
         });
