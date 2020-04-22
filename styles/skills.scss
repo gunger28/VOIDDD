@@ -175,7 +175,7 @@ color: rgb(255, 255, 255);
   .block_icons{
     background-color: rgba(0, 0, 0, 0);
       margin: 0 auto;
-    width: 15vw;
+    width: 250px;
     height: 100%;
     z-index: 2;
 
@@ -282,8 +282,9 @@ margin: 10px 10px;
 
 
 .textSkill{
+  padding-right: 10px;
   text-indent: 20px;
-  font-size: 18px;
+  font-size: 17px;
   font-family: $font;
   display: inline-block;
   position: relative;

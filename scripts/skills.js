@@ -44,18 +44,18 @@ function slide_skills(flag){
 
 if(flag == close){
     skill3.style.width = "200px";
-    skill3.style.height = "200xp";
+    skill3.style.height = "200px";
     skill3.style.transform = "translateY(1000px)";
 
 setTimeout(() => {
     skill2.style.width = "200px";
-    skill2.style.height = "200xp";
+    skill2.style.height = "200px";
     skill2.style.transform = "translateY(1000px)";
 }, 100);
 
 setTimeout(() => {
     skill1.style.width = "200px";
-    skill1.style.height = "200xp";
+    skill1.style.height = "200px";
     skill1.style.transform = "translateY(1000px)";
 }, 200);
 
@@ -90,7 +90,8 @@ boolka = false;
         descr.style.left = "2500px";
         elem.style.color = "orange";
             setTimeout(() => {
-                descr.style.left = "0px";
+                descr.style.left = "0";
+                //descr.style.right = "500px";
             }, 600);
             boolka =true;
 
@@ -101,7 +102,8 @@ if(tmpObj !== elem && !flagDesc ){
     console.log("open first time");
     elem.style.color = "orange";
     slide_skills(close);
-    descr.style.left = "0px";
+    descr.style.left = "0";
+   // descr.style.right = "500px";
 flagDesc = true;
 boolka =true;
 
