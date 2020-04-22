@@ -143,7 +143,6 @@
 }
 
 .skills_pane .block_icons {
-  background-color: #00ff2a;
   width: 250px;
   height: 100%;
   z-index: 2;
@@ -221,7 +220,7 @@
   z-index: 0;
   position: fixed;
   margin-left: 100px;
-  margin-top: 110px;
+  margin-top: 115px;
   background-color: rgba(0, 0, 0, 0.718);
   -webkit-transition-duration: .9s;
           transition-duration: .9s;
@@ -237,9 +236,9 @@
 }
 
 .description_skill .textSkill {
-  padding-right: 10px;
+  padding-right: 3px;
   text-indent: 20px;
-  font-size: 17px;
+  font-size: 16px;
   font-family: "Open Sans";
   display: inline-block;
   position: relative;
