@@ -99,18 +99,21 @@
 .wind_main .wind_gal .gal_view .watch_photo img {
   -webkit-clip-path: polygon(0% 0%, 75% 0%, 100% 25%, 100% 100%, 25% 100%, 0% 75%);
           clip-path: polygon(0% 0%, 75% 0%, 100% 25%, 100% 100%, 25% 100%, 0% 75%);
+  border: 10px solid #d23434;
   margin-bottom: 50px;
   margin: 0 auto;
   width: 100%;
   height: 100%;
-  border: 2px solid black;
   -webkit-transition-duration: .7s;
           transition-duration: .7s;
 }
 
 .wind_main .wind_gal .gal_view .preview_gal {
+  border-radius: 30px;
+  border: 10px solid #d23434;
   margin-top: 20px;
-  height: 20%;
+  margin-bottom: 20px;
+  height: 25%;
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -120,9 +123,9 @@
 .wind_main .wind_gal .gal_view .preview_gal img {
   -webkit-clip-path: polygon(10% 0%, 100% 0%, 100% 80%, 90% 100%, 0% 100%, 0% 20%);
           clip-path: polygon(10% 0%, 100% 0%, 100% 80%, 90% 100%, 0% 100%, 0% 20%);
-  margin: 0 auto;
+  margin: auto auto;
   width: 18%;
-  height: 100%;
+  height: 90%;
   -webkit-transition-duration: 0.7s;
           transition-duration: 0.7s;
 }
@@ -133,9 +136,11 @@
 }
 
 .wind_main .wind_gal .gal_view .preview_gal_top {
+  border-radius: 30px;
+  border: 10px solid #d23434;
   margin-top: 20px;
   margin-bottom: 20px;
-  height: 18%;
+  height: 25%;
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -145,9 +150,9 @@
 .wind_main .wind_gal .gal_view .preview_gal_top img {
   -webkit-clip-path: polygon(10% 0%, 100% 0%, 100% 80%, 90% 100%, 0% 100%, 0% 20%);
           clip-path: polygon(10% 0%, 100% 0%, 100% 80%, 90% 100%, 0% 100%, 0% 20%);
-  margin: 0 auto;
+  margin: auto auto;
   width: 18%;
-  height: 100%;
+  height: 90%;
   -webkit-transition-duration: 0.7s;
           transition-duration: 0.7s;
 }
