@@ -41,6 +41,8 @@ function close_others() {
         gal_move(close);
         galleryPane.style.opacity = "0";
         galleryPane.style.zIndex = "0";
+        galleryPane.style.backgroundPositionX = "-200px";
+        galleryPane.style.backgroundPositionY = "-200px";
         flagGallery = false;
     }
     if (flagSkills) {
@@ -61,13 +63,14 @@ function gal_move(flag) {
         close_others();
         setTimeout(() => {
             gallery.style.transform = "rotateX(0deg)";
+            gallery.style.opacity = "1";
            
         }, 500);
 
         
         flagGallery = true;
     } else {
-        
+        gallery.style.opacity = "0";
         gallery.style.transform = "rotateX(90deg)";
     }
 }
@@ -203,6 +206,8 @@ function changeSource(src, element) {
         // };
 galleryPane.style.opacity = "1";
 galleryPane.style.zIndex = "11";
+galleryPane.style.backgroundPositionX = "0px";
+galleryPane.style.backgroundPositionY = "0px";
         flagGallery = true;
         changeStyles_White();
        

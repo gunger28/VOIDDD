@@ -57,8 +57,8 @@
   font-size: 77px;
   -webkit-box-shadow: -6px 6px #ffffff;
           box-shadow: -6px 6px #ffffff;
-  -webkit-transition-duration: 0.3s;
-          transition-duration: 0.3s;
+  -webkit-transition-duration: .3s;
+          transition-duration: .3s;
   background-image: url("../assets/decor/gal_bacimg1.jpeg");
   background-attachment: fixed;
   -webkit-box-shadow: 0px 0px 0 #000000;
