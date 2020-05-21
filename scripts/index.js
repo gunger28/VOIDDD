@@ -263,9 +263,9 @@ function load_main_logo(){
     
     setTimeout(() => {
        
-      //  backPane.style.backgroundImage = "url('./assets/videos/main.png')";
-       // video.style.opacity = "0";
-    }, 13000);
+        backPane.style.backgroundImage = "url('./assets/decor/MainScreen2.png')";
+        video.style.opacity = "0";
+    }, 1000);
 
 
 }

@@ -1,3 +1,4 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400);
 * {
   margin: 0;
   padding: 0;
@@ -16,6 +17,18 @@
   z-index: 11;
   -webkit-transition-duration: 2s;
           transition-duration: 2s;
+}
+
+.Title {
+  width: 1000px;
+  height: 500px;
+  position: absolute;
+  top: 0px;
+  left: 130px;
+  z-index: 9;
+  font-size: 190px;
+  color: white;
+  text-shadow: -30px 40px rgba(75, 75, 75, 0.061);
 }
 
 .wind_main {
