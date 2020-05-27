@@ -25,6 +25,7 @@ transition-duration: 2s;
 
 
 .Title{
+  user-select: none;
   width: 80%;
    height: 500px;
    // background-color: brown; 
@@ -37,6 +38,23 @@ font-size: 190px;
 color: white;
 
 text-shadow: -30px 40px rgba(75, 75, 75, 0.061);
+
+animation-duration: .3s;
+.com{
+  user-select: none;
+  // background-color: brown; 
+   position: absolute; 
+ 
+  // left: 130px; 
+   z-index: 9;
+
+font-size: 190px;
+color: rgb(45, 148, 42);
+
+//text-shadow: -30px 40px rgba(75, 75, 75, 0.061);
+
+
+}
 
 }
 

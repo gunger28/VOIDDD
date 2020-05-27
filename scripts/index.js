@@ -58,13 +58,15 @@ function close_others() {
 
 function gal_move(flag) {
     const gallery = document.querySelector("#gal");
-
+    const vidBlock = document.getElementById("vid_block");
     if (flag) {
+        
         close_others();
+        backPane.style.opacity = "0";
         setTimeout(() => {
             gallery.style.transform = "rotateX(0deg)";
             gallery.style.opacity = "1";
-           
+            
         }, 500);
 
         
@@ -91,10 +93,13 @@ function work_move(flag) {
     const works = document.getElementById("works");
 
     if (flag) {
+        backPane.style.opacity = "0";
         close_others();
         setTimeout(() => {
             works.style.left = "100px";
-            
+            works.style.zIndex = "10";
+            works.style.opacity = "1";
+
             changeStyles_Black();
         }, 1000);
 
@@ -108,8 +113,10 @@ function work_move(flag) {
 
 function skill_move(flag) {
     const skill = document.getElementById("skill");
-
+    
+    
     if (flag) {
+        backPane.style.opacity = "0";
         close_others();
         setTimeout(() => {
             skill.style.zIndex = "10";
@@ -130,6 +137,7 @@ function contacts_move(flag) {
     const contacts = document.getElementById("contacts");
 
     if (flag) {
+        backPane.style.opacity = "0";
         close_others();
         setTimeout(() => {
             contacts.style.zIndex = "10";
@@ -184,16 +192,20 @@ function changeStyles_Black() {
 const video = document.getElementById("video");
 const backPane = document.getElementById("top");
 
+
 function changeSource(src, element) {
     backPane.style.backgroundImage = "";
     backPane.style.backgroundColor = "";
     video_opacity(false);
 
+
     if (element.dataset.fullname === "Main") {
-        backPane.style.backgroundImage = "url('./assets/videos/main.png')";
+       // backPane.style.backgroundImage = "url('./assets/videos/main.png')";
+        backPane.style.backgroundImage = "url('./assets/decor/MainScreen4.png')";
         changeStyles_Black();
         video_opacity(true);
         video.style.opacity = "0";
+        backPane.style.opacity = "1";
     }
 
     if (element.dataset.fullname === "Gallery") {
@@ -263,7 +275,7 @@ function load_main_logo(){
     
     setTimeout(() => {
        
-        backPane.style.backgroundImage = "url('./assets/decor/MainScreen3.png')";
+        backPane.style.backgroundImage = "url('./assets/decor/MainScreen4.png')";
         video.style.opacity = "0";
     }, 1000);
 
