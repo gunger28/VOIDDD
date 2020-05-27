@@ -275,8 +275,9 @@ function load_main_logo(){
     
     setTimeout(() => {
        
-        backPane.style.backgroundImage = "url('./assets/decor/MainScreen4.png')";
+        backPane.style.backgroundImage = "url('./assets/decor/MainScreen6.png')";
         video.style.opacity = "0";
+        
     }, 1000);
 
 
