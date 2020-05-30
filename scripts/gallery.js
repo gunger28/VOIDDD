@@ -1,7 +1,7 @@
 function take_pic_view(element){
 const img = document.getElementById(element);
 const view = document.getElementById("viewer");
-
+const cat_text = document.getElementById("CAT");
 view.setAttribute("src",img.getAttribute("src"));
 
 

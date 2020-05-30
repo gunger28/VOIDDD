@@ -33,8 +33,8 @@
   font-size: 170px;
   color: white;
   text-shadow: -30px 40px rgba(75, 75, 75, 0.061);
-  -webkit-animation-duration: .3s;
-          animation-duration: .3s;
+  -webkit-transition-duration: .8s;
+          transition-duration: .8s;
 }
 
 .Title .com {
@@ -44,6 +44,8 @@
           user-select: none;
   position: absolute;
   z-index: 9;
+  -webkit-transition-duration: .8s;
+          transition-duration: .8s;
   font-size: 190px;
   color: #2d942a;
 }
@@ -61,8 +63,8 @@
   height: 90vh;
   border-radius: 30px;
   z-index: 14;
-  -webkit-transition-duration: 0.8s;
-          transition-duration: 0.8s;
+  -webkit-transition-duration: 1s;
+          transition-duration: 1s;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

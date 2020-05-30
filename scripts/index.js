@@ -9,7 +9,7 @@ var flagContacts = false;
 
 var loader = document.getElementById("loading");
 var galleryPane = document.getElementById("galleryMain");
-
+const mainTitle = document.getElementById("mainTitle");
 
 setTimeout(() => {
     document.querySelector("#mn").style.transform = "translateX(0)";
@@ -62,18 +62,24 @@ function gal_move(flag) {
     if (flag) {
         
         close_others();
+
+     
+      
+      mainTitle.style.fontSize = "100px";
+       mainTitle.childNodes[1].style.fontSize = "100px";
+       mainTitle.style.width = "50%";
         backPane.style.opacity = "0";
         setTimeout(() => {
-            gallery.style.transform = "rotateX(0deg)";
+           // gallery.style.transform = "rotateX(0deg)";
             gallery.style.opacity = "1";
             
-        }, 500);
+        }, 1200);
 
         
         flagGallery = true;
     } else {
         gallery.style.opacity = "0";
-        gallery.style.transform = "rotateX(90deg)";
+       // gallery.style.transform = "rotateX(90deg)";
     }
 }
 
@@ -93,6 +99,9 @@ function work_move(flag) {
     const works = document.getElementById("works");
 
     if (flag) {
+        mainTitle.style.fontSize = "100px";
+        mainTitle.childNodes[1].style.fontSize = "100px";
+        mainTitle.style.width = "50%";
         backPane.style.opacity = "0";
         close_others();
         setTimeout(() => {
@@ -116,6 +125,9 @@ function skill_move(flag) {
     
     
     if (flag) {
+        mainTitle.style.fontSize = "100px";
+        mainTitle.childNodes[1].style.fontSize = "100px";
+        mainTitle.style.width = "50%";
         backPane.style.opacity = "0";
         close_others();
         setTimeout(() => {
@@ -137,6 +149,9 @@ function contacts_move(flag) {
     const contacts = document.getElementById("contacts");
 
     if (flag) {
+        mainTitle.style.fontSize = "100px";
+       mainTitle.childNodes[1].style.fontSize = "100px";
+       mainTitle.style.width = "50%";
         backPane.style.opacity = "0";
         close_others();
         setTimeout(() => {
@@ -206,6 +221,11 @@ function changeSource(src, element) {
         video_opacity(true);
         video.style.opacity = "0";
         backPane.style.opacity = "1";
+        mainTitle.style.width = "70%";
+        mainTitle.style.fontSize = "170px";
+
+        mainTitle.childNodes[1].style.fontSize = "170px";
+      
     }
 
     if (element.dataset.fullname === "Gallery") {
