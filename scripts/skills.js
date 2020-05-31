@@ -91,7 +91,7 @@ boolka = false;
         elem.style.color = "orange";
             setTimeout(() => {
                 descr.style.left = "0";
-                //descr.style.right = "500px";
+               
             }, 600);
             boolka =true;
 
@@ -103,7 +103,7 @@ if(tmpObj !== elem && !flagDesc ){
     elem.style.color = "orange";
     slide_skills(close);
     descr.style.left = "0";
-   // descr.style.right = "500px";
+   
 flagDesc = true;
 boolka =true;
 
@@ -148,17 +148,5 @@ function setContent(theme){
     media.style.backgroundSize = ("100% 100%");
 
  }
-    //media.style.backgroundImage = "url("+img[0]+")";
-    
-
-//console.log(media.childNodes[1]);
-//console.log(theme);
-
-//textDesc.textContent = "lol";
-//console.log(theme.dataset.descr);
 textDesc.textContent = theme.dataset.desc;
-
-
-
-
 }

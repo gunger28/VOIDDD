@@ -1,4 +1,3 @@
-
 const video_3D = document.getElementById("vid_3D");
 
 vid1 = "./assets/videos/test2.webm";
@@ -10,8 +9,6 @@ vid6 = "./assets/videos/test5.webm";
 
 vid = vid1;
 counter = 0;
-
-
 
 function video_swith(){
     
@@ -53,24 +50,10 @@ break;
 
 
 video_3D.setAttribute("src", vid);
-//console.log("erer");
-//video_3D.setAttribute("src", );
  video_3D.onload = () => {    
       video_3D.play();
-
-      
  };
- 
- 
-
-
-
-
 };
-
-
-
-
 
 function opac(){
     video_3D.style.opacity = 0;

@@ -13,21 +13,8 @@ const mainTitle = document.getElementById("mainTitle");
 
 setTimeout(() => {
     document.querySelector("#mn").style.transform = "translateX(0)";
-    // document.querySelector("#gal").style.transform = "translateY(0)";
 }, 1000);
 
-
-function video_opacity(flag){
-
-    if(flag){
-      // video.style.opacity = "1";
-        
-}
-else{
-   // video.style.opacity = "0";
-   
-}
-}
 
 function close_others() {
     const open = true;
@@ -215,7 +202,7 @@ function changeSource(src, element) {
 
 
     if (element.dataset.fullname === "Main") {
-       // backPane.style.backgroundImage = "url('./assets/videos/main.png')";
+    
         backPane.style.backgroundImage = "url('./assets/decor/MainScreen4.png')";
         changeStyles_Black();
         video_opacity(true);
@@ -229,7 +216,7 @@ function changeSource(src, element) {
     }
 
     if (element.dataset.fullname === "Gallery") {
-        // close_others();
+      
         gal_move(true);
         backPane.style.backgroundColor = "rgb(255,255,255)";
         // video.setAttribute("src", src);
@@ -265,20 +252,19 @@ galleryPane.style.backgroundPositionY = "0px";
         skill_move(true);
         flagSkills = true;
         changeStyles_White();
-       // video.style.opacity = "0";
+      
     }
 
     if (element.dataset.fullname === "Contacts") {
         contacts_move(true);
         flagContacts = true;
         changeStyles_White();
-        //video.style.opacity = "0";
+       
     }
 }
 
 function load_main_logo(){
-    //backPane.style.width = width;
-    //backPane.style.height = height;
+  
 
     console.log(height);
     document.getElementById("body").style.width = String(width)+"px";
@@ -293,12 +279,12 @@ function load_main_logo(){
     galleryPane.style.width = String(width) + "px"
     galleryPane.style.height = String(height) + "px"
     
-    setTimeout(() => {
+  //  setTimeout(() => {
        
         backPane.style.backgroundImage = "url('./assets/decor/MainScreen6.png')";
         video.style.opacity = "0";
         
-    }, 1000);
+ //   }, 1000);
 
 
 }
@@ -309,7 +295,7 @@ window.onload = function() {
 
     load_main_logo();
     
-    //setInterval(video_swith, 10416);
+   
     setInterval(opac, 9916);
     loader.style.opacity = "0";
     this.loader.style.zIndex = "0";
@@ -317,7 +303,7 @@ window.onload = function() {
 
     const Ptag = document.getElementById("panels_cat");
     const prews = document.querySelectorAll(".prew");
-    //this.drawAll();
+    
     prews.forEach(prew => {
         prew.addEventListener("click", function() {
             gal_view_move(event.target.getAttribute("id"));
@@ -332,7 +318,7 @@ window.onload = function() {
     menuElements.forEach(menuElement => {
         menuElement.addEventListener("click", function() {
             changeSource(this.dataset.source, this);
-            //close_others();
+          
         });
     });
 
@@ -383,7 +369,7 @@ window.onload = function() {
 
 
     tagsWorksFonts.forEach(text => {
-        // console.log(text.firstElementChild);
+       
         text.firstElementChild.style = "color: white; font-size: 65px;";
     });
 
