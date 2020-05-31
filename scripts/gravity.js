@@ -2,10 +2,10 @@
 const video_3D = document.getElementById("vid_3D");
 
 vid1 = "./assets/videos/test2.webm";
-vid2 = "./assets/videos/test5.webm";
-vid3 = "./assets/videos/test6.webm";
+vid2 = "./assets/videos/test4.webm";
+vid3 = "./assets/videos/test5.webm";
 vid4 = "./assets/videos/test7.webm";
-vid5 = "./assets/videos/test6.webm";
+vid5 = "./assets/videos/test4.webm";
 vid6 = "./assets/videos/test5.webm";
 
 vid = vid1;
