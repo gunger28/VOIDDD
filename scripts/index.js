@@ -17,7 +17,7 @@ var loader = document.getElementById("loading"); // loading div
 var galleryPane = document.getElementById("galleryMain"); // gallery div
 const mainTitle = document.getElementById("mainTitle"); // Title div on start taplet
 
-// animation for moving menu 
+// animation for moving menu in start 
 setTimeout(() => {
     document.querySelector("#menu").style.transform = "translateX(0)";
 }, 500);
@@ -362,7 +362,6 @@ window.onload = function() {
 
 // set start font for card in works
     tagsWorksFonts.forEach(text => {
-       
         text.firstElementChild.style = "color: white; font-size: 65px;";
     });
 

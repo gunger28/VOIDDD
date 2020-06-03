@@ -1,19 +1,23 @@
-var lastWork;
-const description = ["jjkkk", "funeral bad", "funeral bad"];
+
+// descripts for the every work
 const tecnology = ["eevee", "cycles","cycles", "cycles","eevee","eevee","eevee","cycles","eevee","eevee","eevee","eevee","eevee"];
 const styles = ["poly", "nurbs", "particles", "particles", "particles", "MIX", "procedural", "procedural", "poly", "poly", "procedural", "MIX"];
 const program = ["blender", "gimp", "CrazyBump", "NanoStudio", "Inkscape"];
 
-var fSSize = "40px;";
-var fBSize = "65px;";
 
-var boolWork = false;
-var boolOpacity = true;
+var fSSize = "40px;"; // font size opened
+var fBSize = "65px;"; // font size closed
 
-const tagsWorksFonts = document.querySelectorAll(".tag");
+var boolWork = false; // bool to close right side panel
+var boolOpacity = true; // opac for opened work
+var switcherVar; // do not try to get it
+var lastWork; // refs for close side panel
 
-const cards = document.querySelectorAll(".one_card");
+const tagsWorksFonts = document.querySelectorAll(".tag"); // get all title div of 1 card
+const descPane = document.getElementById("work"); // get right side panel
+const cards = document.querySelectorAll(".one_card"); // get cards of work
 
+// set descs to the right side panel
 function setWork(work) {
   const title = document.querySelectorAll(".title");
   const img = document.querySelectorAll(".img_block");
@@ -24,7 +28,6 @@ function setWork(work) {
 
   title[0].textContent = work.getAttribute("alt");
   img[0].childNodes[1].src = work.src;
-  //desc[0].childNodes[1].textContent = description[work.dataset.source];
   console.log(work.dataset.descript);
   desc[0].childNodes[1].textContent = work.dataset.descript
   tecs[0].textContent = "Tecnology: " + tecnology[work.dataset.source];
@@ -36,13 +39,15 @@ function setWork(work) {
   progs[0].innerHTML += secProg;
 }
 
+// target action to clode right panel when u click last work
 cards.forEach(card => {
   card.addEventListener(
     "click",
-    event => preShow(event.target) // event.target это уже img block
+    event => showWork(boolWork, event.target)// event.target это уже img block
   );
 });
 
+// animation font and size of card
 cards.forEach(card => {
   card.addEventListener("mouseenter", function() {
   
@@ -67,6 +72,7 @@ cards.forEach(card => {
   });
 });
 
+//hard reverse style to card
 function reverseToWhite(elem) {
   if (!boolWork) {
   
@@ -79,6 +85,7 @@ function reverseToWhite(elem) {
   }
 }
 
+//hard set style opac to card
 function opacity_img(flag) {
   cards.forEach(card => {
     if (flag) {
@@ -87,11 +94,7 @@ function opacity_img(flag) {
   });
 }
 
-const descPane = document.getElementById("work");
-function preShow(work) {
-  showWork(boolWork, work);
-}
-
+//close right side panel
 function close_work_viewer(){
     const textWorks = document.querySelectorAll(".tag");
     const workPane = document.getElementById("work");
@@ -111,9 +114,7 @@ function close_work_viewer(){
       });
 }
 
-
-var switcherVar;
-
+//change style to all cards when that open/close
 function showWork(flag, work) {
   const workPane = document.getElementById("work");
   const worksPane = document.getElementById("works");

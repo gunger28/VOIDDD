@@ -1,15 +1,16 @@
-const video_3D = document.getElementById("vid_3D");
+const video_3D = document.getElementById("vid_3D"); // div of video in contacts
 
-vid1 = "./assets/videos/test2.webm";
-vid2 = "./assets/videos/test4.webm";
-vid3 = "./assets/videos/test5.webm";
-vid4 = "./assets/videos/test7.webm";
-vid5 = "./assets/videos/test4.webm";
-vid6 = "./assets/videos/test5.webm";
+vid1 = "./assets/videos/test2.webm"; // paths to video
+vid2 = "./assets/videos/test4.webm"; // paths to video 
+vid3 = "./assets/videos/test5.webm"; // paths to video
+vid4 = "./assets/videos/test7.webm"; // paths to video
+vid5 = "./assets/videos/test4.webm"; // paths to video
+vid6 = "./assets/videos/test5.webm"; // paths to video
 
-vid = vid1;
-counter = 0;
+vid = vid1; // set the first video
+counter = 0; // count to switch next vid
 
+// function to change vids
 function video_swith(){
     
     counter+=1;
@@ -55,6 +56,7 @@ video_3D.setAttribute("src", vid);
  };
 };
 
+// function to smooth changing vids (opacity 0 ---> 1 / reverse)
 function opac(){
     video_3D.style.opacity = 0;
 console.log("switch video");
