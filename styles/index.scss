@@ -39,7 +39,8 @@ color: white;
 
 text-shadow: -30px 40px rgba(75, 75, 75, 0.061);
 
-animation-duration: .3s;
+transition: all .8s ease;
+//transition-duration: .8s;
 .com{
   user-select: none;
   // background-color: brown; 
@@ -47,7 +48,8 @@ animation-duration: .3s;
  
   // left: 130px; 
    z-index: 9;
-
+   transition: all .8s ease;
+ //  transition-duration: .8s;
 font-size: 190px;
 color: rgb(45, 148, 42);
 
@@ -80,7 +82,7 @@ color: rgb(45, 148, 42);
 
   z-index: 14;
 
-  transition-duration: 0.8s;
+  transition-duration: 1s;
   display: flex;
   .wind_category {
     width: 30%;
@@ -117,7 +119,7 @@ background-attachment: fixed;
 
         //filter: saturate(30%);
         //filter: hue-rotate(300deg);
-        filter: blur(1px);
+       
         //filter: brightness(50%);
        background-color: rgb(255, 255, 255);
       }

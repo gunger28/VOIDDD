@@ -1,6 +1,4 @@
 var lastWork;
-
-//const name = ["cosmos" ,"death","merry","dright","funeral","plane","opposing","funeral","funeral","funeral","funeral","funeral"];
 const description = ["jjkkk", "funeral bad", "funeral bad"];
 const tecnology = ["eevee", "cycles","cycles", "cycles","eevee","eevee","eevee","cycles","eevee","eevee","eevee","eevee","eevee"];
 const styles = ["poly", "nurbs", "particles", "particles", "particles", "MIX", "procedural", "procedural", "poly", "poly", "procedural", "MIX"];
@@ -47,15 +45,12 @@ cards.forEach(card => {
 
 cards.forEach(card => {
   card.addEventListener("mouseenter", function() {
-    ///console.log("little size black"), //console.log(card.childNodes),
-    // card.style.opacity = "1",
+  
     card.childNodes[1].childNodes[1].style =
       "color: black; font-Size:" + fSSize + ";";
-    // card.childNodes[1].childNodes[1].style.backgroundColor = "red",
-    //card.childNodes[1].childNodes[1].style.fontSize = "40px",
-    // card.children.children.textContent = "ererer",
+
     console.log(card.children[1]);
-    //card.style.opacity = "1";
+  
     if (lastWork != null && boolWork === true) {
       lastWork.style.opacity = "1";
     }
@@ -74,7 +69,7 @@ cards.forEach(card => {
 
 function reverseToWhite(elem) {
   if (!boolWork) {
-    //console.log(card.childNodes[1].childNodes[1]),
+  
 
     elem.childNodes[1].childNodes[1].style =
       "color: white; font-Size:" + fBSize;
@@ -94,8 +89,6 @@ function opacity_img(flag) {
 
 const descPane = document.getElementById("work");
 function preShow(work) {
-  // console.log(work)
-  //console.log(work),
   showWork(boolWork, work);
 }
 
@@ -111,7 +104,7 @@ function close_work_viewer(){
     boolWork = false;
     cards.forEach(card => {
         card.children[1].style.opacity = "0";
-       // console.log(card.children[1]);
+     
     });
     textWorks.forEach(text => {
         text.childNodes[1].style = "color: white; font-Size: 65px;";
@@ -126,7 +119,7 @@ function showWork(flag, work) {
   const worksPane = document.getElementById("works");
   const textWorks = document.querySelectorAll(".tag");
 
-  //console.log(work.parentNode);
+ 
   if (!flag) {
     worksPane.style.width = "65vw";
     worksPane.style.height = "85vh";
@@ -135,7 +128,7 @@ function showWork(flag, work) {
     textWorks.forEach(text => {
       text.childNodes[1].style = "color: white; font-Size: 40px;";
 
-     // boolOpacity = false;
+     
       boolWork = true;
       switcherVar = work.getAttribute("alt");
       work.style.opacity = "1";
@@ -151,21 +144,19 @@ function showWork(flag, work) {
         text.childNodes[1].style = "color: white; font-Size: 65px;";
       });
 
-      // switcherVar = work.getAttribute("alt");
+      
       console.log("same card");
 
       boolOpacity = true;
       boolWork = false;
     } else {
       console.log("NO same card");
-    //  boolOpacity = false;
+ 
       textWorks.forEach(text => {});
       work.style.opacity = "1";
       workPane.style.right = "-1000px";
 
-      // textWorks.forEach(text => {
-      //   //  text.childNodes[1].style = "color: white; font-Size: 65px;"
-      // });
+   
 
       setTimeout(() => {
         worksPane.style.width = "65vw";
@@ -176,7 +167,7 @@ function showWork(flag, work) {
         textWorks.forEach(text => {
           text.childNodes[1].style = "color: white; font-Size: 40px;";
 
-          // boolWork = true;
+          
         });
       }, 1000);
       switcherVar = work.getAttribute("alt");
