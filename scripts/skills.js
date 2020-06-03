@@ -1,23 +1,19 @@
-const skill1 = document.getElementById("fst");
-const skill2 = document.getElementById("sec");
-const skill3 = document.getElementById("thi");
 
-const media = document.getElementById("media");
-const textDesc = document.getElementById("text_desc");
+const skill1 = document.getElementById("fst"); // get the one card
+const skill2 = document.getElementById("sec"); // get the one card
+const skill3 = document.getElementById("thi"); // get the one card
 
+const media = document.getElementById("media"); //get vid div of panel with big desc and pics/video (category) desc panel
+const textDesc = document.getElementById("text_desc"); //get text of desc panel
+var tmpObj = document.getElementById("panels_cat"); // temp var for close desc panel
+const descr = document.getElementById("desc_block"); // main div of desc panel
+const Ptag = document.getElementById("panels_cat"); // panel list of categories
 
-var tmpObj = document.getElementById("panels_cat");
-
-
-const descr = document.getElementById("desc_block");
-
-var flagDesc = false;
-
+var flagDesc = false; //closed/opened desc panel
 const open = true;
 const close = false;
 
-const Ptag = document.getElementById("panels_cat");
-
+// action to set desc and vid/pic in desc panel
 Ptag.childNodes.forEach(elem => {
     elem.addEventListener("click", function() {
 
@@ -26,20 +22,10 @@ Ptag.childNodes.forEach(elem => {
 setTimeout(() => {
     setContent(elem);
 }, 300);
-
-
-
-
-  //  console.log(Ptag.childNodes),
-// audio = new Audio(), // Создаём новый элемент Audio
-// audio.volume = 0.5;
-//     audio.src = "./audio/click.mp3",// Указываем путь к звуку "клика"
-//     audio.autoplay = true
-
-
     });
 });
 
+// animation to slide in bottom of main 3 cards
 function slide_skills(flag){
 
 if(flag == close){
@@ -81,6 +67,7 @@ if(flag == open){
 }
 };
 
+// animation to show desc panel
 function slide_desc(elem,flag){
 tmpObj.style.color = "";
 boolka = false;
@@ -124,8 +111,7 @@ if(tmpObj == elem && flagDesc && !boolka){
 }
 }
 
-
-
+//set desc and pic/vid to desc panel
 function setContent(theme){
     var n = String(theme.dataset.media);
     console.log(n.length);

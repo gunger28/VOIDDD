@@ -1,15 +1,15 @@
+
+const cat = ["./assets/gallery/Gallery"]; // directory for pics
+
+//function set picture to the main render div
 function take_pic_view(element){
 const img = document.getElementById(element);
 const view = document.getElementById("viewer");
 const cat_text = document.getElementById("CAT");
 view.setAttribute("src",img.getAttribute("src"));
-
-
-
 };
 
-const cat = ["./assets/gallery/Gallery"];
-
+// func set pics to the little div of photos
 function reload_imgs(category){
     const categ = document.getElementById(category);
 const imgs = document.querySelectorAll(".prew");
@@ -125,6 +125,7 @@ break;
 }
 }
 
+// just animation for change pic
 function anim_reload(){
 const galBlock = document.getElementById("galBlock");
 galBlock.style.transform = "rotateY(90deg)";
@@ -132,6 +133,7 @@ galBlock.style.transform = "rotateY(90deg)";
 
 }
 
+// reverse animation for change pic
 function anim_reload_reverse(){
     const galBlock = document.getElementById("galBlock");
     galBlock.style.transform = "rotateY(0deg)";
@@ -139,18 +141,3 @@ function anim_reload_reverse(){
     
     }
 
-// window.onload = function(){
-
-//      const prews = document.querySelectorAll(".prew");
-//     // prews.addEventListener("click", function() {
-//     //    take_pic_view(this.getAttribute("id"));
-//     //   });
-    
-//       prews.forEach(prew => {
-//         prew.addEventListener("click", event =>
-//         take_pic_view(event.target.getAttribute("id"))
-//         );
-//       });
-    
-
-// };
