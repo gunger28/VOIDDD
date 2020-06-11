@@ -173,7 +173,7 @@ body {
 text-align: center;
   background-color: white;
   line-height: 95px;
-  transition: all ease .5s;
+  transition: all ease .3s;
   font-family: $font;
  font-size: 60px;
 user-select: none;
@@ -186,15 +186,14 @@ top: 40%;
 
   &:hover{
 
-    right: -10px;
-    top: 39%;
-
+   // right: -10px;
+    top: 39.5%;
     opacity: .9;
-    width: 140px;
-    height: 140px;
+    width: 107px;
+    height: 107px;
     border-radius: 100px;
-    line-height: 132px;
-    font-size: 100px;
+    line-height: 106px;
+    font-size: 80px;
 
   }
 

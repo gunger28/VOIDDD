@@ -165,7 +165,6 @@ function contacts_move(flag) {
 }
 
 
-
 function txt(flag) {
     const text = this.firstElementChild;
 
