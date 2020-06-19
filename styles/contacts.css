@@ -35,6 +35,8 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  background-color: rgba(31, 31, 31, 0.548);
+  border-radius: 15px;
   margin: 0 auto;
   margin-top: 60px;
   border-bottom: 1px solid white;
