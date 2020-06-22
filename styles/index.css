@@ -206,8 +206,8 @@ body {
   text-align: center;
   background-color: white;
   line-height: 95px;
-  -webkit-transition: all ease .5s;
-  transition: all ease .5s;
+  -webkit-transition: all ease .3s;
+  transition: all ease .3s;
   font-family: "Open Sans";
   font-size: 60px;
   -webkit-user-select: none;
@@ -224,13 +224,12 @@ body {
 }
 
 .btn_present:hover {
-  right: -10px;
-  top: 39%;
+  top: 39.5%;
   opacity: .9;
-  width: 140px;
-  height: 140px;
+  width: 107px;
+  height: 107px;
   border-radius: 100px;
-  line-height: 132px;
-  font-size: 100px;
+  line-height: 106px;
+  font-size: 80px;
 }
 /*# sourceMappingURL=index.css.map */
