@@ -306,6 +306,12 @@ window.onload = function() {
 
     this.opacity_img(true); // start opacity of cards in works = 0
 
+    if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+        // код для мобильных устройств
+      } else {
+        // код для обычных устройств
+    }
+
     // action listner for little photo in gallery
     prews.forEach(prew => {
         prew.addEventListener("click", function() {

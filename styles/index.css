@@ -200,9 +200,10 @@ body {
 .btn_present {
   display: inline-block;
   position: fixed;
-  width: 100px;
-  height: 100px;
-  border-radius: 50px;
+  width: 75px;
+  height: 100%;
+  border-bottom-left-radius: 50px;
+  border-top-left-radius: 50px;
   text-align: center;
   background-color: white;
   line-height: 95px;
@@ -216,19 +217,18 @@ body {
           user-select: none;
   background: #240000;
   opacity: .7;
-  background: -webkit-gradient(linear, left top, right top, from(rgba(36, 0, 0, 0)), color-stop(0%, #3a0979), to(#00d4ff));
-  background: linear-gradient(90deg, rgba(36, 0, 0, 0) 0%, #3a0979 0%, #00d4ff 100%);
+  background: -webkit-gradient(linear, left top, right top, from(rgba(82, 82, 82, 0)), color-stop(0%, rgba(54, 54, 54, 0.63)), to(#141414));
+  background: linear-gradient(90deg, rgba(82, 82, 82, 0) 0%, rgba(54, 54, 54, 0.63) 0%, #141414 100%);
   color: white;
-  right: -50px;
-  top: 40%;
+  right: -40px;
+  padding-top: 22%;
 }
 
 .btn_present:hover {
-  top: 39.5%;
+  background: -webkit-gradient(linear, left top, right top, from(rgba(36, 0, 0, 0)), color-stop(0%, rgba(111, 29, 218, 0.431)), to(#00d4ff));
+  background: linear-gradient(90deg, rgba(36, 0, 0, 0) 0%, rgba(111, 29, 218, 0.431) 0%, #00d4ff 100%);
+  right: 0px;
   opacity: .9;
-  width: 107px;
-  height: 107px;
-  border-radius: 100px;
   line-height: 106px;
   font-size: 80px;
 }
