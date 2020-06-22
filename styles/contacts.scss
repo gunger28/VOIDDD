@@ -30,14 +30,17 @@ $contSize: calc((100% - 800px)/2);
 
     .cont {
         width: 90%;
-        height: 50px;
+        height: 5%;
         display: flex;
+//background-color: rgb(255, 255, 255);
+
 
         img {
-            width: 50px;
-            height: 50px;
+            width: 10%;
+            height: 100%;
             transition-duration: .7s;
-
+color: rgb(0, 0, 0);
+//background-color: rgb(0, 0, 0);
             &:hover {
                 transform: rotateY(180deg);
 
@@ -45,20 +48,32 @@ $contSize: calc((100% - 800px)/2);
         }
 
         p {
-            text-indent: 7px;
-            width: 80%;
-            max-height: 32px;
+            box-shadow: 0px 5px 15px 2px rgb(255, 179, 57);
+
+          //  box-shadow:5px 5px 5 #ffffff;
+            background: linear-gradient(45deg, rgba(36,0,0,0) 0%, rgb(205, 7, 255) 0%, rgb(255, 111, 0) 100%);
+           line-height: 250%;
+            border-radius: 15px;
+background-color: rgb(255, 255, 255);
+margin-left: 1%;
+margin-right: 1%;
+margin: 0 auto;
+            font-weight: 600;
+            text-align: center;
+            text-indent: 15px;
+            width: 70%;
+            max-height: 100%;
             font-size: 20px;
             font-family: $font;
             top: 20px;
             position: relative;
-            color: white;
-            border-bottom: 1px solid white;
+            color: rgb(255, 255, 255);
+        //    border-bottom: 1px solid white;
         }
 
         margin: 0 auto;
         margin-top: 60px;
-        border-bottom: 1px solid white;
+    //    border-bottom: 1px solid white;
     }
 
     .info_cont {
@@ -115,7 +130,7 @@ $contSize: calc((100% - 800px)/2);
             margin: auto auto;
             background-color: rgba(190, 0, 95, 0);
             width: 95%;
-            height: 95%;
+            height: 100%;
         }
 
         background-color: rgba(151, 30, 91, 0);
