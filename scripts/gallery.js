@@ -3,10 +3,15 @@ const cat = ["./assets/gallery/Gallery"]; // directory for pics
 
 //function set picture to the main render div
 function take_pic_view(element){
+  //  const vid = document.getElementById("video_gal");
 const img = document.getElementById(element);
+
+const view_vid = document.getElementById("video_gal");
 const view = document.getElementById("viewer");
 const cat_text = document.getElementById("CAT");
-view.setAttribute("src",img.getAttribute("src"));
+
+//view.setAttribute("src",img.getAttribute("src"));
+view_vid.setAttribute("src",img.getAttribute("src"));
 };
 
 // func set pics to the little div of photos
@@ -14,19 +19,36 @@ function reload_imgs(category){
     const categ = document.getElementById(category);
 const imgs = document.querySelectorAll(".prew");
 console.log(categ);
-var i =1;
+var i = 1;
 switch(category){
 case 'void':
     imgs.forEach(function(item) {
         
         anim_reload();
         setTimeout(() => {
-            item.setAttribute("src",cat[0]+"/Void/void"+i+".png");
-            i++;
+           
+
+if(i<3){
+
+    item.setAttribute("src",cat[0]+"/Void/void"+i+".png"); 
+}else{
+
+    item.setAttribute("src",cat[0]+"/Void/void"+i+".webm"); 
+}
+
+           
+     
+         
+         i++;
+         console.log(i);
             anim_reload_reverse();
           }, 600);
-        console.log(i);
+
+         
+  
       });
+
+      
 
       i=1;
       

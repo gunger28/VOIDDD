@@ -76,7 +76,8 @@ $back: url("../assets/decor/gal_bacimg1.jpeg");
         width: 93%;
         margin: 0 auto;
         display: flex;
-
+       // border-radius: 50px;
+       // border: 5px solid #d23434;
         img {
           border-radius: 50px;
           clip-path: polygon(0% 0%, 75% 0%, 100% 25%, 100% 100%, 25% 100%, 0% 75%);
@@ -88,6 +89,15 @@ $back: url("../assets/decor/gal_bacimg1.jpeg");
           transition-duration: .7s;
 
         }
+
+        video{
+          position: absolute;
+          border-radius: 50px;
+width: 92%;
+height: 92%;
+
+        }
+
       }
 
       .preview_gal {

@@ -53,9 +53,11 @@
 }
 
 .contacts_pane .cont p {
-  -webkit-box-shadow: 0px 5px 15px 2px #ffb339;
-          box-shadow: 0px 5px 15px 2px #ffb339;
-  background: linear-gradient(45deg, rgba(36, 0, 0, 0) 0%, #cd07ff 0%, #ff6f00 100%);
+  -webkit-transition-duration: .6s;
+          transition-duration: .6s;
+  -webkit-box-shadow: 0px 5px 15px 2px rgba(255, 179, 57, 0.5);
+          box-shadow: 0px 5px 15px 2px rgba(255, 179, 57, 0.5);
+  background: linear-gradient(45deg, rgba(36, 0, 0, 0) 0%, #9c07ff 0%, #ff6f00 100%);
   line-height: 250%;
   border-radius: 15px;
   background-color: white;
@@ -72,6 +74,11 @@
   top: 20px;
   position: relative;
   color: white;
+}
+
+.contacts_pane .cont p:hover {
+  -webkit-box-shadow: 0px 5px 15px 2px #ffb339;
+          box-shadow: 0px 5px 15px 2px #ffb339;
 }
 
 .contacts_pane .info_cont {

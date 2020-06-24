@@ -48,10 +48,10 @@ color: rgb(0, 0, 0);
         }
 
         p {
-            box-shadow: 0px 5px 15px 2px rgb(255, 179, 57);
-
-          //  box-shadow:5px 5px 5 #ffffff;
-            background: linear-gradient(45deg, rgba(36,0,0,0) 0%, rgb(205, 7, 255) 0%, rgb(255, 111, 0) 100%);
+          
+transition-duration: .6s;
+box-shadow: 0px 5px 15px 2px rgba(255, 179, 57, 0.5);
+            background: linear-gradient(45deg, rgba(36,0,0,0) 0%, rgb(156, 7, 255) 0%, rgb(255, 111, 0) 100%);
            line-height: 250%;
             border-radius: 15px;
 background-color: rgb(255, 255, 255);
@@ -69,6 +69,10 @@ margin: 0 auto;
             position: relative;
             color: rgb(255, 255, 255);
         //    border-bottom: 1px solid white;
+        &:hover{
+            box-shadow: 0px 5px 15px 2px rgb(255, 179, 57);
+          
+        }
         }
 
         margin: 0 auto;
