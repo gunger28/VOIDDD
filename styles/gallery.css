@@ -21,7 +21,7 @@
   margin-left: auto;
   margin-right: 40px;
   left: 100px;
-  width: 30%;
+  width: 24%;
   height: 90vh;
   z-index: 14;
   -webkit-transition-duration: 1s;
@@ -33,7 +33,7 @@
 
 .wind_main .wind_category {
   padding-top: 20px;
-  width: 90%;
+  width: 100%;
   display: inline-block;
   margin-top: 10px;
 }
@@ -78,8 +78,7 @@
   width: 65%;
   right: 0;
   padding-top: 30px;
-  background-color: #1d1d1d;
-  background-image: url("../assets/decor/gal_img.jpg");
+  background-image: url("../assets/decor/gal_img.png");
 }
 
 .gallery .wind_gal {
@@ -122,12 +121,14 @@
 }
 
 .gallery .wind_gal .gal_view video {
+  -webkit-box-shadow: 0px 5px 15px 2px black;
+          box-shadow: 0px 5px 15px 2px black;
   position: absolute;
   border-radius: 50px;
   width: 90%;
   height: auto;
-  -webkit-transition-duration: .7s;
-          transition-duration: .7s;
+  -webkit-transition-duration: .4s;
+          transition-duration: .4s;
   left: 5%;
   right: 5%;
 }
@@ -150,6 +151,8 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-shadow: 0px 5px 15px 2px black;
+          box-shadow: 0px 5px 15px 2px black;
 }
 
 .gallery .wind_gal .prev_block .preview_gal img {
@@ -178,6 +181,8 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-shadow: 0px 5px 15px 2px black;
+          box-shadow: 0px 5px 15px 2px black;
 }
 
 .gallery .wind_gal .prev_block .preview_gal_top img {

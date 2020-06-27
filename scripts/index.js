@@ -289,6 +289,17 @@ function load_main_logo(){
 
 }
 
+function chek_phone(){
+
+
+    if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+        reload_imgs("war")
+    } else {
+      reload_imgs("void")
+  }
+
+}
+
 
 window.onload = function() {
     const Ptag = document.getElementById("panels_cat"); // main div of list of my skills (db, web, apps, nanostudio...) 
@@ -306,11 +317,7 @@ window.onload = function() {
 
     this.opacity_img(true); // start opacity of cards in works = 0
 
-    if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
-          gal_view_move("war");
-      } else {
-        reload_imgs("void")
-    }
+   chek_phone();
 
     // action listner for little photo in gallery
     prews.forEach(prew => {

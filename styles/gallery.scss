@@ -16,7 +16,7 @@ $back: url("../assets/decor/gal_bacimg1.jpeg");
 }
 
 .wind_main {
- // background-color: rgb(0, 17, 255);
+  //background-color: rgb(0, 17, 255);
   position: fixed;
   padding-left: 15px;
   font-family: "Open Sans";
@@ -24,7 +24,7 @@ $back: url("../assets/decor/gal_bacimg1.jpeg");
   margin-right: 40px;
   left: 100px;
  // right: 0;
-  width: 30%;
+  width: 24%;
   height: 90vh;
   z-index: 14;
   transition-duration: 1s;
@@ -32,7 +32,7 @@ $back: url("../assets/decor/gal_bacimg1.jpeg");
 
   .wind_category {
     padding-top: 20px;
-    width: 90%;
+    width: 100%;
     display: inline-block;
     margin-top: 10px;
 
@@ -73,8 +73,8 @@ $back: url("../assets/decor/gal_bacimg1.jpeg");
   width: 65%;
   right: 0;
 padding-top: 30px;
-  background-color: rgb(29, 29, 29);
-background-image: url("../assets/decor/gal_img.jpg");
+ // background-color: rgb(29, 29, 29);
+background-image: url("../assets/decor/gal_img.png");
 
 .wind_gal {
   
@@ -120,12 +120,12 @@ background-image: url("../assets/decor/gal_img.jpg");
     }
 
     video {
-    
+      box-shadow:  0px  5px 15px 2px rgba(0, 0, 0, 1);
       position: absolute;
       border-radius: 50px;
       width: 90%;
     height: auto;
-      transition-duration: .7s;
+      transition-duration: .4s;
       left: 5%;
 right: 5%;
      
@@ -140,6 +140,7 @@ right: 5%;
   position: relative;
   margin: 0 auto;
 
+
     .preview_gal {
       border-radius: 30px;
      // border: 3px dashed #d23434;
@@ -149,6 +150,8 @@ right: 5%;
       height: 50%;
       width: 100%;
       display: flex;
+           box-shadow:  0px  5px 15px 2px rgba(0, 0, 0, 1);
+
 
       img {
         clip-path: polygon(10% 0%, 100% 0%, 100% 80%, 90% 100%, 0% 100%, 0% 20%);
@@ -157,7 +160,7 @@ right: 5%;
         height: 80%;
         border-radius: 20px;
         transition-duration: 0.7s;
-     //   box-shadow:    5px 15px 2px rgba(0, 0, 0, 0.5);
+     //   
         
         &:hover {
 
@@ -176,6 +179,7 @@ right: 5%;
       height: 50%;
       width: 100%;
       display: flex;
+      box-shadow:  0px  5px 15px 2px rgba(0, 0, 0, 1);
 
       img {
         border-radius: 20px;
