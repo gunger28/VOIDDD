@@ -74,6 +74,8 @@ $back: url("../assets/decor/gal_bacimg1.jpeg");
   right: 0;
 padding-top: 30px;
   background-color: rgb(29, 29, 29);
+background-image: url("../assets/decor/gal_img.jpg");
+
 .wind_gal {
   
   position: relative;
@@ -89,12 +91,14 @@ padding-top: 30px;
     width: 90%;
     position: relative;
     margin: 0 auto;
+    //padding: 5%;
     .watch_photo {
       height: 93%;
       width: 93%;
       margin: 0 auto;
       display: flex;
-
+     
+     // background-color: white;
       // border-radius: 50px;
       // border: 5px solid #d23434;
       img {
@@ -112,10 +116,12 @@ padding-top: 30px;
       video {
         position: absolute;
         border-radius: 50px;
+      margin: auto auto;
         width: 90%;
-        height: 90%;
+      //  height: 90%;
+      height: auto;
         transition-duration: .7s;
-        margin: 0 auto;
+       // margin-top: 50px;
       }
 
     }

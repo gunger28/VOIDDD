@@ -79,6 +79,7 @@
   right: 0;
   padding-top: 30px;
   background-color: #1d1d1d;
+  background-image: url("../assets/decor/gal_img.jpg");
 }
 
 .gallery .wind_gal {
@@ -123,11 +124,11 @@
 .gallery .wind_gal .gal_view .watch_photo video {
   position: absolute;
   border-radius: 50px;
+  margin: auto auto;
   width: 90%;
-  height: 90%;
+  height: auto;
   -webkit-transition-duration: .7s;
           transition-duration: .7s;
-  margin: 0 auto;
 }
 
 .gallery .wind_gal .gal_view .preview_gal {
