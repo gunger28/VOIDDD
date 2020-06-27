@@ -307,9 +307,9 @@ window.onload = function() {
     this.opacity_img(true); // start opacity of cards in works = 0
 
     if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
-        // код для мобильных устройств
+          gal_view_move("war");
       } else {
-        // код для обычных устройств
+        reload_imgs("void")
     }
 
     // action listner for little photo in gallery
