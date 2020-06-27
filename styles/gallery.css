@@ -124,10 +124,12 @@
 .gallery .wind_gal .gal_view video {
   position: absolute;
   border-radius: 50px;
-  width: 93%;
+  width: 90%;
   height: auto;
   -webkit-transition-duration: .7s;
           transition-duration: .7s;
+  left: 5%;
+  right: 5%;
 }
 
 .gallery .wind_gal .prev_block {

@@ -120,16 +120,15 @@ background-image: url("../assets/decor/gal_img.jpg");
     }
 
     video {
-     // display: inline-block;
+    
       position: absolute;
       border-radius: 50px;
-  //  margin: auto auto;
-      width: 93%;
-    //  height: 90%;
+      width: 90%;
     height: auto;
-    //margin: auto auto;
       transition-duration: .7s;
-     // margin-top: 50px;
+      left: 5%;
+right: 5%;
+     
     }
   }
 
