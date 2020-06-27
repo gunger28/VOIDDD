@@ -93,7 +93,7 @@
 }
 
 .gallery .wind_gal .gal_view {
-  height: 70%;
+  height: 68%;
   width: 90%;
   position: relative;
   margin: 0 auto;
@@ -121,29 +121,36 @@
           transition-duration: .7s;
 }
 
-.gallery .wind_gal .gal_view .watch_photo video {
+.gallery .wind_gal .gal_view video {
   position: absolute;
   border-radius: 50px;
-  margin: auto auto;
-  width: 90%;
+  width: 93%;
   height: auto;
   -webkit-transition-duration: .7s;
           transition-duration: .7s;
 }
 
-.gallery .wind_gal .gal_view .preview_gal {
+.gallery .wind_gal .prev_block {
+  margin-top: 30px;
+  height: 35%;
+  width: 90%;
+  position: relative;
+  margin: 0 auto;
+}
+
+.gallery .wind_gal .prev_block .preview_gal {
   border-radius: 30px;
   background-color: white;
   margin-top: 20px;
   margin-bottom: 20px;
-  height: 25%;
+  height: 50%;
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-.gallery .wind_gal .gal_view .preview_gal img {
+.gallery .wind_gal .prev_block .preview_gal img {
   -webkit-clip-path: polygon(10% 0%, 100% 0%, 100% 80%, 90% 100%, 0% 100%, 0% 20%);
           clip-path: polygon(10% 0%, 100% 0%, 100% 80%, 90% 100%, 0% 100%, 0% 20%);
   margin: auto auto;
@@ -154,24 +161,24 @@
           transition-duration: 0.7s;
 }
 
-.gallery .wind_gal .gal_view .preview_gal img:hover {
+.gallery .wind_gal .prev_block .preview_gal img:hover {
   -webkit-transform: scale3d(0.9, 0.9, 1);
           transform: scale3d(0.9, 0.9, 1);
 }
 
-.gallery .wind_gal .gal_view .preview_gal_top {
+.gallery .wind_gal .prev_block .preview_gal_top {
   border-radius: 30px;
   background-color: white;
   margin-top: 20px;
   margin-bottom: 20px;
-  height: 25%;
+  height: 50%;
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-.gallery .wind_gal .gal_view .preview_gal_top img {
+.gallery .wind_gal .prev_block .preview_gal_top img {
   border-radius: 20px;
   -webkit-clip-path: polygon(10% 0%, 100% 0%, 100% 80%, 90% 100%, 0% 100%, 0% 20%);
           clip-path: polygon(10% 0%, 100% 0%, 100% 80%, 90% 100%, 0% 100%, 0% 20%);
@@ -182,7 +189,7 @@
           transition-duration: 0.7s;
 }
 
-.gallery .wind_gal .gal_view .preview_gal_top img:hover {
+.gallery .wind_gal .prev_block .preview_gal_top img:hover {
   -webkit-transform: scale3d(0.9, 0.9, 1);
           transform: scale3d(0.9, 0.9, 1);
 }
