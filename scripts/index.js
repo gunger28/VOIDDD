@@ -288,14 +288,24 @@ function load_main_logo(){
         video.style.opacity = "0";
 
 }
+const category = document.querySelectorAll(".cat"); 
 
 function chek_phone(){
 
 
     if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
         reload_imgs("war")
+
+        category.forEach(categs => {
+            categs.style.fontSize = "47"
+        });
+
+
     } else {
       reload_imgs("void")
+      category.forEach(categs => {
+        categs.style.fontSize = "77"
+    });
   }
 
 }
@@ -307,7 +317,7 @@ window.onload = function() {
     const menuElements = document.querySelectorAll(".menu_element"); // menu elevents (StartPage, V, O, I, D)
     const mainVid = document.getElementById("go_to_start"); // div of main menu button (go to start taplet)
     const video = document.getElementById("video"); // tag video of start taplet
-    const category = document.querySelectorAll(".cat"); // div of category for gallery
+    // div of category for gallery
 
     load_main_logo(); // loading start taplet
     loader.style.opacity = "0"; // switch off loading div
