@@ -297,14 +297,14 @@ function chek_phone(){
         reload_imgs("war")
 
         category.forEach(categs => {
-            categs.style.fontSize = "47"
+            categs.style.fontSize = "47px"
         });
 
 
     } else {
       reload_imgs("void")
       category.forEach(categs => {
-        categs.style.fontSize = "77"
+        categs.style.fontSize = "77px"
     });
   }
 
