@@ -70,10 +70,12 @@
 }
 
 .wind_gal {
+  height: 100%;
   width: 65%;
   margin: 0 auto;
   -webkit-transition-duration: .6s;
           transition-duration: .6s;
+  background-color: #414141;
 }
 
 .wind_gal .gal_view {
@@ -109,6 +111,8 @@
   border-radius: 50px;
   width: 92%;
   height: 92%;
+  -webkit-transition-duration: .7s;
+          transition-duration: .7s;
 }
 
 .wind_gal .gal_view .preview_gal {

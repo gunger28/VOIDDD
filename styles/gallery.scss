@@ -62,9 +62,12 @@ $back: url("../assets/decor/gal_bacimg1.jpeg");
   }
 
   .wind_gal {
+    height: 100%;
     width: 65%;
     margin: 0 auto;
     transition-duration: .6s;
+
+background-color: rgb(65, 65, 65);
 
     .gal_view {
       height: 70%;
