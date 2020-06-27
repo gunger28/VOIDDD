@@ -2,6 +2,7 @@
 <html>
     <head>
         <meta http-equiv="Content-Type"  content="text/html; charset=UTF-8" />
+        <!-- <meta http-equiv='X-UA-Compatible' content='IE=Edge' /> -->
 
         <link rel="shortcut icon" href="./assets/decor/icon.ico" />
         <link rel="stylesheet" href="./styles/gallery.css?<?php echo time();?>" />
@@ -38,12 +39,15 @@
             </div>
 
             <video
+            controls 
+            type='video/webm; codecs="vp8, vorbis"'
                 pip="false"
                 src="./assets/videos/screen.webm"
                 autoplay
                 loop
                 preload="auto"
                 id="video"
+                muted
             >
             
         </video>
@@ -109,7 +113,7 @@ I'M TRYING TO «TOUCH» THE STARS...
         </div>
 
         <!-- контакты -->
-<div class="contacts_pane" id="contacts" style="top: 0px; z-index: 11; opacity: 1;">
+<div class="contacts_pane" id="contacts" style="top: 0px; z-index: 0; opacity: 0;">
     <video id="vid_3D"src="./assets/videos/test1.webm" autoplay loop width="100%" height="100%"  pip="false" ></video>
 <div class="left_cont">
     <div class="cont">
@@ -573,17 +577,49 @@ VFX</p>
         </div>
 
         <!-- Галерея -->
-       <div class="gal_pane" id="galleryMain" style="opacity: 0; z-index: 0; background-position-x: -200px; background-position-y: -200px;"> 
- <div id="gal" class="wind_main" style="transform: rotateX(0deg); opacity: 0;">
+       <div class="gal_pane" id="galleryMain" style="opacity: 1; z-index: 11; background-position-x: -200px; background-position-y: -200px;"> 
+ <div id="gal" class="wind_main" style="transform: rotateX(0deg); opacity: 1;">
             <div class="wind_category" id="CAT">
-                <p class="cat" id="void">V O I D</p>
-                <p class="cat" id="gallery">GALLERY</p>
-                <p class="cat" id="war">WAR</p>
-                <p class="cat" id="cosmic">COSMIC</p>
-                <p class="cat" id="aparts">APARTS</p>
-                <p class="cat" id="faces">FACES</p>
-                <p class="cat" id="arch">ARCH</p>
-                <p class="cat" id="death">DEATH</p>
+                <p class="cat" 
+                id="void" 
+                dir="/Void/void"
+                countVid = "2"
+                >V O I D</p>
+                <p class="cat" 
+                id="gallery" 
+                dir="/gallery/gallery"
+                countVid = "9"
+                >GALLERY</p>
+                <p class="cat"
+                 id="war"
+                 dir="/War/war"
+                 countVid = "8"
+                 >WAR</p>
+                <p class="cat"
+                 id="cosmic" 
+                dir="/cosmic/cosmic"
+                countVid = "4"
+                >COSMIC</p>
+                <p class="cat"
+                 id="aparts"
+                 dir="/apart/apart"
+                  countVid = "10"
+                 >APARTS</p>
+                <p class="cat"
+                 id="faces"
+                 dir="/faces/faces"
+                 countVid = "3"
+                 >FACES</p>
+                <p class="cat"
+                 id="arch"
+                 dir="/Arch/arch"
+                 countVid = "8"
+                 >ARCH</p>
+                <p class="cat" 
+                id="death"
+                 dir="/death/Death"
+                 countVid = "9"
+                 >DEATH</p>
             </div>
             <div class="wind_gal" id="galBlock">
                 <div class="gal_view">
@@ -593,9 +629,22 @@ VFX</p>
                         <img
                         src="./assets/gallery/faces1.png"
                             alt="image"
-                            style="transform: rotateY(0deg) scale3d(1, 1, 1);  "
+                            style="transform: rotateY(0deg) scale3d(1, 1, 1); opacity: 0; "
                             id="viewer"
                         />
+
+                        <video 
+                        loop
+                        type='video/webm; codecs="vp8, vorbis"'
+                        muted
+                        pip = "false"
+                        src="./assets/gallery/Gallery/Void/void3.webm" 
+                        autoplay
+                loop
+                preload="auto"
+                id="video_gal"
+
+                        ></video>
                     </div>
 
                     <div class="preview_gal_top">
@@ -604,30 +653,35 @@ VFX</p>
                             alt="image"
                             class="prew"
                             id="f1"
+                            data-vid=""
                         />
                         <img
                         src="./assets/gallery/faces2.png"
                             alt="image"
                             class="prew"
                             id="s1"
+                            data-vid=""
                         />
                         <img
                         src="./assets/gallery/faces2.png"
                             alt="image"
                             class="prew"
                             id="t1"
+                            data-vid=""
                         />
                         <img
                         src="./assets/gallery/faces2.png"
                             alt="image"
                             class="prew"
                             id="fo1"
+                            data-vid=""
                         />
                         <img
                         src="./assets/gallery/faces2.png"
                             alt="image"
                             class="prew"
                             id="fi1"
+                            data-vid=""
                         />
                     </div>
 
@@ -637,30 +691,35 @@ VFX</p>
                             alt="image"
                             class="prew"
                             id="f"
+                            data-vid=""
                         />
                         <img
                         src="./assets/gallery/faces2.png"
                             alt="image"
                             class="prew"
                             id="s"
+                            data-vid=""
                         />
                         <img
                         src="./assets/gallery/faces2.png"
                             alt="image"
                             class="prew"
                             id="t"
+                            data-vid=""
                         />
                         <img
                         src="./assets/gallery/faces2.png"
                             alt="image"
                             class="prew"
                             id="fo"
+                            data-vid=""
                         />
                         <img
                             src="./assets/gallery/faces2.png"
                             alt="image"
                             class="prew"
                             id="fi"
+                            data-vid=""
                         />
                     </div>
 
