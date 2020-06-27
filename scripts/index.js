@@ -297,7 +297,7 @@ function chek_phone(){
         reload_imgs("war")
 
         category.forEach(categs => {
-            categs.style.fontSize = "44px"
+            categs.style.fontSize = "40px"
         });
 
 
