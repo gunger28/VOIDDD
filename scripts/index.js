@@ -345,12 +345,26 @@ window.onload = function() {
 
    chek_phone();
 
+   var rorarteScreen = document.getElementById("rotateScreen");
+
    window.addEventListener("orientationchange", function() {
 // Выводим числовое значение ориентации
-    
-topTitle.innerHTML = "VOID";
+
+if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+if(window.orientation == 0){
+
+    rorarteScreen.style.zIndex = "19";
+
+   }else {
+
+    rorarteScreen.style.zIndex = "-10";
+
+   }
+}
+
 
 }, false);
+
 
     // action listner for little photo in gallery
     prews.forEach(prew => {
