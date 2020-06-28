@@ -10,7 +10,7 @@ var flagGallery = closed; // bool for gallery taplet
 var flagSkills = closed; // bool for skills taplet
 var flagContacts = closed; // bool for contacts taplet
 
-const video = document.getElementById("video"); // tag video on start taplet
+ // tag video on start taplet
 var backPane = document.getElementById("top"); // div of start taplet
 
 var loader = document.getElementById("loading"); // loading div
@@ -211,7 +211,7 @@ function changeSource(src, element) {
         backPane.style.backgroundImage = "url('./assets/decor/MainScreen6.png')";
         changeStyles_Black();
         
-        video.style.opacity = "0";
+       
         backPane.style.opacity = "1";
        // mainTitle.style.width = "55%";
        // mainTitle.style.fontSize = "170px";
@@ -226,10 +226,7 @@ function changeSource(src, element) {
       
         gal_move(true);
         backPane.style.backgroundColor = "rgb(255,255,255)";
-        // video.setAttribute("src", src);
-        // video.onload = () => {
-        //     video.play();
-        // };
+      
 galleryPane.style.opacity = "1";
 galleryPane.style.zIndex = "11";
 galleryPane.style.backgroundPositionX = "0px";
@@ -252,12 +249,7 @@ galleryPane.style.backgroundPositionY = "0px";
     }
 
     if (element.dataset.fullname === "Skills") {
-        // close_others();
-       // gal_move(true);
-        //video.setAttribute("src", src);
-        // video.onload = () => {
-        //     video.play();
-        // };
+    
 
         skill_move(true);
         flagSkills = true;
@@ -276,20 +268,23 @@ galleryPane.style.backgroundPositionY = "0px";
 // func load width & height, logo for start taplet 
 function load_main_logo(){
 
+    width = document.body.clientWidth; // width of work screen of browser
+    height = document.body.clientHeight;
+
+
     document.getElementById("body").style.width = String(width)+"px";
     document.getElementById("body").style.height = String(height)+"px";
 
     document.getElementById("top").style.width = String(width)+"px";
     document.getElementById("top").style.height = String(height)+"px";
 
-    document.getElementById("video").style.width = String(width)+"px";
-    document.getElementById("video").style.height = String(height)+"px";
+  
 
     galleryPane.style.width = String(width) + "px"
     galleryPane.style.height = String(height) + "px"
     
       //  backPane.style.backgroundImage = "url('./assets/decor/MainScreen6.png')";
-        video.style.opacity = "0";
+       
 
 }
 
@@ -334,7 +329,7 @@ window.onload = function() {
     const prews = document.querySelectorAll(".prew"); // little photos of gallery
     const menuElements = document.querySelectorAll(".menu_element"); // menu elevents (StartPage, V, O, I, D)
     const mainVid = document.getElementById("go_to_start"); // div of main menu button (go to start taplet)
-    const video = document.getElementById("video"); // tag video of start taplet
+   
     // div of category for gallery
 
     load_main_logo(); // loading start taplet
@@ -358,11 +353,23 @@ if(window.orientation == 0){
     rorarteScreen.style.zIndex = "19";
     rorarteScreen.style.opacity = "1";
    }else {
+   
+    width = document.body.clientWidth; // width of work screen of browser
+    height = document.body.clientHeight;
 
-backPane.style.width = "100%";
+    backPane.style.width = "100%";
 backPane.style.height = "100vh";
-  //  backPane.style.backgroundSize = "cover";
-//backPane = backPane;
+
+    // document.getElementById("top").style.width = String(height)+"px";
+    // document.getElementById("top").style.height =  String(width)+"px";
+
+
+    document.getElementById("top").style.width = backPane.style.width;
+    document.getElementById("top").style.height = backPane.style.height;
+
+    loader.style.width = backPane.style.width;
+    loader.style.height = backPane.style.height;
+
     rorarteScreen.style.opacity = "0";
     rorarteScreen.style.zIndex = "-10";
 

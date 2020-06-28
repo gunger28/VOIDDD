@@ -1,765 +1,628 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta http-equiv="Content-Type"  content="text/html; charset=UTF-8" />
-        <!-- <meta http-equiv='X-UA-Compatible' content='IE=Edge' /> -->
 
-        <link rel="shortcut icon" href="./assets/decor/icon.ico" />
-        <link rel="stylesheet" href="./styles/gallery.css?<?php echo time();?>" />
-        <link rel="stylesheet" href="./styles/index.css?<?php echo time();?>" />
-        <link rel="stylesheet" href="./styles/works.css?<?php echo time();?>" />
-        <link rel="stylesheet" href="./styles/skills.css?<?php echo time();?>" />
-        <link rel="stylesheet" href="./styles/contacts.css?<?php echo time();?>" />
-        <link
-            href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
-            rel="stylesheet"
-        />
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <!-- <meta http-equiv='X-UA-Compatible' content='IE=Edge' /> -->
 
-<!-- For mobile phone -->
-        <link rel="stylesheet" type="text/css" href="index.css" media="handheld" />
+    <link rel="shortcut icon" href="./assets/decor/icon.ico" />
+    <link rel="stylesheet" href="./styles/gallery.css?<?php echo time();?>" />
+    <link rel="stylesheet" href="./styles/index.css?<?php echo time();?>" />
+    <link rel="stylesheet" href="./styles/works.css?<?php echo time();?>" />
+    <link rel="stylesheet" href="./styles/skills.css?<?php echo time();?>" />
+    <link rel="stylesheet" href="./styles/contacts.css?<?php echo time();?>" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet" />
+
+    <!-- For mobile phone -->
+    <link rel="stylesheet" type="text/css" href="index.css" media="handheld" />
 
 
 
-        <title>VOID</title>
-    </head>
+    <title>VOID</title>
+</head>
 
-    <body id="body">
-        
-        <!-- экран загрузки -->
-        <div class="load_pane" style="opacity: 1;" id="loading">
+<body id="body">
 
-            etert
-        </div>
+    <!-- экран загрузки -->
+    <div class="load_pane" style="
+         opacity : 1; 
+         width: 100vw;
+         height: 100vh;" id="loading">
 
-<!-- главный экран-->
-        <div class="vid_block" id="top" style="  
+        etert
+    </div>
+
+    <!-- главный экран-->
+    <div class="vid_block" id="top" style="  
         width: 100%;
         height: 100vh; 
         background-size: cover; 
-        background-image: url(./assets/decor/MainScreen6.png);" >
-            
-            <div class="btn_present" style="z-index: 10; ">
-                ➤
-            </div>
+        background-image: url(./assets/decor/MainScreen6.png);">
 
-            <video
-            controls 
-            type='video/webm; codecs="vp8, vorbis"'
-                pip="false"
-                src="./assets/videos/screen.webm"
-                autoplay
-                loop
-                preload="auto"
-                id="video"
-                muted
-            >
-            
-        </video>
-            <div class="TopTitle" id="topTitle">  RESUME 
-
-
-            </div>
-
-        <div class="Title" id="mainTitle" style=" width: 55%; max-height: 60%; opacity: 1; font-size: 170px; background-color: rgba(137, 43, 226, 0);">
-I'M TRYING TO «TOUCH» THE STARS...
-   
-
-<p id="botTitle" class="com" style="font-size: 160px; background-color: rgba(43, 159, 226, 0);">//MBY I WILL </p>
-            
+        <div class="btn_present" style="z-index: 10; ">
+            ➤
         </div>
 
+      
+        <div class="TopTitle" id="topTitle"> RESUME
 
-        <div id="rotateScreen" style="position: absolute; width: 100%; height: 100% ; background-color: blueviolet; font-size: 60px; z-index: -10; opacity: 0; ">
-
-    переверни блять экран!!!
 
         </div>
 
+        <div class="Title" id="mainTitle"
+            style=" width: 55%; max-height: 60%; opacity: 1; font-size: 170px; background-color: rgba(137, 43, 226, 0);">
+            I'M TRYING TO «TOUCH» THE STARS...
+
+
+            <p id="botTitle" class="com" style="font-size: 160px; background-color: rgba(43, 159, 226, 0);">//MBY I WILL
+            </p>
+
         </div>
 
-        
 
- <!-- Боковое меню -->
-        <div class="menu_block" id="menu" style="z-index: 16;">
-            <div
-                class="menu_logo"
-                id="go_to_start"
-                data-fullname="Main"
-                data-shortname="V"
-            >
-                <img src="./assets/decor/logoVV1.png" alt="image" />
-                <a href="#top"></a>
-            </div>
+        <div id="rotateScreen"
+            style="position: absolute; width: 100%; height: 100% ; background-color: blueviolet; font-size: 60px; z-index: -10; opacity: 0; ">
 
-           
-            <div
-                class="menu_element"
-                data-source="./scripts/vid_gal1.webm"
-                data-fullname="Gallery"
-                data-shortname="V"
-            >
-           
-                <p>V</p>
-            </div>
-            <div
-                class="menu_element"
-                data-source="../assets/gallery/vid1.webm"
-                data-fullname="Works"
-                data-shortname="O"
-            >
-                <p>O</p>
-            </div>
-            <div
-                class="menu_element"
-                data-source="./scripts/vid2.webm"
-                data-fullname="Skills"
-                data-shortname="I"
-            >
-                <p>I</p>
-            </div>
-            <div
-                class="menu_element"
-                data-source="./scripts/vid2.webm"
-                data-fullname="Contacts"
-                data-shortname="D"
-            >
-                <p>D</p>
-            </div>
+            переверни блять экран!!!
+
         </div>
 
-        <!-- контакты -->
-<div class="contacts_pane" id="contacts" style="top: 0px; z-index: 0; opacity: 0;">
-    <video id="vid_3D"src="./assets/videos/test1.webm" autoplay loop width="100%" height="100%"  pip="false" ></video>
-<div class="left_cont">
-    <div class="cont">
-        
-       <p>8-951-387-50-51</p> 
-       <img src="./assets/decor/phone.png" alt="">
     </div>
-    <div class="cont">
-        
-        <p>gungeranton@gmail.com</p> 
-        <img src="./assets/decor/gmail.png" alt="">
-    </div>
-    <div class="cont">
-        
-        <p>gungeranton@yandex.ru</p> 
-        <img src="./assets/decor/yandex.png" alt="">
-    </div>
-    <div class="logos">
-        <div class="line">
-            <img src="./assets/decor/swift.png" alt="">
-            <img src="./assets/decor/js.png" alt="">
-            <img src="./assets/decor/css.png" alt="">
-            <img src="./assets/decor/postgres.png" alt="">
-                    </div>
-                    <div class="line">
-                        <img src="./assets/decor/kompas.png" alt="">
-                        <img src="./assets/decor/solidworks.png" alt="">
-                        <img src="./assets/decor/blender.png" alt="">
-                        <img src="./assets/decor/git.png" alt="">
-                                </div>
-    </div>
-<div class="info_cont">
 
-    All the materials presented, including the site-created, programmed, designed, modeled, rendered by void_ways
-</div>
-</div>
-<div class="d_cont">
-    <div class="DDD">
 
-    </div>
-3D
-</div>
-<div class="right_cont">
-    <div class="cont">
-        <img src="./assets/decor/inst.png" alt="">
-        <p>void_ways</p> 
-    </div>
-    <div class="cont">
-        <img src="./assets/decor/youtube.png" alt="">
-        <p>Evnika GK</p> 
-    </div>
-    <div class="cont">
-        <img src="./assets/decor/github.png" alt="">
-        <p>gunger28</p> 
-    </div>
-    <div class="logos">
-        <div class="line">
-<img src="./assets/decor/java.png" alt="">
-<img src="./assets/decor/sass.png" style="height: 70px;" alt="">
-<img src="./assets/decor/python.png" alt="">
-<img src="./assets/decor/html.png" alt="">
+
+    <!-- Боковое меню -->
+    <div class="menu_block" id="menu" style="z-index: 16;">
+        <div class="menu_logo" id="go_to_start" data-fullname="Main" data-shortname="V">
+            <img src="./assets/decor/logoVV1.png" alt="image" />
+            <a href="#top"></a>
         </div>
-        <div class="line">
-            <img src="./assets/decor/gimp.png" alt="">
-            <img src="./assets/decor/inkscape.png" alt="">
-            <img src="./assets/decor/php.png" alt="">
-            <img src="./assets/decor/sketchup.png" alt="">
-                    </div>
-    </div>
-    <div class="info_cont">
 
-        © All rights reserved. VOID∞WAYS 2020 
+
+        <div class="menu_element" data-source="./scripts/vid_gal1.webm" data-fullname="Gallery" data-shortname="V">
+
+            <p>V</p>
         </div>
-</div>
+        <div class="menu_element" data-source="../assets/gallery/vid1.webm" data-fullname="Works" data-shortname="O">
+            <p>O</p>
+        </div>
+        <div class="menu_element" data-source="./scripts/vid2.webm" data-fullname="Skills" data-shortname="I">
+            <p>I</p>
+        </div>
+        <div class="menu_element" data-source="./scripts/vid2.webm" data-fullname="Contacts" data-shortname="D">
+            <p>D</p>
+        </div>
+    </div>
 
+    <!-- контакты -->
+    <div class="contacts_pane" id="contacts" style="top: 0px; z-index: 0; opacity: 0;">
+        <video id="vid_3D" src="./assets/videos/test1.webm" autoplay loop width="100%" height="100%"
+            pip="false"></video>
+        <div class="left_cont">
+            <div class="cont">
 
-</div>
-
- <!-- Навыки -->
-        <div class="skills_pane" style="top:0px; z-index: 0; opacity: 0;" id="skill">
-            <div class="description_skill" id="desc_block" style="left: 2500px;">
-<div class="media" id="media">
-    <video 
-    pip="false"
-    src="./assets/gallery/vid1.webm"
-    class="videoSkills"
-    loop
-    autoplay    
-    preload="auto"
-    id="video"
-    >    </video>
-</div>
-<div class="textSkill" id="text_desc">
-
-</div>
-
+                <p>8-951-387-50-51</p>
+                <img src="./assets/decor/phone.png" alt="">
             </div>
+            <div class="cont">
 
-
-<div class="line_of_skills">
-    <p class="p">SKILLS</p>
-    <div class="skill" id="fst" >
-<div class="photo_cat">
-<p>3D3D3D3D3D3D3D3D3D</p>
-<p >3D3D3D3D3D3D3D3D3D</p>
-<p>3D3D3D3D3D3D3D3D3D</p>
-</div>
-
-
-<div class="info_cat">
-    <div class="bar_progres" style="width: 100%;"> <h1 >BLENDER3D</h1></div>
-   
-    
-    
+                <p>gungeranton@gmail.com</p>
+                <img src="./assets/decor/gmail.png" alt="">
             </div>
-            <div class="info_cat">
-                <div class="bar_progres" style="width: 70%">
-                    <h1 >SOLID WORKS</h1>
+            <div class="cont">
+
+                <p>gungeranton@yandex.ru</p>
+                <img src="./assets/decor/yandex.png" alt="">
+            </div>
+            <div class="logos">
+                <div class="line">
+                    <img src="./assets/decor/swift.png" alt="">
+                    <img src="./assets/decor/js.png" alt="">
+                    <img src="./assets/decor/css.png" alt="">
+                    <img src="./assets/decor/postgres.png" alt="">
                 </div>
-                
-    
-    
+                <div class="line">
+                    <img src="./assets/decor/kompas.png" alt="">
+                    <img src="./assets/decor/solidworks.png" alt="">
+                    <img src="./assets/decor/blender.png" alt="">
+                    <img src="./assets/decor/git.png" alt="">
+                </div>
             </div>
-            <div class="info_cat">
-                <div class="bar_progres" style="width: 80%;"><h1>KOMPAS3D</h1></div>
-                
-    
-    
+            <div class="info_cont">
+
+                All the materials presented, including the site-created, programmed, designed, modeled, rendered by
+                void_ways
+            </div>
+        </div>
+        <div class="d_cont">
+            <div class="DDD">
+
+            </div>
+            3D
+        </div>
+        <div class="right_cont">
+            <div class="cont">
+                <img src="./assets/decor/inst.png" alt="">
+                <p>void_ways</p>
+            </div>
+            <div class="cont">
+                <img src="./assets/decor/youtube.png" alt="">
+                <p>Evnika GK</p>
+            </div>
+            <div class="cont">
+                <img src="./assets/decor/github.png" alt="">
+                <p>gunger28</p>
+            </div>
+            <div class="logos">
+                <div class="line">
+                    <img src="./assets/decor/java.png" alt="">
+                    <img src="./assets/decor/sass.png" style="height: 70px;" alt="">
+                    <img src="./assets/decor/python.png" alt="">
+                    <img src="./assets/decor/html.png" alt="">
+                </div>
+                <div class="line">
+                    <img src="./assets/decor/gimp.png" alt="">
+                    <img src="./assets/decor/inkscape.png" alt="">
+                    <img src="./assets/decor/php.png" alt="">
+                    <img src="./assets/decor/sketchup.png" alt="">
+                </div>
+            </div>
+            <div class="info_cont">
+
+                © All rights reserved. VOID∞WAYS 2020
+            </div>
+        </div>
+
+
+    </div>
+
+    <!-- Навыки -->
+    <div class="skills_pane" style="top:0px; z-index: 0; opacity: 0;" id="skill">
+        <div class="description_skill" id="desc_block" style="left: 2500px;">
+            <div class="media" id="media">
+                <video pip="false" src="./assets/gallery/vid1.webm" class="videoSkills" loop autoplay preload="auto"
+                    id="video"> </video>
+            </div>
+            <div class="textSkill" id="text_desc">
+
             </div>
 
-            <div class="info_cat">
-                <div class="bar_progres" style="width: 85%;"><h1>SKETCHUP</h1></div>
-                
-    
-    
+        </div>
+
+
+        <div class="line_of_skills">
+            <p class="p">SKILLS</p>
+            <div class="skill" id="fst">
+                <div class="photo_cat">
+                    <p>3D3D3D3D3D3D3D3D3D</p>
+                    <p>3D3D3D3D3D3D3D3D3D</p>
+                    <p>3D3D3D3D3D3D3D3D3D</p>
+                </div>
+
+
+                <div class="info_cat">
+                    <div class="bar_progres" style="width: 100%;">
+                        <h1>BLENDER3D</h1>
+                    </div>
+
+
+
+                </div>
+                <div class="info_cat">
+                    <div class="bar_progres" style="width: 70%">
+                        <h1>SOLID WORKS</h1>
+                    </div>
+
+
+
+                </div>
+                <div class="info_cat">
+                    <div class="bar_progres" style="width: 80%;">
+                        <h1>KOMPAS3D</h1>
+                    </div>
+
+
+
+                </div>
+
+                <div class="info_cat">
+                    <div class="bar_progres" style="width: 85%;">
+                        <h1>SKETCHUP</h1>
+                    </div>
+
+
+
+                </div>
+
+            </div>
+            <div class="skill" id="sec" style="background-color: rgba(255, 120, 9, 0.479);">
+                <div class="photo_cat">
+                    <p>CODECODECODE</p>
+                    <p>CODECODECODE</p>
+                    <p>CODECODECODE</p>
+                </div>
+
+
+
+                <div class="info_cat">
+                    <div class="bar_progres" style="width: 80%;">
+                        <h1>JAVA</h1>
+                    </div>
+
+
+
+                </div>
+                <div class="info_cat">
+                    <div class="bar_progres" style="width: 60%;">
+                        <h1>JAVA SCRIPT</h1>
+                    </div>
+
+
+
+                </div>
+                <div class="info_cat">
+                    <div class="bar_progres" style="width: 40%;">
+                        <h1>PYTHON</h1>
+                    </div>
+
+
+
+                </div>
+                <div class="info_cat">
+                    <div class="bar_progres" style="width: 35%;">
+                        <h1>SWIFT</h1>
+                    </div>
+
+
+
+                </div>
+
+
+            </div>
+            <div class="skill" id="thi" style="background-color: rgba(40, 25, 255, 0.507);">
+                <div class="photo_cat">
+                    <p>2D2D2D2D2D</p>
+                    <p>2D2D2D2D2D</p>
+                    <p>2D2D2D2D2D</p>
+                </div>
+
+                <div class="info_cat">
+                    <div class="bar_progres" style="width: 90%;">
+                        <h1>GIMP</h1>
+                    </div>
+
+
+
+                </div>
+                <div class="info_cat">
+                    <div class="bar_progres" style="width: 100%;">
+                        <h1>PAINT.NET</h1>
+                    </div>
+
+
+
+                </div>
+                <div class="info_cat">
+                    <div class="bar_progres" style="width: 55%;">
+                        <h1>INKSCAPE</h1>
+                    </div>
+
+
+
+                </div>
+                <div class="info_cat">
+                    <div class="bar_progres" style="width: 85%;">
+                        <h1>SKETCHUP</h1>
+                    </div>
+
+
+
+                </div>
+
             </div>
 
-    </div>
-    <div class="skill" id="sec" style="background-color: rgba(255, 120, 9, 0.479);">
-        <div class="photo_cat">
-            <p>CODECODECODE</p>
-            <p>CODECODECODE</p>
-            <p>CODECODECODE</p>
         </div>
 
+        <!-- Боковой блок умений -->
+        <div class="block_icons">
+            <div class="pattern">
+                <div class="top">
+                    <p
+                        style="font-size: 80px; color: white; font-family: Open Sans; text-indent: 10px;letter-spacing: 8px; line-height: 100px;">
+                        VOID</p>
+
+                </div>
 
 
-        <div class="info_cat">
-            <div class="bar_progres" style="width: 80%;"> <h1>JAVA</h1></div>
-           
-            
-            
-                    </div>
-                    <div class="info_cat">
-                        <div class="bar_progres" style="width: 60%;"> <h1>JAVA SCRIPT</h1></div>
-                        
-            
-            
-                    </div>
-                    <div class="info_cat">
-                        <div class="bar_progres" style="width: 40%;"><h1>PYTHON</h1></div>
-                        
-            
-            
-                    </div>
-                    <div class="info_cat">
-                        <div class="bar_progres" style="width: 35%;"><h1>SWIFT</h1></div>
-                        
-            
-            
-                    </div>
-                    
+            </div>
 
-    </div>
-    <div class="skill" id="thi" style="background-color: rgba(40, 25, 255, 0.507);">
-        <div class="photo_cat">
-            <p>2D2D2D2D2D</p>
-            <p>2D2D2D2D2D</p>
-            <p>2D2D2D2D2D</p>
-        </div>
+            <div class="block_cat" id='panels_cat'>
+                <div style="width: 100%; height: 4px; background-color: rgb(253, 160, 39); user-select: none;"></div>
+                <p data-media="./assets/skills/vfx.webm"
+                    data-desc="Спецэффе́кт, специа́льный эффе́кт (англ. special effect, сокр. SPFX, SFX или FX) — технологии кинематографа и телевидения, повышающие достоверность и выразительность экранного изображения. К спецэффектам также относят оптические иллюзии и трюки, позволяющие создавать виртуальный мир в индустрии видеоигр и симуляторов.
 
-        <div class="info_cat">
-            <div class="bar_progres" style="width: 90%;"><h1>GIMP</h1></div>
+В западном кинематографе спецэффекты условно разделяют на две основные группы — визуальные и механические. К визуальным относятся комбинированные съёмки, а также компьютерная графика. Механические (физические) спецэффекты — это обработка объектов перед их съёмкой. Сюда относится пиротехника, механизированный реквизит (аниматроника) и специальный грим. Кроме того, физическими спецэффектами считаются атмосферные явления: искусственные ветер, туман, дождь, снег и прочее.">
+                    VFX</p>
 
+                <p data-media="./assets/skills/low.png"
+                    data-desc="Low-poly (от англ. low — низко и polygon — полигон) — трёхмерная модель с малым количеством полигонов.
 
+    То есть это модели, которые состоят из минимального числа полигонов. При этом их достаточное количество для визуального восприятия получаемого объекта. Широкое распространение имеют на мобильных платформах в игровой индустрии в связи с ограничением производительности.[1] То есть такие модели используются когда в силу каких-либо обстоятельств не требуется высокая детализация.">
+                    LOW POLLY</p>
 
-        </div>
-        <div class="info_cat">
-            <div class="bar_progres" style="width: 100%;"><h1>PAINT.NET</h1></div>
-            
+                <p data-media="./assets/skills/high.png"
+                    data-desc="Hi-poly - это полная свобода. модели от нескольких тысяч до миллионов полигонов - для большой детализации. применительно для статичных картин или анимационных роликов.">
+                    HIGH POLLY</p>
 
-
-        </div>
-        <div class="info_cat">
-            <div class="bar_progres" style="width: 55%;"><h1>INKSCAPE</h1></div>
-            
-
-
-        </div>
-        <div class="info_cat">
-            <div class="bar_progres" style="width: 85%;"><h1>SKETCHUP</h1></div>
-            
-
-
-        </div>
-
-    </div>
-
-</div>
-
-<!-- Боковой блок умений -->
-<div class="block_icons">
-<div class="pattern">
-    <div class="top">
-<p style="font-size: 80px; color: white; font-family: Open Sans; text-indent: 10px;letter-spacing: 8px; line-height: 100px;">VOID</p>
-
-    </div>
-
-
-</div >
-
-<div class="block_cat" id='panels_cat'>
-    <div style="width: 100%; height: 4px; background-color: rgb(253, 160, 39); user-select: none;"></div>
-<p data-media="./assets/skills/vfx.webm" data-desc="Спецэффе́кт, специа́льный эффе́кт (англ. special effect, сокр. SPFX, SFX или FX) — технологии кинематографа и телевидения, повышающие достоверность и выразительность экранного изображения. К спецэффектам также относят оптические иллюзии и трюки, позволяющие создавать виртуальный мир в индустрии видеоигр и симуляторов.
-
-В западном кинематографе спецэффекты условно разделяют на две основные группы — визуальные и механические. К визуальным относятся комбинированные съёмки, а также компьютерная графика. Механические (физические) спецэффекты — это обработка объектов перед их съёмкой. Сюда относится пиротехника, механизированный реквизит (аниматроника) и специальный грим. Кроме того, физическими спецэффектами считаются атмосферные явления: искусственные ветер, туман, дождь, снег и прочее." >
-VFX</p> 
-
-    <p data-media="./assets/skills/low.png" data-desc="Low-poly (от англ. low — низко и polygon — полигон) — трёхмерная модель с малым количеством полигонов.
-
-    То есть это модели, которые состоят из минимального числа полигонов. При этом их достаточное количество для визуального восприятия получаемого объекта. Широкое распространение имеют на мобильных платформах в игровой индустрии в связи с ограничением производительности.[1] То есть такие модели используются когда в силу каких-либо обстоятельств не требуется высокая детализация."> 
-        LOW POLLY</p>   
-
-    <p data-media="./assets/skills/high.png" data-desc="Hi-poly - это полная свобода. модели от нескольких тысяч до миллионов полигонов - для большой детализации. применительно для статичных картин или анимационных роликов.">
-        HIGH POLLY</p>   
-
-    <p data-media="./assets/skills/texture.jpg" data-desc="Текстурирование – неотъемлемый этап 3d моделирования и визуализации трехмерного объекта. Создание текструры и ее наложение на 3д модель определяют ее качество, реалистичность и точность.
+                <p data-media="./assets/skills/texture.jpg"
+                    data-desc="Текстурирование – неотъемлемый этап 3d моделирования и визуализации трехмерного объекта. Создание текструры и ее наложение на 3д модель определяют ее качество, реалистичность и точность.
 
     Применение профессиональных компьютерных программ, текстурирование 3d max, для работы с графикой дают неограниченные возможности работы с 3д-объектами, независимо от сложности конфигурации объекта, вида материалов и прочего.">
-        TEXTURING</p>  
+                    TEXTURING</p>
 
-    <p data-media="./assets/skills/anim.webm" data-desc="Компью́терная анима́ция — вид мультипликации, создаваемый при помощи компьютера. В отличие от более общего понятия «графика CGI», относящегося как к неподвижным, так и к движущимся изображениям, компьютерная анимация подразумевает только движущиеся. На сегодня получила широкое применение как в области развлечений, так и в производственной, научной и деловой сферах. Являясь производной от компьютерной графики, анимация наследует те же способы создания изображений:">
-        ANIMATIONS</p>  
-    <p data-media="./assets/skills/logo.png" data-desc="Логоти́п (от др.-греч. λόγος — слово + τύπος — отпечаток) — графический знак, эмблема или символ, используемый территориальными образованиями, коммерческими предприятиями, организациями и частными лицами для повышения узнаваемости и распознаваемости в социуме. Логотип представляет собой название сущности, которую он идентифицирует, в виде стилизованных букв и/или идеограммы. Логотипы широко применяются в качестве товарных знаков.">
-        LOGO</p>  
-    <p data-media="./assets/skills/arch.png" data-desc="Архитекту́ра, или зо́дчество[1] — искусство и наука строить, проектировать здания и сооружения (включая их комплексы)[2][3], а также сама совокупность зданий и сооружений, создающих пространственную среду для жизни и деятельности человека[4]. Архитектура создаёт материально организованную среду, необходимую людям для их жизни и деятельности, в соответствии с их устремлениями, а также современными техническими возможностями, эстетическими и художественными воззрениями [2][3]. В архитектуре взаимосвязаны функциональные (назначение, польза), технические (прочность, долговечность), эстетические (красота) свойства объектов и их художественно-образный смысл [2]. Художественный смысл и специфику архитектуры как искусства лучше всего выражает классическая Триада Витрувия: Прочность, Польза, Красота (лат. Firmitas, Utilitas, Venustas). В дальнейшем эту формулу стали трактовать исключительно широко — как три мира, или три «царства», с которыми имеет дело архитектор [5].">
-        ARCHITECTURE</p>  
-    <p data-media="./assets/skills/blue.png" data-desc="Чертёж — это графический конструкторский документ, содержащий изображение инженерного объекта (например, детали, сборочной единицы, изделия, здания, сооружения и т. п.), а также данные, необходимые, в зависимости от конструктивного уровня, для его изготовления, сборки, монтажа, упаковывания, строительства, контроля и др. [1][2][3]. Обычно чертеж содержит двухмерные и трехмерные виды, размеры, текстовые надписи и таблицы.">
-        BLUEPRINTS</p>  
-    <p data-media="./assets/skills/vfx.jpeg" data-desc="А UI — это User Interface (дословно «пользовательский интерфейс») — то, как выглядит интерфейс и то, какие физические характеристики приобретает. Определяет, какого цвета будет ваше «изделие», удобно ли будет человеку попадать пальцем в кнопочки, читабельным ли будет текст и тому подобное…
+                <p data-media="./assets/skills/anim.webm"
+                    data-desc="Компью́терная анима́ция — вид мультипликации, создаваемый при помощи компьютера. В отличие от более общего понятия «графика CGI», относящегося как к неподвижным, так и к движущимся изображениям, компьютерная анимация подразумевает только движущиеся. На сегодня получила широкое применение как в области развлечений, так и в производственной, научной и деловой сферах. Являясь производной от компьютерной графики, анимация наследует те же способы создания изображений:">
+                    ANIMATIONS</p>
+                <p data-media="./assets/skills/logo.png"
+                    data-desc="Логоти́п (от др.-греч. λόγος — слово + τύπος — отпечаток) — графический знак, эмблема или символ, используемый территориальными образованиями, коммерческими предприятиями, организациями и частными лицами для повышения узнаваемости и распознаваемости в социуме. Логотип представляет собой название сущности, которую он идентифицирует, в виде стилизованных букв и/или идеограммы. Логотипы широко применяются в качестве товарных знаков.">
+                    LOGO</p>
+                <p data-media="./assets/skills/arch.png"
+                    data-desc="Архитекту́ра, или зо́дчество[1] — искусство и наука строить, проектировать здания и сооружения (включая их комплексы)[2][3], а также сама совокупность зданий и сооружений, создающих пространственную среду для жизни и деятельности человека[4]. Архитектура создаёт материально организованную среду, необходимую людям для их жизни и деятельности, в соответствии с их устремлениями, а также современными техническими возможностями, эстетическими и художественными воззрениями [2][3]. В архитектуре взаимосвязаны функциональные (назначение, польза), технические (прочность, долговечность), эстетические (красота) свойства объектов и их художественно-образный смысл [2]. Художественный смысл и специфику архитектуры как искусства лучше всего выражает классическая Триада Витрувия: Прочность, Польза, Красота (лат. Firmitas, Utilitas, Venustas). В дальнейшем эту формулу стали трактовать исключительно широко — как три мира, или три «царства», с которыми имеет дело архитектор [5].">
+                    ARCHITECTURE</p>
+                <p data-media="./assets/skills/blue.png"
+                    data-desc="Чертёж — это графический конструкторский документ, содержащий изображение инженерного объекта (например, детали, сборочной единицы, изделия, здания, сооружения и т. п.), а также данные, необходимые, в зависимости от конструктивного уровня, для его изготовления, сборки, монтажа, упаковывания, строительства, контроля и др. [1][2][3]. Обычно чертеж содержит двухмерные и трехмерные виды, размеры, текстовые надписи и таблицы.">
+                    BLUEPRINTS</p>
+                <p data-media="./assets/skills/vfx.jpeg"
+                    data-desc="А UI — это User Interface (дословно «пользовательский интерфейс») — то, как выглядит интерфейс и то, какие физические характеристики приобретает. Определяет, какого цвета будет ваше «изделие», удобно ли будет человеку попадать пальцем в кнопочки, читабельным ли будет текст и тому подобное…
 
     UX/UI дизайн — это проектирование любых пользовательских интерфейсов в которых удобство использования так же важно как и внешний вид.">
-        UI</p>  
-    <p data-media="./assets/skills/site.png" data-desc="Сайт, или веб-сайт (от англ. website: web — «паутина, сеть» и site — «место», буквально «место, сегмент, часть в сети»), — одна или несколько логически связанных между собой веб-страниц; также место расположения контента сервера. Обычно сайт в Интернете представляет собой массив связанных данных, имеющий уникальный адрес и воспринимаемый пользователями как единое целое. Веб-сайты называются так, потому что доступ к ним происходит по протоколу HTTP[1].">
-        WEB SITES</p>  
-    <p data-media="./assets/skills/land.png" data-desc="Целевая страница (англ. landing page, также «посадочная страница») — веб-страница, основной задачей которой является сбор контактных данных целевой аудитории. Используется для усиления эффективности рекламы, увеличения аудитории. Целевая страница обычно содержит информацию о товаре или услуге.">
-        LANDING PAGES</p>  
-    <p data-media="./assets/skills/land.png" data-desc="На подобном высире вы находитесь сейчас. Эксперементальная и мозгоебательная штука, которая заставляет тебя писать говнокод и делать говноверстку.">
-        MULTI-LANDING</p>  
-    <p data-media="./assets/skills/iosapp.jpg" data-desc="Мобильное приложение (англ. «Mobile app») — программное обеспечение, предназначенное для работы на смартфонах, планшетах и других мобильных устройствах, разработанное для конкретной платформы (iOS, Android, Windows Phone и т. д.). Многие мобильные приложения предустановлены на самом устройстве или могут быть загружены на него из онлайновых магазинов приложений, таких как App Store, Google Play, и других, бесплатно или за плату.[1]">
-        IOS APPS</p>  
-    <p data-media="./assets/skills/vfx.jpeg" data-desc="Десктопные приложения – это программы, логика работы которых требует наличия оператора (человека работающего с программой), содержащие в себе всю полную функциональность и способные работать отдельно на любой машине изолированно от других приложений. Microsoft Word, Excel, Блокнот, однопользовательские игры – всё это примеры десктопных приложений. Для их работы необходимы лишь достаточные аппаратные ресурсы компьютера, само приложение и набор библиотек, содержащих функции для работы с приложением.">
-        DESKTOP APPS</p>  
-     
-    <p data-media="./assets/skills/nano.png" data-desc="Сведе́ние или микширование (англ. mixing, смешение) — стадия создания из отдельных записанных треков конечной записи, следующий после звукозаписи этап создания фонограммы, заключающийся в отборе и редактировании (иногда реставрации) исходных записанных треков, объединении их в единый проект и обработке эффектами. Редактирование часто выделяется в самостоятельный этап работы.">
-        NANOSTUDIO</p>  
-    <p data-media="./assets/skills/sass.png" data-desc="Sass (Syntactically Awesome Stylesheets) — модуль, включенный в Haml. Sass — это метаязык на основе CSS, предназначенный для увеличения уровня абстракции CSS кода и упрощения файлов каскадных таблиц стилей.">
-        SASS</p>  
-    <p data-media="./assets/skills/web.png" data-desc="Web 2.0 (определение Тима О’Рейлли) — методика проектирования систем, которые путём учёта сетевых взаимодействий становятся тем лучше, чем больше людей ими пользуются. Особенностью веб 2.0 является принцип привлечения пользователей к наполнению и многократной выверке информационного материала.">
-        WEB</p>  
-    <p data-media="./assets/skills/web.png" data-desc="Ба́за да́нных — представленная в объективной форме совокупность самостоятельных материалов (статей, расчётов, нормативных актов, судебных решений и иных подобных материалов), систематизированных таким образом, чтобы эти материалы могли быть найдены и обработаны с помощью электронной вычислительной машины (ЭВМ)[1].">
-        DATA BASES</p>  
-</div >
+                    UI</p>
+                <p data-media="./assets/skills/site.png"
+                    data-desc="Сайт, или веб-сайт (от англ. website: web — «паутина, сеть» и site — «место», буквально «место, сегмент, часть в сети»), — одна или несколько логически связанных между собой веб-страниц; также место расположения контента сервера. Обычно сайт в Интернете представляет собой массив связанных данных, имеющий уникальный адрес и воспринимаемый пользователями как единое целое. Веб-сайты называются так, потому что доступ к ним происходит по протоколу HTTP[1].">
+                    WEB SITES</p>
+                <p data-media="./assets/skills/land.png"
+                    data-desc="Целевая страница (англ. landing page, также «посадочная страница») — веб-страница, основной задачей которой является сбор контактных данных целевой аудитории. Используется для усиления эффективности рекламы, увеличения аудитории. Целевая страница обычно содержит информацию о товаре или услуге.">
+                    LANDING PAGES</p>
+                <p data-media="./assets/skills/land.png"
+                    data-desc="На подобном высире вы находитесь сейчас. Эксперементальная и мозгоебательная штука, которая заставляет тебя писать говнокод и делать говноверстку.">
+                    MULTI-LANDING</p>
+                <p data-media="./assets/skills/iosapp.jpg"
+                    data-desc="Мобильное приложение (англ. «Mobile app») — программное обеспечение, предназначенное для работы на смартфонах, планшетах и других мобильных устройствах, разработанное для конкретной платформы (iOS, Android, Windows Phone и т. д.). Многие мобильные приложения предустановлены на самом устройстве или могут быть загружены на него из онлайновых магазинов приложений, таких как App Store, Google Play, и других, бесплатно или за плату.[1]">
+                    IOS APPS</p>
+                <p data-media="./assets/skills/vfx.jpeg"
+                    data-desc="Десктопные приложения – это программы, логика работы которых требует наличия оператора (человека работающего с программой), содержащие в себе всю полную функциональность и способные работать отдельно на любой машине изолированно от других приложений. Microsoft Word, Excel, Блокнот, однопользовательские игры – всё это примеры десктопных приложений. Для их работы необходимы лишь достаточные аппаратные ресурсы компьютера, само приложение и набор библиотек, содержащих функции для работы с приложением.">
+                    DESKTOP APPS</p>
+
+                <p data-media="./assets/skills/nano.png"
+                    data-desc="Сведе́ние или микширование (англ. mixing, смешение) — стадия создания из отдельных записанных треков конечной записи, следующий после звукозаписи этап создания фонограммы, заключающийся в отборе и редактировании (иногда реставрации) исходных записанных треков, объединении их в единый проект и обработке эффектами. Редактирование часто выделяется в самостоятельный этап работы.">
+                    NANOSTUDIO</p>
+                <p data-media="./assets/skills/sass.png"
+                    data-desc="Sass (Syntactically Awesome Stylesheets) — модуль, включенный в Haml. Sass — это метаязык на основе CSS, предназначенный для увеличения уровня абстракции CSS кода и упрощения файлов каскадных таблиц стилей.">
+                    SASS</p>
+                <p data-media="./assets/skills/web.png"
+                    data-desc="Web 2.0 (определение Тима О’Рейлли) — методика проектирования систем, которые путём учёта сетевых взаимодействий становятся тем лучше, чем больше людей ими пользуются. Особенностью веб 2.0 является принцип привлечения пользователей к наполнению и многократной выверке информационного материала.">
+                    WEB</p>
+                <p data-media="./assets/skills/web.png"
+                    data-desc="Ба́за да́нных — представленная в объективной форме совокупность самостоятельных материалов (статей, расчётов, нормативных актов, судебных решений и иных подобных материалов), систематизированных таким образом, чтобы эти материалы могли быть найдены и обработаны с помощью электронной вычислительной машины (ЭВМ)[1].">
+                    DATA BASES</p>
+            </div>
 
 
-</div>
+        </div>
+    </div>
+
+    <!-- Описание работы -->
+    <div class="description_block" style="right: -1000px; " id="work">
+        <div class="title">
+            Cosmos
         </div>
 
-<!-- Описание работы -->
-        <div class="description_block" style="right: -1000px; " id="work">
-            <div class="title">
-                Cosmos
-            </div>
-
-            <div class="img_block">
-                <img src="./assets/gallery/war1.png" alt="work1" />
-            </div>
-
-            <div class="description">
-                <div class="text">
-                    <p>
-                        Похоже гдет-то произошла ошибка и текст который должен был быть здесь не прогрузился(((
-                    </p>
-                    <br />
-                </div>
-
-                <div class="tecnologies">
-                    Tecnologies:
-                </div>
-
-                <div class="style">
-                    Style:
-                </div>
-
-                <div class="programs">
-                    <p>Unexepted</p>
-                    <p>Unexepted</p>
-                    <p>Unexepted</p>
-                </div>
-            </div>
+        <div class="img_block">
+            <img src="./assets/gallery/war1.png" alt="work1" />
         </div>
 
-        <!-- Работы -->
-        <div class="works_block" style="left: 5100px; " id="works">
-            <p>WORKS</p>
-            <div class="all_works_panel">
-                <div class="one_panel">
-                    <div class="one_card">
-                        <div class="tag" unselectable="on">
-                            <h1>cosmos</h1>
-                        </div>
-                        <img
-                            src="./assets/gallery/Gallery/cosmic/cosmic2.png"
-                            data-source="1"
-                            data-descript="Было сделано за 2 дня без эскиза, как почти все мои работы. Огонь в космосе... ну, я видимо гений. На сцене находится корабль и черная дыра, которая начала искажать пространство и разбирать корабль на части."
-                            alt="cosmos"
-                        />
-                    </div>
-                    <div class="one_card">
-                        <div class="tag">
-                            <h1>death</h1>
-                        </div>
-                        <img
-                            src="./assets/gallery/Gallery/death/Death4.png"
-                            data-source="2"
-                            data-descript="Данная работа состоит из серии логически связанных рендеров. Отображает цикличность и долговечность событий в естественной и видимой модели существования. Вся серия представленна в галереи"
-                            alt="death"
-                        />
-                    </div>
+        <div class="description">
+            <div class="text">
+                <p>
+                    Похоже гдет-то произошла ошибка и текст который должен был быть здесь не прогрузился(((
+                </p>
+                <br />
+            </div>
 
-                    <div class="one_card">
-                        <div class="tag">
-                            <h1>merry</h1>
-                        </div>
-                        <img
-                            src="./assets/gallery/Gallery/gallery/gallery6.png"
-                            data-source="3"
-                            data-descript="Спонтанный рендер, относится к новому году. Переделываю сцену каждый год. Да-да marry это не правильно, но ошибки созданы для того чтобы учиться."
-                            alt="merry"
-                        />
+            <div class="tecnologies">
+                Tecnologies:
+            </div>
+
+            <div class="style">
+                Style:
+            </div>
+
+            <div class="programs">
+                <p>Unexepted</p>
+                <p>Unexepted</p>
+                <p>Unexepted</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Работы -->
+    <div class="works_block" style="left: 5100px; " id="works">
+        <p>WORKS</p>
+        <div class="all_works_panel">
+            <div class="one_panel">
+                <div class="one_card">
+                    <div class="tag" unselectable="on">
+                        <h1>cosmos</h1>
                     </div>
-                    <div class="one_card">
-                        <div class="tag">
-                            <h1>dright</h1>
-                        </div>
-                        <img
-                            src="./assets/gallery/war4.png"
-                            data-source="4"
-                            data-descript="Отдаю дань памяти прекрасной зажигалке компании Cricket, которая сопровождала меня в самые лучшие моменты моих 20 лет. Такой как ты больше не будет("
-                            alt="dright"
-                        />
+                    <img src="./assets/gallery/Gallery/cosmic/cosmic2.png" data-source="1"
+                        data-descript="Было сделано за 2 дня без эскиза, как почти все мои работы. Огонь в космосе... ну, я видимо гений. На сцене находится корабль и черная дыра, которая начала искажать пространство и разбирать корабль на части."
+                        alt="cosmos" />
+                </div>
+                <div class="one_card">
+                    <div class="tag">
+                        <h1>death</h1>
                     </div>
+                    <img src="./assets/gallery/Gallery/death/Death4.png" data-source="2"
+                        data-descript="Данная работа состоит из серии логически связанных рендеров. Отображает цикличность и долговечность событий в естественной и видимой модели существования. Вся серия представленна в галереи"
+                        alt="death" />
                 </div>
 
-                <div class="one_panel">
-                    <div class="one_card">
-                        <div class="tag">
-                            <h1>Funeral</h1>
-                        </div>
-                        <img
-                            src="./assets/gallery/war2.png"
-                            data-source="5"
-                            data-descript="Высир. Скорее всего я поменяю работу в этой карточке. Бедолага... не повезло."
-                            alt="Funeral"
-                        />
+                <div class="one_card">
+                    <div class="tag">
+                        <h1>merry</h1>
                     </div>
-                    <div class="one_card">
-                        <div class="tag">
-                            <h1>plane</h1>
-                        </div>
-                        <img
-                            src="./assets/gallery/Gallery/War/war2.png"
-                            data-source="6"
-                            data-descript="Большой проект охватывающий работу с физикой частиц и твердых тел. Разрушение, дым, огонь, голивуд. В работе самолет терпит крушение и разбивается на мелкие куски оставляя после себя огненную завессу."
-                            alt="plane"
-                        />
+                    <img src="./assets/gallery/Gallery/gallery/gallery6.png" data-source="3"
+                        data-descript="Спонтанный рендер, относится к новому году. Переделываю сцену каждый год. Да-да marry это не правильно, но ошибки созданы для того чтобы учиться."
+                        alt="merry" />
+                </div>
+                <div class="one_card">
+                    <div class="tag">
+                        <h1>dright</h1>
                     </div>
+                    <img src="./assets/gallery/war4.png" data-source="4"
+                        data-descript="Отдаю дань памяти прекрасной зажигалке компании Cricket, которая сопровождала меня в самые лучшие моменты моих 20 лет. Такой как ты больше не будет("
+                        alt="dright" />
+                </div>
+            </div>
 
-                    <div class="one_card">
-                        <div class="tag">
-                            <h1>opposing</h1>
-                        </div>
-                        <img
-                            src="./assets/gallery/Gallery/War/war7.png"
-                            data-source="7"
-                            data-descript="Бомб не будет. Они приняли ислам( Запечатлен момент раскрытия оболочки падающих боеголовок. И по температуре моего компа при рендере, я догадался куда они упали."
-                            alt="opposing"
-                        />
+            <div class="one_panel">
+                <div class="one_card">
+                    <div class="tag">
+                        <h1>Funeral</h1>
                     </div>
-                    <div class="one_card">
-                        <div class="tag">
-                            <h1>island</h1>
-                        </div>
-                        <img
-                            src="./assets/gallery/Gallery/Arch/arch2.png"
-                            data-source="8"
-                            data-descript="Остров мечты... (Нет) Какой дурак захочет жить на клочке в океане, но с отелем? Похоже я дурак..."
-                            alt="island"
-                        />
+                    <img src="./assets/gallery/war2.png" data-source="5"
+                        data-descript="Высир. Скорее всего я поменяю работу в этой карточке. Бедолага... не повезло."
+                        alt="Funeral" />
+                </div>
+                <div class="one_card">
+                    <div class="tag">
+                        <h1>plane</h1>
                     </div>
+                    <img src="./assets/gallery/Gallery/War/war2.png" data-source="6"
+                        data-descript="Большой проект охватывающий работу с физикой частиц и твердых тел. Разрушение, дым, огонь, голивуд. В работе самолет терпит крушение и разбивается на мелкие куски оставляя после себя огненную завессу."
+                        alt="plane" />
                 </div>
 
-                <div class="one_panel">
-                    <div class="one_card">
-                        <div class="tag">
-                            <h1>hookah</h1>
-                        </div>
-                        <img
-                            src="./assets/gallery/Gallery/apart/apart5.png"
-                            data-source="9"
-                            data-descript="Делали делали как-то пацаны кальянную и не сделали. Эрнест Хэмингуэй 1917г."
-                            alt="hookah"
-                        />
+                <div class="one_card">
+                    <div class="tag">
+                        <h1>opposing</h1>
                     </div>
-                    <div class="one_card">
-                        <div class="tag">
-                            <h1>hotel</h1>
-                        </div>
-                        <img
-                            src="./assets/gallery/Gallery/Arch/arch3.png"
-                            data-source="10"
-                            data-descript="Ого, отель 5 зведз, а на газон ЦП не хватило???"
-                            alt="hotel"
-                        />
+                    <img src="./assets/gallery/Gallery/War/war7.png" data-source="7"
+                        data-descript="Бомб не будет. Они приняли ислам( Запечатлен момент раскрытия оболочки падающих боеголовок. И по температуре моего компа при рендере, я догадался куда они упали."
+                        alt="opposing" />
+                </div>
+                <div class="one_card">
+                    <div class="tag">
+                        <h1>island</h1>
                     </div>
+                    <img src="./assets/gallery/Gallery/Arch/arch2.png" data-source="8"
+                        data-descript="Остров мечты... (Нет) Какой дурак захочет жить на клочке в океане, но с отелем? Похоже я дурак..."
+                        alt="island" />
+                </div>
+            </div>
 
-                    <div class="one_card">
-                        <div class="tag">
-                            <h1>memories</h1>
-                        </div>
-                        <img
-                            src="./assets/gallery/Gallery/gallery/gallery3.png"
-                            data-source="11"
-                            data-descript="Знакомьтесь, это медовик семейства медовых, очень вкусный и мягкий - мне так видеокарта сказала."
-                            alt="memories"
-                        />
+            <div class="one_panel">
+                <div class="one_card">
+                    <div class="tag">
+                        <h1>hookah</h1>
                     </div>
-                    <div class="one_card">
-                        <div class="tag">
-                            <h1>life</h1>
-                        </div>
-                        <img
-                            src="./assets/gallery/Gallery/Arch/arch1.png"
-                            data-source="4"
-                            data-descript="Это метро речной вокзал и прекрассная роза для прекрассной дамы, которая ждет на платформе меж столбов."
-                            alt="life"
-                        />
+                    <img src="./assets/gallery/Gallery/apart/apart5.png" data-source="9"
+                        data-descript="Делали делали как-то пацаны кальянную и не сделали. Эрнест Хэмингуэй 1917г."
+                        alt="hookah" />
+                </div>
+                <div class="one_card">
+                    <div class="tag">
+                        <h1>hotel</h1>
                     </div>
+                    <img src="./assets/gallery/Gallery/Arch/arch3.png" data-source="10"
+                        data-descript="Ого, отель 5 зведз, а на газон ЦП не хватило???" alt="hotel" />
+                </div>
+
+                <div class="one_card">
+                    <div class="tag">
+                        <h1>memories</h1>
+                    </div>
+                    <img src="./assets/gallery/Gallery/gallery/gallery3.png" data-source="11"
+                        data-descript="Знакомьтесь, это медовик семейства медовых, очень вкусный и мягкий - мне так видеокарта сказала."
+                        alt="memories" />
+                </div>
+                <div class="one_card">
+                    <div class="tag">
+                        <h1>life</h1>
+                    </div>
+                    <img src="./assets/gallery/Gallery/Arch/arch1.png" data-source="4"
+                        data-descript="Это метро речной вокзал и прекрассная роза для прекрассной дамы, которая ждет на платформе меж столбов."
+                        alt="life" />
                 </div>
             </div>
         </div>
+    </div>
 
-        <!-- Галерея -->
-       <div class="gal_pane" id="galleryMain" style="opacity: 0; z-index: 1; background-position-x: -200px; background-position-y: -200px;"> 
- <div id="gal" class="wind_main" style="transform: rotateX(0deg); opacity: 1;">
+    <!-- Галерея -->
+    <div class="gal_pane" id="galleryMain"
+        style="opacity: 0; z-index: 1; background-position-x: -200px; background-position-y: -200px;">
+        <div id="gal" class="wind_main" style="transform: rotateX(0deg); opacity: 1;">
             <div class="wind_category" id="CAT">
-                <p class="cat" 
-                id="void" 
-                dir="/Void/void"
-                countVid = "2"
-                >V O I D</p>
-                <p class="cat" 
-                id="gallery" 
-                dir="/gallery/gallery"
-                countVid = "9"
-                >GALLERY</p>
-                <p class="cat"
-                 id="war"
-                 dir="/War/war"
-                 countVid = "8"
-                 >WAR</p>
-                <p class="cat"
-                 id="cosmic" 
-                dir="/cosmic/cosmic"
-                countVid = "4"
-                >COSMIC</p>
-                <p class="cat"
-                 id="aparts"
-                 dir="/apart/apart"
-                  countVid = "10"
-                 >APARTS</p>
-                <p class="cat"
-                 id="faces"
-                 dir="/faces/faces"
-                 countVid = "3"
-                 >FACES</p>
-                <p class="cat"
-                 id="arch"
-                 dir="/Arch/arch"
-                 countVid = "8"
-                 >ARCH</p>
-                <p class="cat" 
-                id="death"
-                 dir="/death/Death"
-                 countVid = "9"
-                 >DEATH</p>
+                <p class="cat" id="void" dir="/Void/void" countVid="2">V O I D</p>
+                <p class="cat" id="gallery" dir="/gallery/gallery" countVid="9">GALLERY</p>
+                <p class="cat" id="war" dir="/War/war" countVid="8">WAR</p>
+                <p class="cat" id="cosmic" dir="/cosmic/cosmic" countVid="4">COSMIC</p>
+                <p class="cat" id="aparts" dir="/apart/apart" countVid="10">APARTS</p>
+                <p class="cat" id="faces" dir="/faces/faces" countVid="3">FACES</p>
+                <p class="cat" id="arch" dir="/Arch/arch" countVid="8">ARCH</p>
+                <p class="cat" id="death" dir="/death/Death" countVid="9">DEATH</p>
             </div>
         </div>
 
 
-            <div class="gallery">
+        <div class="gallery">
             <div class="wind_gal" id="galBlock">
                 <div class="gal_view">
-                    
+
 
                     <div class="watch_photo">
-                        <img
-                        src="./assets/gallery/faces1.png"
-                            alt="image"
-                            style="transform: rotateY(0deg) scale3d(1, 1, 1); opacity: 0; "
-                            id="viewer"
-                        />
+                        <img src="./assets/gallery/faces1.png" alt="image"
+                            style="transform: rotateY(0deg) scale3d(1, 1, 1); opacity: 0; " id="viewer" />
 
-                        <video 
-                        loop
-                        type='video/webm; codecs="vp8, vorbis"'
-                        muted
-                        pip = "false"
-                        src="./assets/gallery/Gallery/Void/void3.webm" 
-                        autoplay
-                loop
-                preload="auto"
-                id="video_gal"
-
-                        >
-                    </video>
+                        <video loop type='video/webm; codecs="vp8, vorbis"' muted pip="false"
+                            src="./assets/gallery/Gallery/Void/void3.webm" autoplay loop preload="auto" id="video_gal">
+                        </video>
 
                     </div>
 
-                        
-                    
+
+
                 </div>
 
                 <div class="prev_block">
 
                     <div class="preview_gal_top">
-                        <img
-                        src="./assets/gallery/faces2.png"
-                            alt="image"
-                            class="prew"
-                            id="f1"
-                            data-vid=""
-                        />
-                        <img
-                        src="./assets/gallery/faces2.png"
-                            alt="image"
-                            class="prew"
-                            id="s1"
-                            data-vid=""
-                        />
-                        <img
-                        src="./assets/gallery/faces2.png"
-                            alt="image"
-                            class="prew"
-                            id="t1"
-                            data-vid=""
-                        />
-                        <img
-                        src="./assets/gallery/faces2.png"
-                            alt="image"
-                            class="prew"
-                            id="fo1"
-                            data-vid=""
-                        />
-                        <img
-                        src="./assets/gallery/faces2.png"
-                            alt="image"
-                            class="prew"
-                            id="fi1"
-                            data-vid=""
-                        />
+                        <img src="./assets/gallery/faces2.png" alt="image" class="prew" id="f1" data-vid="" />
+                        <img src="./assets/gallery/faces2.png" alt="image" class="prew" id="s1" data-vid="" />
+                        <img src="./assets/gallery/faces2.png" alt="image" class="prew" id="t1" data-vid="" />
+                        <img src="./assets/gallery/faces2.png" alt="image" class="prew" id="fo1" data-vid="" />
+                        <img src="./assets/gallery/faces2.png" alt="image" class="prew" id="fi1" data-vid="" />
                     </div>
 
                     <div class="preview_gal">
-                        <img
-                        src="./assets/gallery/faces2.png"
-                            alt="image"
-                            class="prew"
-                            id="f"
-                            data-vid=""
-                        />
-                        <img
-                        src="./assets/gallery/faces2.png"
-                            alt="image"
-                            class="prew"
-                            id="s"
-                            data-vid=""
-                        />
-                        <img
-                        src="./assets/gallery/faces2.png"
-                            alt="image"
-                            class="prew"
-                            id="t"
-                            data-vid=""
-                        />
-                        <img
-                        src="./assets/gallery/faces2.png"
-                            alt="image"
-                            class="prew"
-                            id="fo"
-                            data-vid=""
-                        />
-                        <img
-                            src="./assets/gallery/faces2.png"
-                            alt="image"
-                            class="prew"
-                            id="fi"
-                            data-vid=""
-                        />
+                        <img src="./assets/gallery/faces2.png" alt="image" class="prew" id="f" data-vid="" />
+                        <img src="./assets/gallery/faces2.png" alt="image" class="prew" id="s" data-vid="" />
+                        <img src="./assets/gallery/faces2.png" alt="image" class="prew" id="t" data-vid="" />
+                        <img src="./assets/gallery/faces2.png" alt="image" class="prew" id="fo" data-vid="" />
+                        <img src="./assets/gallery/faces2.png" alt="image" class="prew" id="fi" data-vid="" />
                     </div>
 
-                   
+
                 </div>
             </div>
         </div>
-        
-</div>
-        <script type="text/javascript" src="./scripts/gallery.js" ></script>
-        <script type="text/javascript" src="./scripts/index.js"></script>
-        <script type="text/javascript" src="./scripts/work.js" ></script>
-        <script type="text/javascript" src="./scripts/contacts.js" > </script>
-        <script type="text/javascript" src="./scripts/skills.js" ></script>
-    </body>
+
+    </div>
+    <script type="text/javascript" src="./scripts/gallery.js"></script>
+    <script type="text/javascript" src="./scripts/index.js"></script>
+    <script type="text/javascript" src="./scripts/work.js"></script>
+    <script type="text/javascript" src="./scripts/contacts.js"> </script>
+    <script type="text/javascript" src="./scripts/skills.js"></script>
+</body>
+
 </html>
