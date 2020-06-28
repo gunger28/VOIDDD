@@ -359,7 +359,9 @@ if(window.orientation == 0){
     rorarteScreen.style.opacity = "1";
    }else {
 
-    backPane.style.backgroundSize = "cover";
+backPane.style.width = "100%";
+backPane.style.height = "100vh";
+  //  backPane.style.backgroundSize = "cover";
 //backPane = backPane;
     rorarteScreen.style.opacity = "0";
     rorarteScreen.style.zIndex = "-10";
