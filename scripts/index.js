@@ -217,7 +217,7 @@ function changeSource(src, element) {
         
         video.style.opacity = "0";
         backPane.style.opacity = "1";
-        mainTitle.style.width = "60%";
+        mainTitle.style.width = "55%";
        // mainTitle.style.fontSize = "170px";
 
         chek_phone();
@@ -240,7 +240,9 @@ galleryPane.style.backgroundPositionX = "0px";
 galleryPane.style.backgroundPositionY = "0px";
         flagGallery = true;
         changeStyles_White();
-       
+
+        reload_imgs("void");
+
         topTitle.style.left = "-100px";
     }
 
@@ -301,7 +303,7 @@ function chek_phone(){
     const botTitle = document.getElementById("botTitle");
 
     if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
-        reload_imgs("war")
+      
 
         category.forEach(categs => {
             categs.style.fontSize = "40px"
@@ -312,7 +314,7 @@ function chek_phone(){
       
 
     } else {
-      reload_imgs("void")
+   
       category.forEach(categs => {
         categs.style.fontSize = "77px"
     });

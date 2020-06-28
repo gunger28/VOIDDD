@@ -40,8 +40,8 @@
   line-height: 120%;
   color: #0fdbff;
   left: 0px;
-  -webkit-transition: ease-in-out 0.6s;
-  transition: ease-in-out 0.6s;
+  -webkit-transition: ease-in-out 1.2s;
+  transition: ease-in-out 1.2s;
 }
 
 .Title {
@@ -56,8 +56,8 @@
   z-index: 9;
   color: white;
   text-shadow: -30px 40px rgba(75, 75, 75, 0.061);
-  -webkit-transition: all .8s ease;
-  transition: all .8s ease;
+  -webkit-transition: all 1.2s ease;
+  transition: all 1.2s ease;
 }
 
 .Title .com {
@@ -67,8 +67,8 @@
           user-select: none;
   position: absolute;
   z-index: 9;
-  -webkit-transition: all .8s ease;
-  transition: all .8s ease;
+  -webkit-transition: all 1.2s ease;
+  transition: all 1.2s ease;
   font-size: 190px;
   color: #2d942a;
 }
