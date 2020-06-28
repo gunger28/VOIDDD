@@ -18,6 +18,7 @@ var galleryPane = document.getElementById("galleryMain"); // gallery div
 const mainTitle = document.getElementById("mainTitle"); // Title div on start taplet
 const category = document.querySelectorAll(".cat"); 
 const topTitle = document.getElementById("topTitle");
+const vidBlock = document.getElementById("vid_block");
 
 // animation for moving menu in start 
 setTimeout(() => {
@@ -55,7 +56,7 @@ function close_others() {
 // func for open/close gallery taplet (animation for elements of page)
 function gal_move(flag) {
     const gallery = document.querySelector("#gal");
-    const vidBlock = document.getElementById("vid_block");
+    
     if (flag) { 
         close_others();
       mainTitle.style.fontSize = "100px";
@@ -362,6 +363,8 @@ if(window.orientation == 0){
     rorarteScreen.style.zIndex = "19";
     rorarteScreen.style.opacity = "1";
    }else {
+
+    vidBlock = vidBlock;
     rorarteScreen.style.opacity = "0";
     rorarteScreen.style.zIndex = "-10";
 
