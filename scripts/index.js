@@ -301,7 +301,7 @@ function chek_phone(){
        
             if(window.orientation == 0){
             
-                rorarteScreen.style.zIndex = "19";
+                rorarteScreen.style.zIndex = "999";
                 rorarteScreen.style.opacity = "1";
                }
 
