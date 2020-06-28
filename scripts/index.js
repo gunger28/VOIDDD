@@ -354,9 +354,9 @@ if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(naviga
 if(window.orientation == 0){
 
     rorarteScreen.style.zIndex = "19";
-
+    rorarteScreen.style.opacity = "1";
    }else {
-
+    rorarteScreen.style.opacity = "0";
     rorarteScreen.style.zIndex = "-10";
 
    }
