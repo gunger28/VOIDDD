@@ -87,7 +87,7 @@ background-image: url("../assets/decor/gal_img.png");
  // background-color: rgb(65, 65, 65);
 
   .gal_view {
-    height: 61%;
+    height: 64%;
     width: 90%;
     position: relative;
   // display: inline;
@@ -145,8 +145,8 @@ right: 5%;
       border-radius: 30px;
      // border: 3px dashed #d23434;
      background-color: rgb(255, 255, 255);
-      margin-top: 20px;
-      margin-bottom: 20px;
+     
+      //margin-bottom: 20px;
       height: 40%;
       width: 100%;
       display: flex;
@@ -174,8 +174,8 @@ right: 5%;
       border-radius: 30px;
      // border: 3px dashed #d23434;
       background-color: rgb(255, 255, 255);
-      margin-top: 20px;
-      margin-bottom: 20px;
+      margin-top: 10px;
+      margin-bottom: 10px;
       height: 40%;
       width: 100%;
       display: flex;

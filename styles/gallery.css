@@ -89,7 +89,7 @@
 }
 
 .gallery .wind_gal .gal_view {
-  height: 61%;
+  height: 64%;
   width: 90%;
   position: relative;
   margin: 0 auto;
@@ -141,8 +141,6 @@
 .gallery .wind_gal .prev_block .preview_gal {
   border-radius: 30px;
   background-color: white;
-  margin-top: 20px;
-  margin-bottom: 20px;
   height: 40%;
   width: 100%;
   display: -webkit-box;
@@ -171,8 +169,8 @@
 .gallery .wind_gal .prev_block .preview_gal_top {
   border-radius: 30px;
   background-color: white;
-  margin-top: 20px;
-  margin-bottom: 20px;
+  margin-top: 10px;
+  margin-bottom: 10px;
   height: 40%;
   width: 100%;
   display: -webkit-box;
