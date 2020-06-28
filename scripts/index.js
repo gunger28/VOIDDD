@@ -19,6 +19,7 @@ const mainTitle = document.getElementById("mainTitle"); // Title div on start ta
 const category = document.querySelectorAll(".cat"); 
 const topTitle = document.getElementById("topTitle");
 const vidBlock = document.getElementById("vid_block");
+var rorarteScreen = document.getElementById("rotateScreen");
 
 // animation for moving menu in start 
 setTimeout(() => {
@@ -352,7 +353,7 @@ window.onload = function() {
 
    chek_phone();
 
-   var rorarteScreen = document.getElementById("rotateScreen");
+
 
    window.addEventListener("orientationchange", function() {
 // Выводим числовое значение ориентации
