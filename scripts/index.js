@@ -292,7 +292,7 @@ function load_main_logo(){
     galleryPane.style.width = String(width) + "px"
     galleryPane.style.height = String(height) + "px"
     
-        backPane.style.backgroundImage = "url('./assets/decor/MainScreen6.png')";
+      //  backPane.style.backgroundImage = "url('./assets/decor/MainScreen6.png')";
         video.style.opacity = "0";
 
 }
