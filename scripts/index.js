@@ -217,7 +217,7 @@ function changeSource(src, element) {
         
         video.style.opacity = "0";
         backPane.style.opacity = "1";
-        mainTitle.style.width = "55%";
+       // mainTitle.style.width = "55%";
        // mainTitle.style.fontSize = "170px";
 
         chek_phone();
@@ -308,7 +308,7 @@ function chek_phone(){
         category.forEach(categs => {
             categs.style.fontSize = "40px"
         });
-
+        mainTitle.style.width = "55%";
         mainTitle.style.fontSize = "60px"
         botTitle.style.fontSize = "60px"
       
@@ -318,6 +318,7 @@ function chek_phone(){
       category.forEach(categs => {
         categs.style.fontSize = "77px"
     });
+    mainTitle.style.width = "60%";
     mainTitle.style.fontSize = "150px"
     botTitle.style.fontSize = "150px"
    
