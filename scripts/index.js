@@ -16,6 +16,8 @@ const backPane = document.getElementById("top"); // div of start taplet
 var loader = document.getElementById("loading"); // loading div
 var galleryPane = document.getElementById("galleryMain"); // gallery div
 const mainTitle = document.getElementById("mainTitle"); // Title div on start taplet
+const category = document.querySelectorAll(".cat"); 
+const topTitle = document.getElementById("topTitle");
 
 // animation for moving menu in start 
 setTimeout(() => {
@@ -220,6 +222,7 @@ function changeSource(src, element) {
 
         mainTitle.childNodes[1].style.fontSize = "170px";
         
+        topTitle.style.left = "0px";
       
     }
 
@@ -238,6 +241,7 @@ galleryPane.style.backgroundPositionY = "0px";
         flagGallery = true;
         changeStyles_White();
        
+        topTitle.style.left = "-100px";
     }
 
     if (element.dataset.fullname === "Works") {
@@ -290,10 +294,11 @@ function load_main_logo(){
         video.style.opacity = "0";
 
 }
-const category = document.querySelectorAll(".cat"); 
+
 
 function chek_phone(){
-    litleTetle = document.getElementById("litleTitle");
+
+    const botTitle = document.getElementById("botTitle");
 
     if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
         reload_imgs("war")
@@ -303,7 +308,8 @@ function chek_phone(){
         });
 
         mainTitle.style.fontSize = "80px"
-      //  litleTetle.childNodes[1].style.fontSize = "80px";
+        botTitle.style.fontSize = "80px"
+      
 
     } else {
       reload_imgs("void")
@@ -311,7 +317,8 @@ function chek_phone(){
         categs.style.fontSize = "77px"
     });
     mainTitle.style.fontSize = "150px"
-    //litleTetle.childNodes[1].style.fontSize = "150px";
+    botTitle.style.fontSize = "150px"
+   
   }
 
 }
@@ -354,6 +361,7 @@ window.onload = function() {
     mainVid.addEventListener("click", function() {
       close_others();
         changeSource(mainVid.dataset.source, mainVid);
+        
     });
 
    // actions for change photos by the category in gallery

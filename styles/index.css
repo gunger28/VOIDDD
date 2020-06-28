@@ -40,6 +40,8 @@
   line-height: 120%;
   color: #0fdbff;
   left: 0px;
+  -webkit-transition: ease-in-out 0.6s;
+  transition: ease-in-out 0.6s;
 }
 
 .Title {
