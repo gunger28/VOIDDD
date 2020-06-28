@@ -27,13 +27,40 @@
           transition-duration: .8s;
 }
 
+.TopTitle {
+  width: 85%;
+  height: 25%;
+  position: absolute;
+  background-color: rgba(49, 49, 49, 0.984);
+  text-shadow: 5px 0px 8px #0fdbff;
+  background-image: url("../assets/decor/main_img.jpg");
+  z-index: 11;
+  font-size: 130px;
+  text-indent: 30%;
+  line-height: 88%;
+  color: #0fdbff;
+  -webkit-clip-path: polygon(100% 0, 78% 84%, 65% 95%, 0% 0);
+          clip-path: polygon(100% 0, 78% 84%, 65% 95%, 0% 0);
+  left: 0px;
+}
+
+.TopTitle .TopImg {
+  width: 25%;
+  height: 90%;
+  position: absolute;
+  left: 55%;
+  top: 0%;
+  background-color: #2d942a;
+}
+
 .Title {
+  z-index: 12;
   -webkit-user-select: none;
      -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
   position: absolute;
-  top: 0px;
+  top: 15%;
   left: 130px;
   z-index: 9;
   color: white;

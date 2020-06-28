@@ -209,7 +209,7 @@ function changeSource(src, element) {
 
     if (element.dataset.fullname === "Main") {
     
-        backPane.style.backgroundImage = "url('./assets/decor/MainScreen4.png')";
+        backPane.style.backgroundImage = "url('./assets/decor/MainScreen6.png')";
         changeStyles_Black();
         
         video.style.opacity = "0";
@@ -307,7 +307,7 @@ function chek_phone(){
       category.forEach(categs => {
         categs.style.fontSize = "77px"
     });
-    mainTitle.style.fontSize = "170px"
+    mainTitle.style.fontSize = "150px"
   }
 
 }
