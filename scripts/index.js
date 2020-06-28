@@ -205,6 +205,7 @@ function changeSource(src, element) {
     backPane.style.backgroundImage = "";
     backPane.style.backgroundColor = "";
     
+   
 
 
     if (element.dataset.fullname === "Main") {
@@ -218,6 +219,7 @@ function changeSource(src, element) {
         mainTitle.style.fontSize = "170px";
 
         mainTitle.childNodes[1].style.fontSize = "170px";
+        
       
     }
 
@@ -291,7 +293,7 @@ function load_main_logo(){
 const category = document.querySelectorAll(".cat"); 
 
 function chek_phone(){
-
+    litleTeile = document.getElementById("litleTitle");
 
     if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
         reload_imgs("war")
@@ -301,6 +303,7 @@ function chek_phone(){
         });
 
         mainTitle.style.fontSize = "80px"
+        litleTeile.childNodes[1].style.fontSize = "80px";
 
     } else {
       reload_imgs("void")
@@ -308,6 +311,7 @@ function chek_phone(){
         categs.style.fontSize = "77px"
     });
     mainTitle.style.fontSize = "150px"
+    litleTeile.childNodes[1].style.fontSize = "150px";
   }
 
 }
