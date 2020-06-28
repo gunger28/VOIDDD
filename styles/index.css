@@ -37,8 +37,8 @@ html {
   background-color: rgba(49, 49, 49, 0);
   text-shadow: 5px 0px 8px #0fdbff;
   z-index: 11;
-  font: "Open Sans";
-  font-size: 100px;
+  font-family: "Open Sans";
+  font-size: 6.5em;
   text-indent: 100px;
   line-height: 120%;
   color: #0fdbff;

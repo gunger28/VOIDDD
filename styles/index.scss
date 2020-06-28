@@ -36,11 +36,10 @@ height: 25%;
 position: absolute;
 background-color: rgba(49, 49, 49, 0);
 text-shadow: 5px 0px 8px rgb(15, 219, 255);
-//background-image: url("../assets/decor/main_img.jpg");
 
 z-index: 11;
-  font: $font;
-font-size: 100px;
+font-family: $font;
+font-size: 6.5em;
 text-indent: 100px;
 line-height: 120%;
 color: rgb(15, 219, 255);

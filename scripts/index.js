@@ -355,6 +355,11 @@ if(window.orientation == 0){
 
     rorarteScreen.style.zIndex = "19";
     rorarteScreen.style.opacity = "1";
+
+    cards.forEach(card => {
+      card.style.fontSize = ""
+      });
+
    }else {
    
     width = document.body.clientWidth; // width of work screen of browser
