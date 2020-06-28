@@ -18,7 +18,6 @@ var galleryPane = document.getElementById("galleryMain"); // gallery div
 const mainTitle = document.getElementById("mainTitle"); // Title div on start taplet
 const category = document.querySelectorAll(".cat"); 
 const topTitle = document.getElementById("topTitle");
-const vidBlock = document.getElementById("vid_block");
 var rorarteScreen = document.getElementById("rotateScreen");
 
 // animation for moving menu in start 
@@ -365,7 +364,8 @@ if(window.orientation == 0){
     rorarteScreen.style.opacity = "1";
    }else {
 
-    vidBlock = vidBlock;
+   // backPane.style.backgroundImage = "url('./assets/decor/MainScreen6.png')";
+backPane = backPane;
     rorarteScreen.style.opacity = "0";
     rorarteScreen.style.zIndex = "-10";
 
