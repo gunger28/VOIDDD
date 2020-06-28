@@ -319,8 +319,8 @@ function chek_phone(){
         categs.style.fontSize = "77px"
     });
     mainTitle.style.width = "60%";
-    mainTitle.style.fontSize = "150px"
-    botTitle.style.fontSize = "150px"
+    mainTitle.style.fontSize = "140px"
+    botTitle.style.fontSize = "140px"
    
   }
 
@@ -344,6 +344,11 @@ window.onload = function() {
     this.opacity_img(true); // start opacity of cards in works = 0
 
    chek_phone();
+
+   window.addEventListener("orientationchange", function() {
+    // Выводим числовое значение ориентации
+    alert(window.orientation);
+}, false);
 
     // action listner for little photo in gallery
     prews.forEach(prew => {
