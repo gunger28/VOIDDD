@@ -304,6 +304,12 @@ function chek_phone(){
 
     if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
       
+       
+            if(window.orientation == 0){
+            
+                rorarteScreen.style.zIndex = "19";
+                rorarteScreen.style.opacity = "1";
+               }
 
         category.forEach(categs => {
             categs.style.fontSize = "40px"
