@@ -11,7 +11,7 @@ var flagSkills = closed; // bool for skills taplet
 var flagContacts = closed; // bool for contacts taplet
 
 const video = document.getElementById("video"); // tag video on start taplet
-const backPane = document.getElementById("top"); // div of start taplet
+var backPane = document.getElementById("top"); // div of start taplet
 
 var loader = document.getElementById("loading"); // loading div
 var galleryPane = document.getElementById("galleryMain"); // gallery div
@@ -205,12 +205,7 @@ function changeStyles_Black() {
 
 
 function changeSource(src, element) {
-    backPane.style.backgroundImage = "";
-    backPane.style.backgroundColor = "";
-    
    
-
-
     if (element.dataset.fullname === "Main") {
     
         backPane.style.backgroundImage = "url('./assets/decor/MainScreen6.png')";
@@ -364,8 +359,8 @@ if(window.orientation == 0){
     rorarteScreen.style.opacity = "1";
    }else {
 
-   // backPane.style.backgroundImage = "url('./assets/decor/MainScreen6.png')";
-backPane = backPane;
+    backPane.style.backgroundSize = "cover";
+//backPane = backPane;
     rorarteScreen.style.opacity = "0";
     rorarteScreen.style.zIndex = "-10";
 
