@@ -218,9 +218,9 @@ function changeSource(src, element) {
         video.style.opacity = "0";
         backPane.style.opacity = "1";
         mainTitle.style.width = "70%";
-        mainTitle.style.fontSize = "170px";
+       // mainTitle.style.fontSize = "170px";
 
-        mainTitle.childNodes[1].style.fontSize = "170px";
+        chek_phone();
         
         topTitle.style.left = "0px";
       
