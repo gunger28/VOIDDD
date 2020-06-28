@@ -369,7 +369,7 @@ backPane.style.height = "100vh";
     
     
     galleryPane.style.width = backPane.style.width;
-    galleryPane.style.height = backPane.style.height;
+    galleryPane.style.height = "100%";
 
     document.getElementById("body").style.width = backPane.style.width;
     document.getElementById("body").style.height = backPane.style.height;
