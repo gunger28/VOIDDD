@@ -346,8 +346,10 @@ window.onload = function() {
    chek_phone();
 
    window.addEventListener("orientationchange", function() {
-    // Выводим числовое значение ориентации
-    alert(window.orientation);
+// Выводим числовое значение ориентации
+    
+topTitle.innerHTML = "VOID";
+
 }, false);
 
     // action listner for little photo in gallery
