@@ -375,7 +375,7 @@ backPane.style.height = "100vh";
     document.getElementById("body").style.height = backPane.style.height;
 
     loader.style.width = backPane.style.width;
-    loader.style.height = "100%";
+    loader.style.height = "200%";
 
     rorarteScreen.style.opacity = "0";
     rorarteScreen.style.zIndex = "-10";
