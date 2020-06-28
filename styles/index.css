@@ -68,11 +68,9 @@ html {
      -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
-  position: absolute;
-  z-index: 9;
+  position: relative;
   -webkit-transition: all 1.2s ease;
   transition: all 1.2s ease;
-  font-size: 190px;
   color: #2d942a;
 }
 
@@ -89,7 +87,7 @@ html {
       -ms-flex-pack: justify;
           justify-content: space-between;
   background-color: rgba(0, 0, 0, 0);
-  width: 6%;
+  width: 100px;
   z-index: 10;
 }
 
