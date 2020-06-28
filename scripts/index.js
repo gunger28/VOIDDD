@@ -300,12 +300,14 @@ function chek_phone(){
             categs.style.fontSize = "40px"
         });
 
+        mainTitle.style.fontSize = "80px"
 
     } else {
       reload_imgs("void")
       category.forEach(categs => {
         categs.style.fontSize = "77px"
     });
+    mainTitle.style.fontSize = "170px"
   }
 
 }
