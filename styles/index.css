@@ -31,26 +31,15 @@
   width: 85%;
   height: 25%;
   position: absolute;
-  background-color: rgba(49, 49, 49, 0.984);
+  background-color: rgba(49, 49, 49, 0);
   text-shadow: 5px 0px 8px #0fdbff;
-  background-image: url("../assets/decor/main_img.jpg");
   z-index: 11;
-  font-size: 130px;
-  text-indent: 30%;
-  line-height: 88%;
+  font: "Open Sans";
+  font-size: 100px;
+  text-indent: 100px;
+  line-height: 120%;
   color: #0fdbff;
-  -webkit-clip-path: polygon(100% 0, 78% 84%, 65% 95%, 0% 0);
-          clip-path: polygon(100% 0, 78% 84%, 65% 95%, 0% 0);
   left: 0px;
-}
-
-.TopTitle .TopImg {
-  width: 25%;
-  height: 90%;
-  position: absolute;
-  left: 55%;
-  top: 0%;
-  background-color: #2d942a;
 }
 
 .Title {

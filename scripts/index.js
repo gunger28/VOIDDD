@@ -293,7 +293,7 @@ function load_main_logo(){
 const category = document.querySelectorAll(".cat"); 
 
 function chek_phone(){
-    litleTeile = document.getElementById("litleTitle");
+    litleTetle = document.getElementById("litleTitle");
 
     if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
         reload_imgs("war")
@@ -303,7 +303,7 @@ function chek_phone(){
         });
 
         mainTitle.style.fontSize = "80px"
-        litleTeile.childNodes[1].style.fontSize = "80px";
+      //  litleTetle.childNodes[1].style.fontSize = "80px";
 
     } else {
       reload_imgs("void")
@@ -311,7 +311,7 @@ function chek_phone(){
         categs.style.fontSize = "77px"
     });
     mainTitle.style.fontSize = "150px"
-    litleTeile.childNodes[1].style.fontSize = "150px";
+    //litleTetle.childNodes[1].style.fontSize = "150px";
   }
 
 }
