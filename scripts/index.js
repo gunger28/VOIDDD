@@ -307,8 +307,8 @@ function chek_phone(){
             categs.style.fontSize = "40px"
         });
 
-        mainTitle.style.fontSize = "80px"
-        botTitle.style.fontSize = "80px"
+        mainTitle.style.fontSize = "60px"
+        botTitle.style.fontSize = "60px"
       
 
     } else {
