@@ -31,17 +31,18 @@ html{
 }
 
 .TopTitle{
+
 width: 85%;
 height: 25%;
 position: absolute;
 background-color: rgba(49, 49, 49, 0);
 text-shadow: 5px 0px 8px rgb(15, 219, 255);
-
+margin-top: 5px;
 z-index: 11;
 font-family: $font;
 font-size: 6.5em;
 text-indent: 100px;
-line-height: 120%;
+line-height: 100%;
 color: rgb(15, 219, 255);
 //clip-path: polygon(100% 0, 78% 84%, 65% 95%, 0% 0);
 left: 0px;
@@ -82,10 +83,10 @@ transition: ease-in-out 1.2s;
 
 .menu_block {
 
-  margin-top: 20px;
+  margin-top: 7px;
   transition-duration: 4s;
   transform: translateX(-140px);
-  margin-left: 10px;
+  
   position: fixed;
   display: table-cell;
   justify-content: space-between;
@@ -97,6 +98,9 @@ transition: ease-in-out 1.2s;
     background-color: rgba(0, 204, 255, 0);
     width: 80px;
     height: 80px;
+   
+    margin: 0 auto;
+    margin-top: 13px;
     margin-bottom: 13px;
     z-index: 10;
     border: none;
@@ -125,13 +129,17 @@ transition: ease-in-out 1.2s;
     border-radius: 100%;
     transition-duration: 1s;
     display: flex;
+    margin: auto auto;
 
     p {
-
+      text-align: center;
+      width: 80%;
+      background-color: rgba(128, 128, 128, 0);
+      margin: auto auto;
       user-select: none;
       font-family: "Open Sans";
       color: rgb(255, 255, 255);
-      margin: auto;
+      
       font-size: 20px;
     }
 

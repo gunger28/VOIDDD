@@ -36,11 +36,12 @@ html {
   position: absolute;
   background-color: rgba(49, 49, 49, 0);
   text-shadow: 5px 0px 8px #0fdbff;
+  margin-top: 5px;
   z-index: 11;
   font-family: "Open Sans";
   font-size: 6.5em;
   text-indent: 100px;
-  line-height: 120%;
+  line-height: 100%;
   color: #0fdbff;
   left: 0px;
   -webkit-transition: ease-in-out 1.2s;
@@ -75,12 +76,11 @@ html {
 }
 
 .menu_block {
-  margin-top: 20px;
+  margin-top: 7px;
   -webkit-transition-duration: 4s;
           transition-duration: 4s;
   -webkit-transform: translateX(-140px);
           transform: translateX(-140px);
-  margin-left: 10px;
   position: fixed;
   display: table-cell;
   -webkit-box-pack: justify;
@@ -95,6 +95,8 @@ html {
   background-color: rgba(0, 204, 255, 0);
   width: 80px;
   height: 80px;
+  margin: 0 auto;
+  margin-top: 13px;
   margin-bottom: 13px;
   z-index: 10;
   border: none;
@@ -132,16 +134,20 @@ html {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  margin: auto auto;
 }
 
 .menu_block .menu_element p {
+  text-align: center;
+  width: 80%;
+  background-color: rgba(128, 128, 128, 0);
+  margin: auto auto;
   -webkit-user-select: none;
      -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
   font-family: "Open Sans";
   color: white;
-  margin: auto;
   font-size: 20px;
 }
 
