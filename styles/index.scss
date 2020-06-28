@@ -11,7 +11,7 @@ $back: url("../assets/decor/gal_bacimg1.jpeg");
 
 .load_pane {
   display: flex;
-  position: fixed;
+  position: absolute;
   top: 0;
   left: 0;
   background-image: url("../assets/videos/loading.gif");

@@ -363,12 +363,14 @@ backPane.style.height = "100vh";
     // document.getElementById("top").style.width = String(height)+"px";
     // document.getElementById("top").style.height =  String(width)+"px";
 
+    galleryPane.style.width = backPane.style.width;
+    galleryPane.style.height = "100%";
 
-    document.getElementById("top").style.width = backPane.style.width;
-    document.getElementById("top").style.height = backPane.style.height;
+    document.getElementById("body").style.width = backPane.style.width;
+    document.getElementById("body").style.height = backPane.style.height;
 
-    loader.style.width = backPane.style.width;
-    loader.style.height = backPane.style.height;
+    loader.style.width = backPane.style.width;backPane.style.width;
+    loader.style.height = "100%";
 
     rorarteScreen.style.opacity = "0";
     rorarteScreen.style.zIndex = "-10";
