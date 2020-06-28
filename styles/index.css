@@ -1,5 +1,10 @@
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:400);
+html {
+  overflow: hidden;
+}
+
 * {
+  overflow: hidden;
   margin: 0;
   padding: 0;
   -webkit-box-sizing: border-box;
@@ -181,6 +186,7 @@
 }
 
 body {
+  overflow: hidden;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
