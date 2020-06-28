@@ -13,8 +13,6 @@
   opacity: 1;
   margin: auto 0;
   background-color: black;
-  width: 93vw;
-  height: 98vh;
   z-index: 6;
   -webkit-transition-duration: 1s;
           transition-duration: 1s;

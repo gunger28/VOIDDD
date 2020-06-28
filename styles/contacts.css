@@ -15,8 +15,6 @@
   position: fixed;
   margin: auto 0;
   background-color: black;
-  width: 100vw;
-  height: 100vh;
   transition-duration: 1s;
 }
 

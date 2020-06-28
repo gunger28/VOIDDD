@@ -15,10 +15,13 @@ var backPane = document.getElementById("top"); // div of start taplet
 
 var loader = document.getElementById("loading"); // loading div
 var galleryPane = document.getElementById("galleryMain"); // gallery div
-const mainTitle = document.getElementById("mainTitle"); // Title div on start taplet
-const category = document.querySelectorAll(".cat"); 
-const topTitle = document.getElementById("topTitle");
+var mainTitle = document.getElementById("mainTitle"); // Title div on start taplet
+var category = document.querySelectorAll(".cat"); 
+var topTitle = document.getElementById("topTitle");
 var rorarteScreen = document.getElementById("rotateScreen");
+var contacts = document.getElementById("contacts");
+var works = document.getElementById("works");
+var skill = document.getElementById("skill");
 
 // animation for moving menu in start 
 setTimeout(() => {
@@ -92,7 +95,7 @@ function gal_view_move(obj) {
 
 // func for open/close work taplet (animation for elements of page)
 function work_move(flag) {
-    const works = document.getElementById("works");
+    
 
     if (flag) {
         mainTitle.style.fontSize = "100px";
@@ -118,7 +121,7 @@ function work_move(flag) {
 
 // func for open/close skills taplet (animation for elements of page)
 function skill_move(flag) {
-    const skill = document.getElementById("skill");
+   
     
     
     if (flag) {
@@ -144,7 +147,7 @@ function skill_move(flag) {
 
 // func for open/close contacts taplet (animation for elements of page)
 function contacts_move(flag) {
-    const contacts = document.getElementById("contacts");
+    
 
     if (flag) {
         mainTitle.style.fontSize = "100px";
@@ -363,13 +366,15 @@ backPane.style.height = "100vh";
     // document.getElementById("top").style.width = String(height)+"px";
     // document.getElementById("top").style.height =  String(width)+"px";
 
+    
+    
     galleryPane.style.width = backPane.style.width;
-    galleryPane.style.height = "100%";
+    galleryPane.style.height = backPane.style.height;
 
     document.getElementById("body").style.width = backPane.style.width;
     document.getElementById("body").style.height = backPane.style.height;
 
-    loader.style.width = backPane.style.width;backPane.style.width;
+    loader.style.width = backPane.style.width;
     loader.style.height = "100%";
 
     rorarteScreen.style.opacity = "0";
