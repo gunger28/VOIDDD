@@ -50,7 +50,7 @@
   -webkit-transition-duration: .3s;
           transition-duration: .3s;
   background-image: url("../assets/decor/gal_bacimg1.jpeg");
-  background-attachment: local;
+  background-attachment: fixed;
   -webkit-box-shadow: 0px 0px 0 #000000;
           box-shadow: 0px 0px 0 #000000;
 }
