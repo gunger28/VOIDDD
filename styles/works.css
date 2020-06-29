@@ -24,7 +24,7 @@
      -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
-  font-size: 80px;
+  font-size: 55px;
   color: white;
   font-family: "Open Sans";
   letter-spacing: 8px;
@@ -136,7 +136,7 @@
   position: relative;
   text-transform: uppercase;
   font-family: "Open Sans";
-  font-size: 67px;
+  font-size: 55px;
   margin-left: -10px;
 }
 

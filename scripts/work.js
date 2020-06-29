@@ -4,9 +4,11 @@ const tecnology = ["eevee", "cycles","cycles", "cycles","eevee","eevee","eevee",
 const styles = ["poly", "nurbs", "particles", "particles", "particles", "MIX", "procedural", "procedural", "poly", "poly", "procedural", "MIX"];
 const program = ["blender", "gimp", "CrazyBump", "NanoStudio", "Inkscape"];
 
+var Mobile_fSSize = "40px;"; // font size opened
+var Mobile_fbSize = "65px;"; // font size closed
 
-var fSSize = "40px;"; // font size opened
-var fBSize = "65px;"; // font size closed
+var fSSize = "30px;"; // font size opened
+var fBSize = "55px;"; // font size closed
 
 var boolWork = false; // bool to close right side panel
 var boolOpacity = true; // opac for opened work
@@ -110,7 +112,7 @@ function close_work_viewer(){
      
     });
     textWorks.forEach(text => {
-        text.childNodes[1].style = "color: white; font-Size: 65px;";
+        text.childNodes[1].style = "color: white; font-Size: " + fBSize + ";";
       });
 }
 
@@ -127,7 +129,7 @@ function showWork(flag, work) {
     workPane.style.right = "0";
     setWork(work);
     textWorks.forEach(text => {
-      text.childNodes[1].style = "color: white; font-Size: 40px;";
+      text.childNodes[1].style = "color: white; font-Size: " + fSSize + ";";
 
      
       boolWork = true;
@@ -142,7 +144,7 @@ function showWork(flag, work) {
       work.style.opacity = "0";
 
       textWorks.forEach(text => {
-        text.childNodes[1].style = "color: white; font-Size: 65px;";
+        text.childNodes[1].style = "color: white; font-Size: " + fBSize + ";";
       });
 
       
@@ -166,7 +168,7 @@ function showWork(flag, work) {
         setWork(work);
 
         textWorks.forEach(text => {
-          text.childNodes[1].style = "color: white; font-Size: 40px;";
+          text.childNodes[1].style = "color: white; font-Size: " + fSSize + ";";
 
           
         });
