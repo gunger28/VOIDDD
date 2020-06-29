@@ -102,8 +102,8 @@ function close_work_viewer(){
     const workPane = document.getElementById("work");
     const worksPane = document.getElementById("works");
 
-    worksPane.style.width = "100vw";
-    worksPane.style.height = "100vh";
+    worksPane.style.width = "90%";
+    worksPane.style.height = "85%";
     workPane.style.right = "-900px";
     boolOpacity = true;
     boolWork = false;
@@ -124,8 +124,8 @@ function showWork(flag, work) {
 
  
   if (!flag) {
-    worksPane.style.width = "67vw";
-    worksPane.style.height = "70vh";
+    worksPane.style.width = "67%";
+    worksPane.style.height = "70%";
     workPane.style.right = "0";
     setWork(work);
     textWorks.forEach(text => {
@@ -138,8 +138,8 @@ function showWork(flag, work) {
     });
   } else {
     if (switcherVar === work.getAttribute("alt")) {
-      worksPane.style.width = "100vw";
-      worksPane.style.height = "100vh";
+      worksPane.style.width = "90%";
+      worksPane.style.height = "85%";
       workPane.style.right = "-1000px";
       work.style.opacity = "0";
 
@@ -162,8 +162,8 @@ function showWork(flag, work) {
    
 
       setTimeout(() => {
-        worksPane.style.width = "67vw";
-        worksPane.style.height = "70vh";
+        worksPane.style.width = "67%";
+        worksPane.style.height = "70%";
         workPane.style.right = "0";
         setWork(work);
 

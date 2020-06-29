@@ -33,8 +33,8 @@
 
 .all_works_panel {
   display: inline-block;
-  height: 90%;
-  width: 80%;
+  -webkit-transition-duration: .7s;
+          transition-duration: .7s;
 }
 
 .all_works_panel .one_panel {

@@ -41,9 +41,9 @@ $font: "Open Sans";
 
 .all_works_panel {
     display: inline-block;
-    height: 90%;
-    width: 80%;
-
+   
+    transition-duration: .7s;
+    
     .one_panel {
 
         display: flex;
