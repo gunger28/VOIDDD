@@ -22,6 +22,9 @@ var rorarteScreen = document.getElementById("rotateScreen");
 var contacts = document.getElementById("contacts");
 var works = document.getElementById("works");
 var skill = document.getElementById("skill");
+var skill_sideTitle = document.getElementById("side_title");
+var skill_ctegories = document.querySelectorAll(".cat"); 
+
 
 // animation for moving menu in start 
 setTimeout(() => {
@@ -291,15 +294,20 @@ function load_main_logo(){
 
 }
 
+function desktop_style(){
 
-function chek_phone(){
+    category.forEach(categs => {
+        categs.style.fontSize = "77px"
+    });
+    mainTitle.style.width = "60%";
+    mainTitle.style.fontSize = "140px"
+    botTitle.style.fontSize = "140px"
+    skill_sideTitle.style.fontSize = "80px"
+}
 
-    const botTitle = document.getElementById("botTitle");
+function phone_style(){
 
-    if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
-      
-       
-            if(window.orientation == 0){
+if(window.orientation == 0){
             
                 rorarteScreen.style.zIndex = "999";
                 rorarteScreen.style.opacity = "1";
@@ -311,16 +319,24 @@ function chek_phone(){
         mainTitle.style.width = "55%";
         mainTitle.style.fontSize = "60px"
         botTitle.style.fontSize = "60px"
+        skill_sideTitle.style.fontSize = "40px"
+    
+}
+
+
+function chek_phone(){
+
+    const botTitle = document.getElementById("botTitle");
+
+    if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+      
+       
+        phone_style();    
       
 
     } else {
    
-      category.forEach(categs => {
-        categs.style.fontSize = "77px"
-    });
-    mainTitle.style.width = "60%";
-    mainTitle.style.fontSize = "140px"
-    botTitle.style.fontSize = "140px"
+     desktop_style();
    
   }
 
