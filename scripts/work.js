@@ -124,8 +124,8 @@ function showWork(flag, work) {
 
  
   if (!flag) {
-    worksPane.style.width = "65vw";
-    worksPane.style.height = "85vh";
+    worksPane.style.width = "67vw";
+    worksPane.style.height = "70vh";
     workPane.style.right = "0";
     setWork(work);
     textWorks.forEach(text => {
@@ -162,8 +162,8 @@ function showWork(flag, work) {
    
 
       setTimeout(() => {
-        worksPane.style.width = "65vw";
-        worksPane.style.height = "85vh";
+        worksPane.style.width = "67vw";
+        worksPane.style.height = "70vh";
         workPane.style.right = "0";
         setWork(work);
 
