@@ -23,8 +23,12 @@ var contacts = document.getElementById("contacts");
 var works = document.getElementById("works");
 var skill = document.getElementById("skill");
 var skill_sideTitle = document.getElementById("side_title");
-var skill_ctegories = document.querySelectorAll(".cat"); 
+var skill_titleBars = document.querySelectorAll(".bar_progres"); 
 
+const skill_categDiv = document.getElementById("panels_cat"); // main div of list of my skills (db, web, apps, nanostudio...) 
+const prews = document.querySelectorAll(".prew"); // little photos of gallery
+const menuElements = document.querySelectorAll(".menu_element"); // menu elevents (StartPage, V, O, I, D)
+const mainVid = document.getElementById("go_to_start"); // div of main menu button (go to start taplet)
 
 // animation for moving menu in start 
 setTimeout(() => {
@@ -296,16 +300,50 @@ function load_main_logo(){
 
 function desktop_style(){
 
+
+ 
+
     category.forEach(categs => {
         categs.style.fontSize = "77px"
     });
     mainTitle.style.width = "60%";
-    mainTitle.style.fontSize = "140px"
-    botTitle.style.fontSize = "140px"
-    skill_sideTitle.style.fontSize = "80px"
+    mainTitle.style.fontSize = "140px";
+    botTitle.style.fontSize = "140px";
+    skill_sideTitle.style.fontSize = "80px";
+
+    skill_titleBars.forEach( bar => {
+        console.log(bar.childNodes[1]);
+        
+        bar.childNodes[1].style.fontSize = "40px"
+           }
+            );
+
+            
 }
 
 function phone_style(){
+
+  //  console.log(skill_categDiv.childNodes.length);
+
+        for (var i = 0; i < skill_categDiv.childNodes.length; i++) {
+       
+                if(skill_categDiv.childNodes[i].firstChild !== null){
+                    skill_categDiv.childNodes[i].style.fontSize = "15px";
+                }
+          }
+
+
+    //skill_categDiv.style.fontSize = "17px";
+   // console.log(skill_categDiv.childNodes);
+    
+
+   skill_titleBars.forEach( bar => {
+//console.log(bar.childNodes[1]);
+
+bar.childNodes[1].style.fontSize = "17px"
+   }
+    );
+
 
 if(window.orientation == 0){
             
@@ -330,10 +368,8 @@ function chek_phone(){
 
     if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
       
-       
         phone_style();    
-      
-
+    
     } else {
    
      desktop_style();
@@ -344,10 +380,7 @@ function chek_phone(){
 
 
 window.onload = function() {
-    const Ptag = document.getElementById("panels_cat"); // main div of list of my skills (db, web, apps, nanostudio...) 
-    const prews = document.querySelectorAll(".prew"); // little photos of gallery
-    const menuElements = document.querySelectorAll(".menu_element"); // menu elevents (StartPage, V, O, I, D)
-    const mainVid = document.getElementById("go_to_start"); // div of main menu button (go to start taplet)
+    
    
     // div of category for gallery
 
@@ -438,7 +471,7 @@ backPane.style.height = "100vh";
     });
 
     // audio action for skills list
-    Ptag.childNodes.forEach(elem => {
+    skill_categDiv.childNodes.forEach(elem => {
         elem.addEventListener("mouseenter", function() {
       //  console.log(Ptag.childNodes),
  audio = new Audio(), // Создаём новый элемент Audio
