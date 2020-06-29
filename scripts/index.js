@@ -25,6 +25,11 @@ var skill = document.getElementById("skill");
 var skill_sideTitle = document.getElementById("side_title");
 var skill_titleBars = document.querySelectorAll(".bar_progres"); 
 var skill_titleSkill = document.querySelectorAll(".photo_cat"); 
+var skill_videoSkill = document.getElementById("video");
+var skill_descSkill = document.getElementById("text_desc");
+var skill_mediaDesk = document.getElementById("media");
+var skill_deskDiv = document.getElementById("desc_block");
+
 
 const skill_categDiv = document.getElementById("panels_cat"); // main div of list of my skills (db, web, apps, nanostudio...) 
 const prews = document.querySelectorAll(".prew"); // little photos of gallery
@@ -343,7 +348,11 @@ function phone_style(){
                 }
           }
 
-
+          skill_deskDiv.style.height = "200px"
+          skill_mediaDesk.style.height = "180px"
+          skill_descSkill.style.fontSize = "8px"
+          skill_videoSkill.style.width = "33%"
+//skill_videoSkill.style.height = "50%"
 
     //skill_categDiv.style.fontSize = "17px";
    // console.log(skill_categDiv.childNodes);

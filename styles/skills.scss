@@ -230,21 +230,22 @@ $font: "Open Sans";
 
 .description_skill {
   width: calc(100vw - 350px);
-  height: 400px;
+ // height: 400px;
   z-index: 0;
   position: fixed;
   margin-left: 100px;
   margin-top: 115px;
   background-color: rgba(0, 0, 0, 0.718);
   transition-duration: .9s;
-  display: flex;
+  display: flexbox;
 
   .media {
     margin: 10px 10px;
-    width: 672px;
-    height: 380px;
-
-
+    width: 50%;
+  //  height: 380px;
+position: absolute;
+display: flex;
+    
   }
 
 
@@ -253,14 +254,15 @@ $font: "Open Sans";
     text-indent: 20px;
     font-size: 16px;
     font-family: $font;
-    display: inline-block;
+  //  display: inline-;
     position: relative;
     $textW: calc(100% - 692px);
     margin: 10px 10px;
     color: white;
+    float: right;
     background-color: rgba(255, 255, 255, 0);
-    width: calc(100% - 692px);
-    height: 380px;
+    width: 44%;
+    max-height: 90%;
 
 
   }
@@ -268,8 +270,9 @@ $font: "Open Sans";
 }
 
 .videoSkills {
-  width: 672px;
-  height: 380px;
+ // box-shadow: 10px 10px 7px black;
+//width: 60%;
+ // height: 200px;
   z-index: 10;
 
 }

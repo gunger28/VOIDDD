@@ -211,7 +211,6 @@
 
 .description_skill {
   width: calc(100vw - 350px);
-  height: 400px;
   z-index: 0;
   position: fixed;
   margin-left: 100px;
@@ -219,15 +218,16 @@
   background-color: rgba(0, 0, 0, 0.718);
   -webkit-transition-duration: .9s;
           transition-duration: .9s;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: flexbox;
 }
 
 .description_skill .media {
   margin: 10px 10px;
-  width: 672px;
-  height: 380px;
+  width: 50%;
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .description_skill .textSkill {
@@ -235,18 +235,16 @@
   text-indent: 20px;
   font-size: 16px;
   font-family: "Open Sans";
-  display: inline-block;
   position: relative;
   margin: 10px 10px;
   color: white;
+  float: right;
   background-color: rgba(255, 255, 255, 0);
-  width: calc(100% - 692px);
-  height: 380px;
+  width: 44%;
+  max-height: 90%;
 }
 
 .videoSkills {
-  width: 672px;
-  height: 380px;
   z-index: 10;
 }
 /*# sourceMappingURL=skills.css.map */
