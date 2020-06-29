@@ -33,7 +33,7 @@ html {
 .TopTitle {
   width: 85%;
   height: 25%;
-  position: absolute;
+  position: fixed;
   background-color: rgba(49, 49, 49, 0);
   text-shadow: 5px 0px 8px #0fdbff;
   margin-top: 5px;
