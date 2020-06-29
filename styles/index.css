@@ -3,6 +3,17 @@ html {
   overflow: hidden;
 }
 
+body {
+  position: fixed;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: black;
+  height: 100vh;
+  width: 100vw;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -186,14 +197,6 @@ html {
   to {
     text-shadow: 0 0px 1px white;
   }
-}
-
-body {
-  overflow: hidden;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  background-color: black;
 }
 
 .vid_block {
