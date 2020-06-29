@@ -311,7 +311,9 @@ function desktop_style(){
     skill_titleSkill.forEach( title => {
        // console.log(title.childNodes[1]);
         
-        title.childNodes[1].style.fontSize = "120px"
+       title.childNodes[1].style.fontSize = "120px"
+       title.childNodes[3].style.fontSize = "120px"
+        title.childNodes[5].style.fontSize = "120px"
            }
             );
 
