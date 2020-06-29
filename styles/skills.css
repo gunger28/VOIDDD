@@ -55,8 +55,8 @@
   height: 90%;
   background-color: rgba(255, 0, 157, 0.779);
   display: inline-block;
-  border-bottom-left-radius: 40px;
-  border-bottom-right-radius: 40px;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
   -webkit-transition-duration: .9s;
           transition-duration: .9s;
 }
@@ -82,7 +82,6 @@
   top: -80px;
   left: -40px;
   user-select: none;
-  font-size: 120px;
   font-weight: 800;
   color: white;
   font-family: "Open Sans";
@@ -140,7 +139,7 @@
 .skills_pane .block_icons {
   position: fixed;
   width: 250px;
-  height: 95%;
+  height: 90%;
   z-index: 2;
   right: 0px;
 }

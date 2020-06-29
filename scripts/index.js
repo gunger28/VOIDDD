@@ -24,6 +24,7 @@ var works = document.getElementById("works");
 var skill = document.getElementById("skill");
 var skill_sideTitle = document.getElementById("side_title");
 var skill_titleBars = document.querySelectorAll(".bar_progres"); 
+var skill_titleSkill = document.querySelectorAll(".photo_cat"); 
 
 const skill_categDiv = document.getElementById("panels_cat"); // main div of list of my skills (db, web, apps, nanostudio...) 
 const prews = document.querySelectorAll(".prew"); // little photos of gallery
@@ -306,6 +307,14 @@ function desktop_style(){
     category.forEach(categs => {
         categs.style.fontSize = "77px"
     });
+
+    skill_titleSkill.forEach( title => {
+       // console.log(title.childNodes[1]);
+        
+        title.childNodes[1].style.fontSize = "120px"
+           }
+            );
+
     mainTitle.style.width = "60%";
     mainTitle.style.fontSize = "140px";
     botTitle.style.fontSize = "140px";
@@ -333,6 +342,7 @@ function phone_style(){
           }
 
 
+
     //skill_categDiv.style.fontSize = "17px";
    // console.log(skill_categDiv.childNodes);
     
@@ -344,6 +354,14 @@ bar.childNodes[1].style.fontSize = "17px"
    }
     );
 
+    skill_titleSkill.forEach( title => {
+        console.log(title.childNodes[1]);
+        
+        title.childNodes[1].style.fontSize = "70px"
+       title.childNodes[3].style.fontSize = "70px"
+        title.childNodes[5].style.fontSize = "70px"
+           }
+            );
 
 if(window.orientation == 0){
             
@@ -357,7 +375,7 @@ if(window.orientation == 0){
         mainTitle.style.width = "55%";
         mainTitle.style.fontSize = "60px"
         botTitle.style.fontSize = "60px"
-        skill_sideTitle.style.fontSize = "40px"
+      //  skill_sideTitle.style.fontSize = "40px"
     
 }
 

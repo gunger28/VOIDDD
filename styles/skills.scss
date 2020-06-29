@@ -54,8 +54,8 @@ $font: "Open Sans";
       background-color: rgba(255, 0, 157, 0.779);
       display: inline-block;
       
-      border-bottom-left-radius: 40px;
-      border-bottom-right-radius: 40px;
+      border-bottom-left-radius: 30px;
+      border-bottom-right-radius: 30px;
       transition-duration: .9s;
 
       .photo_cat {
@@ -75,7 +75,7 @@ $font: "Open Sans";
           top: -80px;
           left: -40px;
           user-select: none;
-          font-size: 120px;
+          //font-size: 120px;
           font-weight: 800;
           color: rgb(255, 255, 255);
           font-family: "Open Sans";
@@ -150,7 +150,7 @@ $font: "Open Sans";
   .block_icons {
     position: fixed;
     width: 250px;
-    height: 95%;
+    height: 90%;
     z-index: 2;
     right: 0px;
 

@@ -29,19 +29,19 @@ setTimeout(() => {
 function slide_skills(flag){
 
 if(flag == close){
-    skill3.style.width = "200px";
-    skill3.style.height = "200px";
+ //   skill3.style.width = "200px";
+ //   skill3.style.height = "200px";
     skill3.style.transform = "translateY(1000px)";
 
 setTimeout(() => {
-    skill2.style.width = "200px";
-    skill2.style.height = "200px";
+   // skill2.style.width = "200px";
+  //  skill2.style.height = "200px";
     skill2.style.transform = "translateY(1000px)";
 }, 100);
 
 setTimeout(() => {
-    skill1.style.width = "200px";
-    skill1.style.height = "200px";
+   // skill1.style.width = "200px";
+  //  skill1.style.height = "200px";
     skill1.style.transform = "translateY(1000px)";
 }, 200);
 
