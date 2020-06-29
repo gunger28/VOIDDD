@@ -121,7 +121,7 @@ function setContent(theme){
      if(n[n.length-1] === "m"){
        media.childNodes[1].style.opacity = 1;
     media.childNodes[1].setAttribute("src", theme.dataset.media);
-    media.childNodes[1].opacity = "1";
+    media.childNodes[1].style.opacity = "1";
     media.childNodes[1].onload = () => {
         media.childNodes[1].play();
     };
@@ -132,7 +132,7 @@ function setContent(theme){
     media.childNodes[1].setAttribute("src", "");
     media.style.backgroundImage = "url("+theme.dataset.media+")";
     media.style.backgroundSize = ("100% 100%");
-    media.childNodes[1].opacity = "0";
+    media.childNodes[1].style.opacity = "0";
  }
 textDesc.textContent = theme.dataset.desc;
 }
