@@ -13,7 +13,6 @@
   opacity: 1;
   margin: auto 0;
   background-color: black;
-  z-index: 6;
   -webkit-transition-duration: 1s;
           transition-duration: 1s;
   padding: 7px;
@@ -107,7 +106,6 @@
   background-color: white;
   width: 30vw;
   height: 100vh;
-  z-index: 20;
   -webkit-transition-duration: .75s;
           transition-duration: .75s;
 }
@@ -159,7 +157,6 @@
   word-wrap: break-word;
   width: 100%;
   max-height: 90%;
-  font-size: 20px;
 }
 
 .description_block .description .tecnologies {
@@ -168,7 +165,6 @@
   height: 11%;
   margin-left: 10px;
   font-family: "Open Sans";
-  font-size: 40px;
 }
 
 .description_block .description .style {
@@ -176,28 +172,30 @@
   height: 11%;
   margin-left: 10px;
   font-family: "Open Sans";
-  font-size: 40px;
 }
 
 .description_block .description .programs {
   margin-top: 10px;
   width: 100%;
-  height: 11%;
+  height: 10%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
 .description_block .description .programs p {
+  display: inline-block;
   color: white;
+  padding-top: 7px;
+  padding-left: 7px;
+  padding-right: 7px;
+  padding-bottom: 7px;
   margin-top: 5px;
-  padding: 10px;
   word-wrap: break-word;
   background-color: black;
   margin-left: 10px;
   max-width: 90%;
-  max-height: 90%;
+  max-height: 50px;
   border-radius: 15px;
-  font-size: 20px;
 }
 /*# sourceMappingURL=works.css.map */

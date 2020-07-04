@@ -27,6 +27,8 @@ var tecs = document.querySelectorAll(".tecnologies");
 var style = document.querySelectorAll(".style");
 var progs = document.querySelectorAll(".programs");
 
+var PCFont = "'font-size:" + "30px;'" ;
+var MobFont = "'font-size:" + "20px;'" ;
 
 function setPhoneStyle(){
 
@@ -34,12 +36,12 @@ function setPhoneStyle(){
     
 //   
 // });
-console.log(desc[0].childNodes[1]);
+console.log(progs[0].childNodes[1]);
 desc[0].childNodes[1].style = "font-size: 14px ;"
 
 style[0].style = "font-size: 24px ;"
 tecs[0].style = "font-size: 24px ;"
-//desc[0].childNodes[1].style = "font-size: 14px ;"
+PCFont = MobFont;
 
   fSSize = Mobile_fSSize;
   fBSize = Mobile_fbSize;
@@ -58,8 +60,8 @@ function setWork(work) {
   tecs[0].textContent = "Tecnology: " + tecnology[work.dataset.source];
   style[0].textContent = "Style: " + styles[work.dataset.source];
 
-  oneProg = "<p>" + program[0] + "</p>";
-  secProg = "<p>" + program[1] + "</p>";
+  oneProg = "<p style="+ PCFont + ">" + program[0] + "</p>";
+  secProg = "<p style="+ PCFont + ">" + program[1] + "</p>";
   progs[0].innerHTML = oneProg;
   progs[0].innerHTML += secProg;
 }
