@@ -1,6 +1,7 @@
 const video_3D = document.getElementById("vid_3D"); // div of video in contacts
 var conts = document.querySelectorAll(".contacttt"); 
 var imgs = document.querySelectorAll(".iamgesCont"); 
+var lineImg = document.querySelectorAll(".line"); 
 
 
 vid1 = "./assets/videos/test2.webm"; // paths to video
@@ -81,6 +82,8 @@ imgs.forEach(imge => {
     imge.style.height = "50px";
  });
 
-
+ lineImg.forEach(line => {
+    line.style.height = "60px";
+ });
 
 }
