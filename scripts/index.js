@@ -29,7 +29,7 @@ var skill_videoSkill = document.getElementById("video");
 var skill_descSkill = document.getElementById("text_desc");
 var skill_mediaDesk = document.getElementById("media");
 var skill_deskDiv = document.getElementById("desc_block");
-
+var contacts_deskDiv = document.getElementById("contacts");
 
 const skill_categDiv = document.getElementById("panels_cat"); // main div of list of my skills (db, web, apps, nanostudio...) 
 const prews = document.querySelectorAll(".prew"); // little photos of gallery
@@ -339,6 +339,7 @@ function desktop_style(){
 
 function phone_style(){
 
+    setPhone_contacts();
   //  console.log(skill_categDiv.childNodes.length);
 
         for (var i = 0; i < skill_categDiv.childNodes.length; i++) {
@@ -449,7 +450,8 @@ backPane.style.height = "100vh";
     // document.getElementById("top").style.width = String(height)+"px";
     // document.getElementById("top").style.height =  String(width)+"px";
 
-    
+    contacts_deskDiv.style.width = backPane.style.width;
+    contacts_deskDiv.style.height = height;
     
     galleryPane.style.width = backPane.style.width;
     galleryPane.style.height = height;

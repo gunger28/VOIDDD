@@ -1,4 +1,7 @@
 const video_3D = document.getElementById("vid_3D"); // div of video in contacts
+var conts = document.querySelectorAll(".contacttt"); 
+var imgs = document.querySelectorAll(".iamgesCont"); 
+
 
 vid1 = "./assets/videos/test2.webm"; // paths to video
 vid2 = "./assets/videos/test4.webm"; // paths to video 
@@ -64,5 +67,20 @@ setTimeout(() => {
     video_swith();
     video_3D.style.opacity = 1;
 }, 500);
+
+}
+
+function setPhone_contacts(){
+
+    conts.forEach(cont => {
+   cont.style.fontSize = "15px"
+});
+
+imgs.forEach(imge => {
+    imge.style.width = "50px";
+    imge.style.height = "50px";
+ });
+
+
 
 }
