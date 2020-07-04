@@ -86,4 +86,14 @@ imgs.forEach(imge => {
     line.style.height = "60px";
  });
 
+ vid1 = "./assets/videos/cont1.mp4"; // paths to video
+ vid2 = "./assets/videos/cont2.mp4"; // paths to video 
+ vid3 = "./assets/videos/cont3.mp4"; // paths to video
+ vid4 = "./assets/videos/cont4.mp4"; // paths to video
+ vid5 = "./assets/videos/cont5.mp4"; // paths to video
+ vid6 = "./assets/videos/cont6.mp4"; // paths to video
+
+
+
+
 }
