@@ -120,8 +120,8 @@
 .skills_pane .line_of_skills .skill .info_cat .bar_progres {
   margin-top: 5%;
   height: 100%;
-  background: -webkit-gradient(linear, left top, right top, from(#ff6600), color-stop(90%, red), to(rgba(255, 0, 0, 0)));
-  background: linear-gradient(90deg, #ff6600 0%, red 90%, rgba(255, 0, 0, 0) 100%);
+  background: -webkit-gradient(linear, left top, right top, from(#00b7ff), color-stop(85%, #008cff), to(rgba(255, 0, 0, 0)));
+  background: linear-gradient(90deg, #00b7ff 0%, #008cff 85%, rgba(255, 0, 0, 0) 100%);
 }
 
 .skills_pane .line_of_skills .skill .info_cat h1 {
