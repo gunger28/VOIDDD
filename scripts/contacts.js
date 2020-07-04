@@ -4,7 +4,7 @@ var imgs = document.querySelectorAll(".iamgesCont");
 var lineImg = document.querySelectorAll(".line"); 
 
 
-vid1 = "./assets/videos/test2.webm"; // paths to video
+vid1 = "./assets/videos/test2.mp4"; // paths to video
 vid2 = "./assets/videos/test4.webm"; // paths to video 
 vid3 = "./assets/videos/test5.webm"; // paths to video
 vid4 = "./assets/videos/test7.webm"; // paths to video
