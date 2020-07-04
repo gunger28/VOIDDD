@@ -17,7 +17,7 @@ $font: "Open Sans";
     margin: auto 0;
     background-color: rgb(0, 0, 0);
     
-    z-index: 6;
+   
     transition-duration: 1s;
     padding: 7px;
 
@@ -113,7 +113,7 @@ $font: "Open Sans";
     background-color: white;
     width: 30vw;
     height: 100vh;
-    z-index: 20;
+   
     transition-duration: .75s;
 
     .img_block {
@@ -165,7 +165,7 @@ $font: "Open Sans";
                 word-wrap: break-word;
                 width: 100%;
                 max-height: 90%;
-                font-size: 20px;
+                
 
             }
 
@@ -178,7 +178,7 @@ $font: "Open Sans";
             height: 11%;
             margin-left: 10px;
             font-family: "Open Sans";
-            font-size: 40px;
+            
         }
 
         .style {
@@ -186,7 +186,7 @@ $font: "Open Sans";
             height: 11%;
             margin-left: 10px;
             font-family: "Open Sans";
-            font-size: 40px;
+            
 
         }
 
@@ -206,7 +206,7 @@ $font: "Open Sans";
                 max-width: 90%;
                 max-height: 90%;
                 border-radius: 15px;
-                font-size: 20px;
+                
 
             }
 

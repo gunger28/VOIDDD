@@ -15,11 +15,31 @@ var boolOpacity = true; // opac for opened work
 var switcherVar; // do not try to get it
 var lastWork; // refs for close side panel
 
-const tagsWorksFonts = document.querySelectorAll(".tag"); // get all title div of 1 card
-const descPane = document.getElementById("work"); // get right side panel
-const cards = document.querySelectorAll(".one_card"); // get cards of work
+var tagsWorksFonts = document.querySelectorAll(".tag"); // get all title div of 1 card
+var descPane = document.getElementById("work"); // get right side p
+var cards = document.querySelectorAll(".one_card"); // get cards of work
+
+
+var title = document.querySelectorAll(".title");
+var img = document.querySelectorAll(".img_block");
+var desc = document.querySelectorAll(".text");
+var tecs = document.querySelectorAll(".tecnologies");
+var style = document.querySelectorAll(".style");
+var progs = document.querySelectorAll(".programs");
+
 
 function setPhoneStyle(){
+
+//   desc.forEach(des => {
+    
+//   
+// });
+console.log(desc[0].childNodes[1]);
+desc[0].childNodes[1].style = "font-size: 14px ;"
+
+style[0].style = "font-size: 24px ;"
+tecs[0].style = "font-size: 24px ;"
+//desc[0].childNodes[1].style = "font-size: 14px ;"
 
   fSSize = Mobile_fSSize;
   fBSize = Mobile_fbSize;
@@ -30,13 +50,7 @@ function setPhoneStyle(){
 
 // set descs to the right side panel
 function setWork(work) {
-  const title = document.querySelectorAll(".title");
-  const img = document.querySelectorAll(".img_block");
-  const desc = document.querySelectorAll(".text");
-  const tecs = document.querySelectorAll(".tecnologies");
-  const style = document.querySelectorAll(".style");
-  const progs = document.querySelectorAll(".programs");
-
+ 
   title[0].textContent = work.getAttribute("alt");
   img[0].childNodes[1].src = work.src;
   console.log(work.dataset.descript);
