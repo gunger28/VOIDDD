@@ -4,12 +4,12 @@ var imgs = document.querySelectorAll(".iamgesCont");
 var lineImg = document.querySelectorAll(".line"); 
 
 
-vid1 = "./assets/videos/test2.mp4"; // paths to video
-vid2 = "./assets/videos/test4.webm"; // paths to video 
-vid3 = "./assets/videos/test5.webm"; // paths to video
-vid4 = "./assets/videos/test7.webm"; // paths to video
-vid5 = "./assets/videos/test4.webm"; // paths to video
-vid6 = "./assets/videos/test5.webm"; // paths to video
+vid1 = "./assets/videos/cont1.webm"; // paths to video
+vid2 = "./assets/videos/cont2.webm"; // paths to video 
+vid3 = "./assets/videos/cont3.webm"; // paths to video
+vid4 = "./assets/videos/cont4.webm"; // paths to video
+vid5 = "./assets/videos/cont5.webm"; // paths to video
+vid6 = "./assets/videos/cont6.webm"; // paths to video
 
 vid = vid1; // set the first video
 counter = 0; // count to switch next vid

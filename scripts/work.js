@@ -4,11 +4,11 @@ const tecnology = ["eevee", "cycles","cycles", "cycles","eevee","eevee","eevee",
 const styles = ["poly", "nurbs", "particles", "particles", "particles", "MIX", "procedural", "procedural", "poly", "poly", "procedural", "MIX"];
 const program = ["blender", "gimp", "CrazyBump", "NanoStudio", "Inkscape"];
 
-var Mobile_fSSize = "40px;"; // font size opened
-var Mobile_fbSize = "65px;"; // font size closed
+var Mobile_fSSize = "20px;"; // font size opened
+var Mobile_fbSize = "40px;"; // font size closed
 
-var fSSize = "30px;"; // font size opened
-var fBSize = "55px;"; // font size closed
+var fSSize = "40px;"; // font size opened
+var fBSize = "65px;"; // font size closed
 
 var boolWork = false; // bool to close right side panel
 var boolOpacity = true; // opac for opened work
@@ -18,6 +18,15 @@ var lastWork; // refs for close side panel
 const tagsWorksFonts = document.querySelectorAll(".tag"); // get all title div of 1 card
 const descPane = document.getElementById("work"); // get right side panel
 const cards = document.querySelectorAll(".one_card"); // get cards of work
+
+function setPhoneStyle(){
+
+  fSSize = Mobile_fSSize;
+  fBSize = Mobile_fbSize;
+
+
+}
+
 
 // set descs to the right side panel
 function setWork(work) {
@@ -125,7 +134,7 @@ function showWork(flag, work) {
  
   if (!flag) {
     worksPane.style.width = "67%";
-    worksPane.style.height = "70%";
+    worksPane.style.height = "60%";
     workPane.style.right = "0";
     setWork(work);
     textWorks.forEach(text => {
@@ -163,7 +172,7 @@ function showWork(flag, work) {
 
       setTimeout(() => {
         worksPane.style.width = "67%";
-        worksPane.style.height = "70%";
+        worksPane.style.height = "60%";
         workPane.style.right = "0";
         setWork(work);
 

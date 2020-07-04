@@ -339,6 +339,8 @@ function desktop_style(){
 
 function phone_style(){
 
+
+    setPhoneStyle();
     setPhone_contacts();
   //  console.log(skill_categDiv.childNodes.length);
 
@@ -528,7 +530,7 @@ backPane.style.height = "100vh";
 
 // set start font for card in works
     tagsWorksFonts.forEach(text => {
-        text.firstElementChild.style = "color: white; font-size: 65px;";
+        text.firstElementChild.style = "color: white; font-size:" + fBSize;
     });
 
     
