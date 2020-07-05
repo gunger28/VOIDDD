@@ -218,16 +218,30 @@
   background-color: rgba(0, 0, 0, 0.718);
   -webkit-transition-duration: .9s;
           transition-duration: .9s;
-  display: flexbox;
-}
-
-.description_skill .media {
-  margin: 10px 10px;
-  width: 50%;
-  position: absolute;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+.description_skill .media {
+  width: 45%;
+  max-height: 100%;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.description_skill .media .videoSkills {
+  height: auto;
+  width: 100%;
+  position: static;
+  left: 0;
+  z-index: 15;
+  background-color: black;
 }
 
 .description_skill .textSkill {
@@ -239,12 +253,7 @@
   margin: 10px 10px;
   color: white;
   float: right;
-  background-color: rgba(255, 255, 255, 0);
-  width: 44%;
-  max-height: 90%;
-}
-
-.videoSkills {
-  z-index: 10;
+  max-width: 55%;
+  max-height: 100%;
 }
 /*# sourceMappingURL=skills.css.map */

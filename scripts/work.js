@@ -4,7 +4,7 @@ const tecnology = ["eevee", "cycles","cycles", "cycles","eevee","eevee","eevee",
 const styles = ["poly", "nurbs", "particles", "particles", "particles", "MIX", "procedural", "procedural", "poly", "poly", "procedural", "MIX"];
 const program = ["blender", "gimp", "CrazyBump", "NanoStudio", "Inkscape"];
 
-var Mobile_fSSize = "20px;"; // font size opened
+var Mobile_fSSize = "30px;"; // font size opened
 var Mobile_fbSize = "40px;"; // font size closed
 
 var fSSize = "40px;"; // font size opened

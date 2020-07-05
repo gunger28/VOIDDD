@@ -119,7 +119,8 @@ function setContent(theme){
     
 
      if(n[n.length-1] === "m"){
-       media.childNodes[1].style.opacity = 1;
+         console.log( media.childNodes[1]);
+      media.childNodes[1].style.opacity = 1;
     media.childNodes[1].setAttribute("src", theme.dataset.media);
     media.childNodes[1].style.opacity = "1";
     media.childNodes[1].onload = () => {
