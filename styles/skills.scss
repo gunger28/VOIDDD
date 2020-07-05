@@ -32,7 +32,8 @@ $font: "Open Sans";
     font-family: $font;
     letter-spacing: 8px;
     display: table;
-    background-image: linear-gradient(to right, rgb(255, 94, 0), rgb(181, 71, 255) 26%, rgb(176, 80, 255) 1%, rgb(255, 230, 0));
+   // background-image: linear-gradient(to right, rgb(255, 94, 0), rgb(181, 71, 255) 26%, rgb(176, 80, 255) 1%, rgb(255, 230, 0));
+     background-image: linear-gradient(to right, rgb(255, 251, 0), rgb(71, 172, 255) 10%, rgb(50, 163, 238) 1%, rgb(35, 204, 255));
     color: transparent;
     -webkit-background-clip: text;
     background-clip: text;
@@ -50,10 +51,12 @@ $font: "Open Sans";
     display: flex;
 
     .skill {
+
+      box-shadow: 0px 2px 10px black;
       margin: 110px auto;
       width: 30%;
       height: 90%;
-      background-color: rgba(255, 0, 157, 0.779);
+      background-color: rgba(255, 0, 157, 0.479);
       display: inline-block;
       
       border-bottom-left-radius: 30px;
@@ -61,6 +64,7 @@ $font: "Open Sans";
       transition-duration: .9s;
 
       .photo_cat {
+       // box-shadow: 0px 2px 10px black;
 
         background-color: rgba(51, 0, 109, 0.44);
         width: 100%;
@@ -120,22 +124,25 @@ $font: "Open Sans";
         clip-path: polygon(0% 0%, 100% 0%, 100% 0%, 100% 30%, 0% 100%, 0% 100%);
 
         .bar_progres {
+         box-shadow: 10px 10 px 10px black;
+
           margin-top: 5%;
       //    box-shadow: 2px 2px 7px rgb(0, 0, 0);
           height: 100%;
       //    background-color: rgb(255, 125, 4);
-          background: linear-gradient(90deg, rgb(0, 183, 255) 0%, rgb(0, 140, 255) 85%, rgba(255, 0, 0, 0) 100%);
+          background: linear-gradient(90deg, rgb(0, 150, 209) 0%, rgb(0, 54, 231) 85%, rgba(255, 0, 0, 0) 100%);
 
         }
 
         h1 {
+          text-shadow: 0px 0px 3px rgb(255, 255, 255);
           position: fixed;
         font-family: $font;
           background-color: rgba(128, 128, 128, 0);
           position: relative;
           width: 350px;
           height: 10px;
-          text-indent: 5px;
+          text-indent: 8px;
           top: 0px;
          // font-size: 40px;
           color: rgb(255, 255, 255);

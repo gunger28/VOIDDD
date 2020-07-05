@@ -34,8 +34,8 @@
   font-family: "Open Sans";
   letter-spacing: 8px;
   display: table;
-  background-image: -webkit-gradient(linear, left top, right top, from(#ff5e00), color-stop(26%, #b547ff), color-stop(1%, #b050ff), to(#ffe600));
-  background-image: linear-gradient(to right, #ff5e00, #b547ff 26%, #b050ff 1%, #ffe600);
+  background-image: -webkit-gradient(linear, left top, right top, from(#fffb00), color-stop(10%, #47acff), color-stop(1%, #32a3ee), to(#23ccff));
+  background-image: linear-gradient(to right, #fffb00, #47acff 10%, #32a3ee 1%, #23ccff);
   color: transparent;
   -webkit-background-clip: text;
   background-clip: text;
@@ -51,10 +51,12 @@
 }
 
 .skills_pane .line_of_skills .skill {
+  -webkit-box-shadow: 0px 2px 10px black;
+          box-shadow: 0px 2px 10px black;
   margin: 110px auto;
   width: 30%;
   height: 90%;
-  background-color: rgba(255, 0, 157, 0.779);
+  background-color: rgba(255, 0, 157, 0.479);
   display: inline-block;
   border-bottom-left-radius: 30px;
   border-bottom-right-radius: 30px;
@@ -119,20 +121,23 @@
 }
 
 .skills_pane .line_of_skills .skill .info_cat .bar_progres {
+  -webkit-box-shadow: 10px 10 px 10px black;
+          box-shadow: 10px 10 px 10px black;
   margin-top: 5%;
   height: 100%;
-  background: -webkit-gradient(linear, left top, right top, from(#00b7ff), color-stop(85%, #008cff), to(rgba(255, 0, 0, 0)));
-  background: linear-gradient(90deg, #00b7ff 0%, #008cff 85%, rgba(255, 0, 0, 0) 100%);
+  background: -webkit-gradient(linear, left top, right top, from(#0096d1), color-stop(85%, #0036e7), to(rgba(255, 0, 0, 0)));
+  background: linear-gradient(90deg, #0096d1 0%, #0036e7 85%, rgba(255, 0, 0, 0) 100%);
 }
 
 .skills_pane .line_of_skills .skill .info_cat h1 {
+  text-shadow: 0px 0px 3px white;
   position: fixed;
   font-family: "Open Sans";
   background-color: rgba(128, 128, 128, 0);
   position: relative;
   width: 350px;
   height: 10px;
-  text-indent: 5px;
+  text-indent: 8px;
   top: 0px;
   color: white;
 }

@@ -330,7 +330,7 @@ function desktop_style(){
     skill_titleBars.forEach( bar => {
         console.log(bar.childNodes[1]);
         
-        bar.childNodes[1].style.fontSize = "40px"
+        bar.childNodes[1].style.fontSize = "32px"
            }
             );
 
@@ -339,6 +339,7 @@ function desktop_style(){
 
 function phone_style(){
 
+slideHeight = "220px";
 
     setPhoneStyle();
     setPhone_contacts();

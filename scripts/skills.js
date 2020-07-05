@@ -3,6 +3,8 @@ const skill1 = document.getElementById("fst"); // get the one card
 const skill2 = document.getElementById("sec"); // get the one card
 const skill3 = document.getElementById("thi"); // get the one card
 
+var slideHeight = "420px";
+
 const media = document.getElementById("media"); //get vid div of panel with big desc and pics/video (category) desc panel
 const textDesc = document.getElementById("text_desc"); //get text of desc panel
 var tmpObj = document.getElementById("panels_cat"); // temp var for close desc panel
@@ -31,18 +33,18 @@ function slide_skills(flag){
 if(flag == close){
  //   skill3.style.width = "200px";
  //   skill3.style.height = "200px";
-    skill3.style.transform = "translateY(1000px)";
+    skill3.style.transform = "translateY("+slideHeight+")";
 
 setTimeout(() => {
    // skill2.style.width = "200px";
   //  skill2.style.height = "200px";
-    skill2.style.transform = "translateY(1000px)";
+    skill2.style.transform = "translateY("+slideHeight+")";
 }, 100);
 
 setTimeout(() => {
    // skill1.style.width = "200px";
   //  skill1.style.height = "200px";
-    skill1.style.transform = "translateY(1000px)";
+    skill1.style.transform = "translateY("+slideHeight+")";
 }, 200);
 
 }
