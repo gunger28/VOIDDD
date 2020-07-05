@@ -23,11 +23,13 @@ $font: "Open Sans";
 
 
   .p {
+   // font-weight: 600;
     position: fixed;
     width: 100%;
     user-select: none;
-    font-size: 80px;
-    font-family: "Open Sans";
+    margin-top: 7px;
+    font-size: 55px;
+    font-family: $font;
     letter-spacing: 8px;
     display: table;
     background-image: linear-gradient(to right, rgb(255, 94, 0), rgb(181, 71, 255) 26%, rgb(176, 80, 255) 1%, rgb(255, 230, 0));
