@@ -149,9 +149,8 @@ video {
      -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
-  position: fixed;
+  position: static;
   z-index: 1;
   width: 100%;
-  height: 120vh;
 }
 /*# sourceMappingURL=contacts.css.map */

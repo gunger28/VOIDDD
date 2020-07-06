@@ -224,7 +224,7 @@ function changeSource(src, element) {
    
     if (element.dataset.fullname === "Main") {
     
-        backPane.style.backgroundImage = "url('./assets/decor/MainScreen6.png')";
+        backPane.style.backgroundImage = "url('./assets/decor/MainScreen7.png')";
         changeStyles_Black();
         
        

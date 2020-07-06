@@ -103,6 +103,8 @@
   display: -ms-flexbox;
   display: flex;
   border-radius: 50px;
+  -webkit-box-shadow: 0px 5px 15px 2px black;
+          box-shadow: 0px 5px 15px 2px black;
   -webkit-transition: ease-in-out .7s;
   transition: ease-in-out .7s;
 }
@@ -115,13 +117,12 @@
   height: auto;
   -webkit-transition-duration: .2s;
           transition-duration: .2s;
-  left: 0;
 }
 
 .gallery .wind_gal .prev_block {
   margin-top: 30px;
   height: 36%;
-  width: 90%;
+  width: 85%;
   position: relative;
   margin: 0 auto;
 }
