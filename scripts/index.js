@@ -497,6 +497,19 @@ backPane.style.height = "100vh";
         
     });
 
+
+    mainTitle.addEventListener("mouseover", function() {
+        
+        mainTitle.style.opacity = 0;
+          
+      });
+
+      mainTitle.addEventListener("mouseout", function() {
+        
+        mainTitle.style.opacity = 0.95;
+          
+      });
+
    // actions for change photos by the category in gallery
     category.forEach(categor => {
         categor.addEventListener("click", event =>
