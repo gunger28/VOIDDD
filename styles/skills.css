@@ -125,8 +125,8 @@
           box-shadow: 10px 10 px 10px black;
   margin-top: 5%;
   height: 100%;
-  background: -webkit-gradient(linear, left top, right top, from(#0096d1), color-stop(85%, #0036e7), to(rgba(255, 0, 0, 0)));
-  background: linear-gradient(90deg, #0096d1 0%, #0036e7 85%, rgba(255, 0, 0, 0) 100%);
+  background: -webkit-gradient(linear, left top, right top, from(#0096d1), color-stop(85%, #0059e7), to(rgba(255, 0, 0, 0)));
+  background: linear-gradient(90deg, #0096d1 0%, #0059e7 85%, rgba(255, 0, 0, 0) 100%);
 }
 
 .skills_pane .line_of_skills .skill .info_cat h1 {

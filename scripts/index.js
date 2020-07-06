@@ -103,7 +103,7 @@ function gal_view_move(obj) {
   }, 700);
 
   viewer.style.transform =
-      "rotateX(90deg) rotateY(180deg) scale3d(0.5, 0.5, 0.5) ";
+      "rotateX(90deg) rotateY(0deg) scale3d(0.5, 0.5, 0.5) ";
 }
 
 // func for open/close work taplet (animation for elements of page)

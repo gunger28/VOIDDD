@@ -7,22 +7,24 @@ function take_pic_view(element){
 const img = document.getElementById(element);
 
 const view_vid = document.getElementById("video_gal");
-const view = document.getElementById("viewer");
+var view = document.getElementById("viewer");
 const cat_text = document.getElementById("CAT");
 if(img.getAttribute("data-vid") === ""){
-    view.setAttribute("src",img.getAttribute("src"));
-    view.style.opacity = "1";
-    view_vid.style.opacity = "0";
+    var imggg = img.getAttribute("src");
+console.log(imggg);
+view.style.backgroundImage = "url(" + imggg + ")";
+   view_vid.style.opacity = "0";
     console.log("image")
 }else{
     view_vid.style.opacity = "0";
     
 
     setTimeout(() => {
+     //   view.style.backgroundImage = "url()";
         view_vid.setAttribute("src",img.getAttribute("data-vid"));
-        view_vid.style.opacity = "1";
-        view.style.opacity = "0";
-      }, 500);
+     view_vid.style.opacity = "1";
+     //   view.style.opacity = "0";
+      }, 250);
     
    
     console.log("video")
@@ -58,7 +60,7 @@ if(i> parseInt(count, 10)){
          i++;
          console.log(i);
             anim_reload_reverse();
-          }, 600);
+          }, 0);
       });
       i=1;
       
