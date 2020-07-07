@@ -322,7 +322,7 @@ function desktop_style(){
            }
             );
 
-    mainTitle.style.width = "60%";
+    mainTitle.style.width = "70%";
     mainTitle.style.fontSize = "140px";
     botTitle.style.fontSize = "140px";
     skill_sideTitle.style.fontSize = "80px";
