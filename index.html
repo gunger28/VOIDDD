@@ -3,27 +3,22 @@
 
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-    <!-- <meta http-equiv='X-UA-Compatible' content='IE=Edge' /> -->
 
     <link rel="shortcut icon" href="./assets/decor/icon.ico" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet" />
+
     <link rel="stylesheet" href="./styles/gallery.css?<?php echo time();?>" />
     <link rel="stylesheet" href="./styles/index.css?<?php echo time();?>" />
     <link rel="stylesheet" href="./styles/works.css?<?php echo time();?>" />
     <link rel="stylesheet" href="./styles/skills.css?<?php echo time();?>" />
     <link rel="stylesheet" href="./styles/contacts.css?<?php echo time();?>" />
-    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet" />
-
-    <!-- For mobile phone -->
-    <!-- <link rel="stylesheet" type="text/css" href="index.css" media="handheld" /> -->
-
-
-
+ 
     <title>VOID</title>
 </head>
 
 <body id="body">
 
-    <!-- экран загрузки -->
+    <!-- LOADING SCREEN -->
     <div class="load_pane" style="
          opacity : 1; 
          width: 100vw;
@@ -32,7 +27,7 @@
         etert
     </div>
 
-    <!-- главный экран-->
+<!-- MAIN SCREEN-->
     <div class="vid_block" id="top" style="  
         width: 100%;
         height: 100vh; 
@@ -66,7 +61,7 @@
         
     </div>
 
-<!-- экран поворота -->
+<!-- SCREEN ROTATE -->
     <div id="rotateScreen"
     style="position: absolute; 
     width: 100%; height: 100% ; 
@@ -79,34 +74,33 @@
 
 </div>
 
-
-
-    <!-- Боковое меню -->
+<!-- SIDE MENU -->
     <div class="menu_block" id="menu" style="z-index: 16;">
+
         <div class="menu_logo" id="go_to_start" data-fullname="Main" data-shortname="V">
             <img src="./assets/decor/logoVV1.png" alt="image" />
-            <a href="#top"></a>
         </div>
-
 
         <div class="menu_element" data-source="" data-fullname="Gallery" data-shortname="V">
-
             <p>V</p>
         </div>
+
         <div class="menu_element" data-source="" data-fullname="Works" data-shortname="O">
             <p>O</p>
         </div>
+
         <div class="menu_element" data-source="" data-fullname="Skills" data-shortname="I">
             <p>I</p>
         </div>
+
         <div class="menu_element" data-source="" data-fullname="Contacts" data-shortname="D">
             <p>D</p>
         </div>
+
     </div>
 
-    <!-- контакты -->
-    <div class="contacts_pane" id="contacts" style="top: 0px; z-index: 0; opacity: 0; width: 100vw;
-    height: 100%;">
+<!-- CONTACTS -->
+    <div class="contacts_pane" id="contacts" style="z-index: 0; opacity: 0;">
         <video id="vid_3D" src="" autoplay loop width="100%" height="auto"
             pip="false" muted playsinline ></video>
         <div class="left_cont">
@@ -198,8 +192,8 @@
 
     </div>
 
-    <!-- Навыки -->
-    <div class="skills_pane" style="top:0px; z-index: 0; opacity: 0;" id="skill">
+<!-- SKILLS -->
+    <div class="skills_pane" style="z-index: 0; opacity: 0;" id="skill">
         <div class="description_skill" id="desc_block" style="left: 2500px; height: 400px;" >
             <div class="media" id="media" style="height: 380px;">
                 
@@ -438,7 +432,7 @@
         </div>
     </div>
 
-    <!-- Описание работы -->
+<!-- WORK DESKRIPTION -->
     <div class="description_block" style="right: -1000px;  z-index: 15; " id="work">
         <div class="title">
             Cosmos
@@ -472,7 +466,7 @@
         </div>
     </div>
 
-    <!-- Работы -->
+<!-- WORKS -->
     <div class="works_block" 
     style="left: 5100px; 
     width: 93vw;
@@ -592,7 +586,7 @@
         </div>
     </div>
 
-    <!-- Галерея -->
+<!-- GALLERY -->
     <div class="gal_pane" id="galleryMain" style="opacity: 0; z-index: 0; background-attachment: local;  
      background-position-x: -200px; background-position-y: -200px;">
         <div id="gal" class="wind_main" style="transform: rotateX(0deg); opacity: 1;">
@@ -650,6 +644,8 @@
         </div>
 
     </div>
+
+<!-- SKRIPTS -->
     <script type="text/javascript" src="./scripts/gallery.js"></script>
     <script type="text/javascript" src="./scripts/index.js"></script>
     <script type="text/javascript" src="./scripts/work.js"></script>
