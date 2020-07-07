@@ -84,8 +84,8 @@
   height: 100%;
   width: 100%;
   margin: 0 auto;
-  -webkit-transition-duration: .6s;
-          transition-duration: .6s;
+  -webkit-transition: ease-in-out .6s;
+  transition: ease-in-out .6s;
 }
 
 .gallery .wind_gal .gal_view {

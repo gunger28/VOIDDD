@@ -96,7 +96,7 @@ function gal_move(flag) {
 // func for open render in gallery taplet (animation for elements of page)
 function gal_view_move(obj) {
   const viewer = document.getElementById("viewer");
-  console.log("work Viwever opened");
+  
   setTimeout(() => {
       viewer.style.transform = "rotateX(0deg) rotateY(0deg) scale3d(1, 1, 1)";
       take_pic_view(obj);
@@ -125,9 +125,9 @@ function work_move(flag) {
         }, 1000);
 
         flagWork = true;
-        console.log("work opened!");
+        
     } else {
-      console.log("work closed!");
+     
         works.style.left = "2100px";
     }
 }
@@ -151,7 +151,7 @@ function skill_move(flag) {
         }, 1000);
 
         flagSkills = true;
-        console.log("skill opened!");
+        
     } else {
         skill.style.zIndex = "0";
         skill.style.opacity = "0";
@@ -176,7 +176,7 @@ function contacts_move(flag) {
         }, 1000);
 
         flagContacts = true;
-        console.log("skill opened!");
+   
     } else {
         contacts.style.zIndex = "0";
         contacts.style.opacity = "0";
@@ -215,7 +215,7 @@ function changeStyles_Black() {
         menEL[i].firstElementChild.style.color = null;
         menEL[i].firstElementChild.removeAttribute("style");
 
-        console.log(menEL.length + " " + menEL[i]);
+       
     }
 }
 
@@ -314,7 +314,7 @@ function desktop_style(){
     });
 
     skill_titleSkill.forEach( title => {
-       // console.log(title.childNodes[1]);
+       
         
        title.childNodes[1].style.fontSize = "120px"
        title.childNodes[3].style.fontSize = "120px"
@@ -328,7 +328,7 @@ function desktop_style(){
     skill_sideTitle.style.fontSize = "80px";
 
     skill_titleBars.forEach( bar => {
-        console.log(bar.childNodes[1]);
+        
         
         bar.childNodes[1].style.fontSize = "32px"
            }
@@ -343,7 +343,7 @@ slideHeight = "220px";
 
     setPhoneStyle();
     setPhone_contacts();
-  //  console.log(skill_categDiv.childNodes.length);
+ 
 
         for (var i = 0; i < skill_categDiv.childNodes.length; i++) {
        
@@ -359,18 +359,17 @@ slideHeight = "220px";
 //skill_videoSkill.style.height = "50%"
 
     //skill_categDiv.style.fontSize = "17px";
-   // console.log(skill_categDiv.childNodes);
-    
+   
 
    skill_titleBars.forEach( bar => {
-//console.log(bar.childNodes[1]);
+
 
 bar.childNodes[1].style.fontSize = "17px"
    }
     );
 
     skill_titleSkill.forEach( title => {
-        console.log(title.childNodes[1]);
+        
         
         title.childNodes[1].style.fontSize = "70px"
        title.childNodes[3].style.fontSize = "70px"
@@ -520,7 +519,7 @@ backPane.style.height = "100vh";
     // audio action for skills list
     skill_categDiv.childNodes.forEach(elem => {
         elem.addEventListener("mouseenter", function() {
-      //  console.log(Ptag.childNodes),
+      
  audio = new Audio(), // Создаём новый элемент Audio
  audio.volume = 0.2;
         audio.src = "./audio/click.mp3",// Указываем путь к звуку "клика"

@@ -11,10 +11,10 @@ var view = document.getElementById("viewer");
 const cat_text = document.getElementById("CAT");
 if(img.getAttribute("data-vid") === ""){
     var imggg = img.getAttribute("src");
-console.log(imggg);
+
 view.style.backgroundImage = "url(" + imggg + ")";
    view_vid.style.opacity = "0";
-    console.log("image")
+ 
 }else{
     view_vid.style.opacity = "0";
     
@@ -27,7 +27,7 @@ view.style.backgroundImage = "url(" + imggg + ")";
       }, 250);
     
    
-    console.log("video")
+   
     
 }
 
@@ -37,13 +37,13 @@ view.style.backgroundImage = "url(" + imggg + ")";
 function reload_imgs(category){
     const categ = document.getElementById(category);
 const imgs = document.querySelectorAll(".prew");
-console.log(categ);
+
 var i = 1;
 
 var count = categ.getAttribute("countVid");
 
 var dir = categ.getAttribute("dir");
-console.log(dir)
+
     imgs.forEach(function(item) {
         
         anim_reload();
@@ -58,9 +58,9 @@ if(i> parseInt(count, 10)){
 }
 
          i++;
-         console.log(i);
+         
             anim_reload_reverse();
-          }, 0);
+          }, 1400);
       });
       i=1;
       
@@ -69,144 +69,10 @@ if(i> parseInt(count, 10)){
 }
 
 
-// func set pics to the little div of photos
-// function reload_imgs(category){
-//     const categ = document.getElementById(category);
-// const imgs = document.querySelectorAll(".prew");
-// console.log(categ);
-// var i = 1;
-// switch(category){
-// case 'void':
-//     imgs.forEach(function(item) {
-        
-//         anim_reload();
-//         setTimeout(() => {
-           
-
-
-
-//     item.setAttribute("src",cat[0]+"/Void/void"+i+".png"); 
-//     item.setAttribute("data-vid",""); 
-// if(i>2){
- 
-//     item.setAttribute("data-vid",cat[0]+"/Void/void"+i+".webm"); 
-//   //  item.setAttribute("src",cat[0]+"/Void/void"+i+".webm"); 
-// }
-
-           
-     
-         
-//          i++;
-//          console.log(i);
-//             anim_reload_reverse();
-//           }, 600);
-
-         
-  
-//       });
-
-      
-
-//       i=1;
-      
-// break;
-// case 'gallery':
-//     imgs.forEach(function(item) {
-//         anim_reload();
-//         setTimeout(() => {
-//             item.setAttribute("src",cat[0]+"/gallery/gallery"+i+".png");
-//             i++;
-//             anim_reload_reverse();
-//           }, 600);
-        
-//       });
-
-//       i=1;
-// break;
-// case 'war':
-//     imgs.forEach(function(item) {
-//         anim_reload();
-//         setTimeout(() => {
-//             item.setAttribute("src",cat[0]+"/War/war"+i+".png");
-//             i++;
-//             anim_reload_reverse();
-//           }, 600);
-        
-//       });
-
-//       i=1;
-// break;
-// case 'cosmic':
-//     imgs.forEach(function(item) {
-//         anim_reload();
-//         setTimeout(() => {
-//             item.setAttribute("src",cat[0]+"/cosmic/cosmic"+i+".png");
-//             i++;
-//             anim_reload_reverse();
-//           }, 600);
-        
-//       });
-
-//       i=1;
-// break;
-// case 'aparts':
-//     imgs.forEach(function(item) {
-//         anim_reload();
-//         setTimeout(() => {
-//             item.setAttribute("src",cat[0]+"/apart/apart"+i+".png");
-//             i++;
-//             anim_reload_reverse();
-//           }, 600);
-        
-//       });
-
-//       i=1;
-// break;
-// case 'faces':
-//     imgs.forEach(function(item) {
-//         anim_reload();
-//         setTimeout(() => {
-//             item.setAttribute("src",cat[0]+"/faces/faces"+i+".png");
-//             i++;
-//             anim_reload_reverse();
-//           }, 600);
-        
-//       });
-
-//       i=1;
-// break;
-// case 'arch':
-//     imgs.forEach(function(item) {
-//         anim_reload();
-//         setTimeout(() => {
-//             item.setAttribute("src",cat[0]+"/Arch/arch"+i+".png");
-//             i++;
-//             anim_reload_reverse();
-//           }, 600);
-        
-//       });
-
-//       i=1;
-// break;
-// case 'death':
-//     imgs.forEach(function(item) {
-//         anim_reload();
-//         setTimeout(() => {
-//             item.setAttribute("src",cat[0]+"/death/Death"+i+".png");
-//             i++;
-//             anim_reload_reverse();
-//           }, 600);
-        
-//       });
-
-//       i=1;
-// break;
-// }
-// }
-
 // just animation for change pic
 function anim_reload(){
 const galBlock = document.getElementById("galBlock");
+console.log("rotate");
 galBlock.style.transform = "rotateY(90deg)";
 
 
