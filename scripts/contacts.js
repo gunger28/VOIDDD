@@ -9,7 +9,7 @@ vid2 = "./assets/videos/cont2.webm"; // paths to video
 vid3 = "./assets/videos/cont3.webm"; // paths to video
 vid4 = "./assets/videos/cont4.webm"; // paths to video
 vid5 = "./assets/videos/cont5.webm"; // paths to video
-vid6 = "./assets/videos/cont6.webm"; // paths to video
+
 
 vid = vid1; // set the first video
 counter = 0; // count to switch next vid
@@ -39,11 +39,12 @@ case 4:{
 }
 case 5:{
     vid = vid5;
+    counter=0;
     break;
 }
 case 6:{
     vid = vid6;
-counter=0;
+
 break;
 }
 }
@@ -86,12 +87,12 @@ imgs.forEach(imge => {
     line.style.height = "60px";
  });
 
- vid1 = "./assets/videos/cont1.mp4"; // paths to video
- vid2 = "./assets/videos/cont2.mp4"; // paths to video 
- vid3 = "./assets/videos/cont3.mp4"; // paths to video
- vid4 = "./assets/videos/cont4.mp4"; // paths to video
- vid5 = "./assets/videos/cont5.mp4"; // paths to video
- vid6 = "./assets/videos/cont6.mp4"; // paths to video
+//  vid1 = "./assets/videos/cont1.mp4"; // paths to video
+//  vid2 = "./assets/videos/cont2.mp4"; // paths to video 
+//  vid3 = "./assets/videos/cont3.mp4"; // paths to video
+//  vid4 = "./assets/videos/cont4.mp4"; // paths to video
+//  vid5 = "./assets/videos/cont5.mp4"; // paths to video
+
 
 
 

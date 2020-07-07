@@ -78,8 +78,8 @@ body {
   transition: all 1.2s ease;
   border-radius: 50px;
   padding-left: 15px;
-  -webkit-box-shadow: 5px 5px 15px black;
-          box-shadow: 5px 5px 15px black;
+  -webkit-box-shadow: 2px 2px 2px black;
+          box-shadow: 2px 2px 2px black;
 }
 
 .Title .com {
